@@ -1,0 +1,76 @@
+header{
+    background: beige;
+    padding: 0;
+}
+
+a{
+    color:red
+}
+
+a:hover{
+    background: red;
+    color: beige;
+}
+
+.container{
+    margin: 0 auto;
+    display: flex;
+    position: sticky;
+    align-items: center;
+}
+
+#search{
+    margin-left: auto;
+    width: 300px;
+    height: 44px;
+    box-sizing: border-box;
+    border-style: solid; 
+    border-radius: 25px;
+    border-color: red;
+    border-width: 0.5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  input {
+    all: unset;
+    font: 16px system-ui;
+    color: red;
+    height: 100%;
+    width: 100%;
+    padding: 6px 10px;
+  }
+  ::placeholder {
+    color: red;
+    opacity: 0.7; 
+  }
+  button {
+    all: unset;
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+  }
+  
+  svg {
+    color: red;
+    fill: currentColor;
+    width: 24px;
+    height: 24px;
+    padding: 10px;
+  }
+
+a.logo{
+    font-weight: bold;
+    padding: 1em;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+}
+nav ul li{
+    display: inline-block;
+}
+nav ul li a{
+    padding: 1em;
+}
