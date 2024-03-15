@@ -30,7 +30,7 @@
         <ul id="recent">
             
             <li *ngFor="let rr of recent_recipes  | slice:0:12">
-                <a [routerLink]="'/recipe/' + rr.id"> 
+                <a [routerLink]="'/recipes/' + rr.id"> 
                 <img src="{{rr.imageUrl}}" alt= rr.name class="secondary-image">
                 <h3> {{rr.name}} </h3>
                 </a>

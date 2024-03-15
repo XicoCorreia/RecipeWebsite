@@ -95,8 +95,7 @@ a{
 }
 
 @media (max-width: 1450px) {
-
     li:nth-child(4n) {
-        margin-right: 30px; /* Remove margin for the last item in each row */
+        margin-right: 30px;
     }
 }

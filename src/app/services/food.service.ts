@@ -22,7 +22,11 @@ export class FoodService {
     return sample_categories
   }
 
-  getRecentRecipes():Recipe[] {
+  getAllRecipes():Recipe[] {
     return sample_recipes;
+  }
+
+  getRecipeById(recipeId:string):Recipe{
+    return this.getAllRecipes().find(recipe => recipe.id == recipeId) ?? new Recipe();
   }
 }

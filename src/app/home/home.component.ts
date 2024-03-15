@@ -27,6 +27,6 @@ export class HomeComponent {
   ngOnInit(): void {
     this.first = this.foodService.getFirstImage();
     this.categories = this.foodService.getAllCategories();
-    this.recent_recipes = this.foodService.getRecentRecipes();
+    this.recent_recipes = this.foodService.getAllRecipes();
   }
 }
