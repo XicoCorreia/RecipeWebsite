@@ -7,20 +7,30 @@
         </div>
     </div>
     <div>
-        <h1 class="title">Categories</h1>
+        <div class="title-button-container">
+            <h1 class="title">Categories</h1>
+            <a href="#" routerLink="/categories" id="secondary-button">See more</a> 
+        </div>
+        <a [routerLink]="'/categories/...'"> 
         <ul id="categories">
             <li *ngFor="let c of categories  | slice:0:4">
                 <img src="{{c}}" alt="" class="secondary-image">
             </li>
         </ul>
+        </a>
     </div>
     <div>
-        <h1 class="title">Most Recent Recipes</h1>
+        <div class="title-button-container">
+            <h1 class="title">Most Recent Recipes</h1>
+            <a href="#" routerLink="/recipes" id="secondary-button">See more </a> 
+        </div>
         <ul id="recent">
+            <a [routerLink]="'/recipe/'"> 
             <li *ngFor="let rr of recent_recipes  | slice:0:12">
                 <img src="{{rr}}" alt="" class="secondary-image">
                 <h2> Carbonara </h2>
             </li>
+            </a>
         </ul>
     </div>
 </div>
