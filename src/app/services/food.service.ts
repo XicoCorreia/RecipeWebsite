@@ -1,4 +1,7 @@
 import { Injectable } from '@angular/core';
+import { Recipe } from '../shared/models/Recipe';
+import { sample_categories, sample_recipes } from 'src/data';
+import { Category } from '../shared/models/Category';
 
 @Injectable({
   providedIn: 'root'
@@ -11,28 +14,15 @@ export class FoodService {
     return '/assets/images/icon.png';
   }
 
-  getFirstImage():String {
-    return '/assets/images/carbonara.jpg';
+  getFirstImage():Recipe {
+    return sample_recipes[0]
   }
 
-  getAllCategories():String[] {
-    return['/assets/images/carbonara.jpg',
-    '/assets/images/carbonara.jpg',
-    '/assets/images/carbonara.jpg',
-    '/assets/images/carbonara.jpg',
-    '/assets/images/carbonara.jpg',
-    '/assets/images/carbonara.jpg'
-    ];
+  getAllCategories():Category[] {
+    return sample_categories
   }
 
-  getRecentRecipes():String[] {
-    return['/assets/images/carbonara.jpg',
-    '/assets/images/carbonara.jpg',
-    '/assets/images/carbonara.jpg',
-    '/assets/images/carbonara.jpg',
-    '/assets/images/carbonara.jpg',
-    '/assets/images/carbonara.jpg',
-    '/assets/images/carbonara.jpg'
-    ];
+  getRecentRecipes():Recipe[] {
+    return sample_recipes;
   }
 }

@@ -1,36 +1,41 @@
 <div class="container">
     <div id="primary">
-        <img src="{{first}}" alt="" id="primary-image">
+        <img src="{{first.imageUrl}}" alt={{first.name}} id="primary-image">
         <div class="pic-text"> 
-            <h1 id="primary-description">Traditional Carbonara </h1> 
-            <a href="#" routerLink="/carbonara" id="primary-button">See the Recipe</a> 
+            <h1 id="primary-description">{{first.name}}</h1> 
+            <a href="#" routerLink="/recipes/{{first.id}}" id="primary-button">See the Recipe</a> 
         </div>
     </div>
     <div>
         <div class="title-button-container">
             <h1 class="title">Categories</h1>
-            <a href="#" routerLink="/categories" id="secondary-button">See more</a> 
+            <a href="#" routerLink="/categories" id="secondary-button">View more</a> 
         </div>
-        <a [routerLink]="'/categories/...'"> 
+        
         <ul id="categories">
             <li *ngFor="let c of categories  | slice:0:4">
-                <img src="{{c}}" alt="" class="secondary-image">
+                <a [routerLink]="'/categories/' + c.id"> 
+                <img src="{{c.imageUrl}}" alt={{c.name}} class="secondary-image">
+                <h3> {{c.name}} </h3>
+                </a>
             </li>
         </ul>
-        </a>
+       
     </div>
     <div>
         <div class="title-button-container">
             <h1 class="title">Most Recent Recipes</h1>
-            <a href="#" routerLink="/recipes" id="secondary-button">See more </a> 
+            <a href="#" routerLink="/recipes" id="secondary-button"> View more </a> 
         </div>
         <ul id="recent">
-            <a [routerLink]="'/recipe/'"> 
+            
             <li *ngFor="let rr of recent_recipes  | slice:0:12">
-                <img src="{{rr}}" alt="" class="secondary-image">
-                <h2> Carbonara </h2>
+                <a [routerLink]="'/recipe/' + rr.id"> 
+                <img src="{{rr.imageUrl}}" alt= rr.name class="secondary-image">
+                <h3> {{rr.name}} </h3>
+                </a>
             </li>
-            </a>
+            
         </ul>
     </div>
 </div>

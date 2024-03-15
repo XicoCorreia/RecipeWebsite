@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { FoodService } from '../services/food.service';
+import { Recipe } from '../shared/models/Recipe';
+import { Category } from '../shared/models/Category';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +9,16 @@ import { FoodService } from '../services/food.service';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-  first:String = '';
-  categories:String[] = [];
-  recent_recipes:String[] = [];
+  first:Recipe = {
+    id: '',
+    name: '',
+    imageUrl: '',
+    steps: [],
+    categories: []
+  };
+  
+  categories:Category[] = [];
+  recent_recipes:Recipe[] = [];
 
   constructor(private foodService:FoodService) {
 
