@@ -1,4 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Ruda:wght@400..900&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin-top: 20px;
+    font-family:'Ruda', sans-serif;
+    font-size: 22px;
+}
+
 a{
     text-decoration: none;
 }
