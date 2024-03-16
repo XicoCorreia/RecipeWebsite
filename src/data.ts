@@ -63,14 +63,17 @@ export const sample_icons: Icon[] = [
     {id: '2', 
     name:"Twitter", 
     imageUrl:'/assets/images/twitter.ico',
+    router: 'https://twitter.com/XicoCorreia17'
     },
     {id: '3', 
-    name:"Snapchat", 
-    imageUrl:'/assets/images/snapchat.ico',
+    name:"Facebook", 
+    imageUrl:'/assets/images/facebook.ico',
+    router: 'https://www.facebook.com/francisco.correia.39/'
     },
     {id: '4', 
     name:"LinkedIn", 
     imageUrl:'/assets/images/linkedin.ico',
+    router: 'https://www.linkedin.com/in/francisco-correia7/'
     },
     {id: '5', 
     name:"Github", 
