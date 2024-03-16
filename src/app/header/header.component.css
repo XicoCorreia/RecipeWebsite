@@ -1,11 +1,10 @@
 
-
 a{
     color:#a62031
 }
 
 .container{
-    margin: 0 auto;
+    margin: 20px auto 0 auto;
     max-width: 1450px;
     display: flex;
     position: sticky;

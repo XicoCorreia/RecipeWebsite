@@ -1,5 +1,6 @@
 import { Category } from './app/shared/models/Category'
 import {Recipe} from './app/shared/models/Recipe'
+import { Icon } from './app/shared/models/Icon'
 
 export const sample_recipes: Recipe[] = [
     {id: '1',
@@ -52,3 +53,28 @@ name:"Healthy",
 imageUrl:'/assets/images/healthy.jpeg',
 }
 ]
+
+export const sample_icons: Icon[] = [
+    {id: '1', 
+    name:"Instagram", 
+    imageUrl:'/assets/images/instagram.ico',
+    router: 'https://www.instagram.com/xicocorreia17/'
+    },
+    {id: '2', 
+    name:"Twitter", 
+    imageUrl:'/assets/images/twitter.ico',
+    },
+    {id: '3', 
+    name:"Snapchat", 
+    imageUrl:'/assets/images/snapchat.ico',
+    },
+    {id: '4', 
+    name:"LinkedIn", 
+    imageUrl:'/assets/images/linkedin.ico',
+    },
+    {id: '5', 
+    name:"Github", 
+    imageUrl:'/assets/images/github.ico',
+    router: 'https://github.com/XicoCorreia'
+    }
+    ] 

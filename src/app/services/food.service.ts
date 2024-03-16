@@ -1,7 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Recipe } from '../shared/models/Recipe';
-import { sample_categories, sample_recipes } from 'src/data';
+import { sample_categories, sample_icons, sample_recipes } from 'src/data';
 import { Category } from '../shared/models/Category';
+import { Icon } from '../shared/models/Icon';
 
 @Injectable({
   providedIn: 'root'
@@ -28,5 +29,9 @@ export class FoodService {
 
   getRecipeById(recipeId:string):Recipe{
     return this.getAllRecipes().find(recipe => recipe.id == recipeId) ?? new Recipe();
+  }
+
+  getSocialIcons(): Icon[] {
+    return sample_icons;
   }
 }
