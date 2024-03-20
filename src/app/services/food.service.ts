@@ -34,4 +34,8 @@ export class FoodService {
   getSocialIcons(): Icon[] {
     return sample_icons;
   }
+
+  getAbout(): String {
+    return '/assets/images/about.jpg';
+  }
 }

@@ -1,0 +1,30 @@
+.container {
+    position: relative;
+    margin: 20px auto;
+    max-width: 1450px;  
+    text-align: left; 
+}
+
+#who_i_am,
+#my_history {
+    display: block;
+}
+
+h1{
+    margin: 0 auto 20px auto;
+}
+
+h3{
+    margin: 0 auto 20px auto;
+}
+
+#primary{
+    position: relative;
+    margin-bottom: 30px;
+}
+
+#primary-image{
+    display: block;
+    width: 100%;
+    height: auto;
+}
