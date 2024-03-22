@@ -1,14 +1,13 @@
-
 a{
-    color:#a62031
+  color:#a62031;
+  font-size: 25px;
 }
 
 .container{
-    margin: 20px auto 0 auto;
-    max-width: 1450px;
-    display: flex;
-    position: sticky;
-    align-items: center;
+  margin: 20px 3%;
+  display: flex;
+  position: sticky;
+  align-items: center;    
 }
 
 #search{
@@ -53,8 +52,9 @@ a{
   }
 
 #icon{
-    width: 400px;
-    height: 71px;
+  display: block;
+  width: 100%;
+  height: auto;
     
 }
 
@@ -67,4 +67,19 @@ nav ul li{
 }
 nav ul li a{
     padding: 1em;
+}
+
+#line{
+  position: relative;
+  background-color: #a62031;
+  color:white;
+  height: 40px;
+  text-align: center;
+
+}
+
+p{
+  margin: 0;
+  height: 2.5rem;
+  line-height: 2.5rem;
 }
