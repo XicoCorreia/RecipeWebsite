@@ -1,15 +1,13 @@
 .container {
     display: flex;
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Horizontally center the content */
+    flex-direction: column; 
+    align-items: center; 
     background-color: #a62031;
     color: white;
-    text-align: center; 
-    padding-bottom: 10px;
+    padding-bottom: 0.5em;
 }
 p{
-    margin: 10px auto 5px auto;
-    font-size: 20px;
+    margin: 0.5em auto 0.25em auto;
 }
 
 ul{
@@ -20,14 +18,14 @@ ul{
 
 li{
     float: left;
-    margin: 0 5px; 
+    margin: 0 0.25em; 
 }
 .icon {
-    width: 15px; 
+    width: 0.75em; 
     height: auto; 
 }
 
 #copyright{
-    padding-top: 10px;
-    font-size: 10px;
+    padding-top: 0.5em;
+    font-size: 0.5em;
 }
