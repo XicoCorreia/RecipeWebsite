@@ -5,7 +5,6 @@
     text-align: left; 
 }
 
-#about_me,
 #the_origin,
 #my_history {
     display: block;
@@ -13,16 +12,47 @@
 }
 
 h1{
-    margin: 0 auto;
+    margin: 0 auto 20px auto;
 }
 
 #primary{
-    position: relative;
+    position: flex;
     margin-bottom: 30px;
+    min-height: 650px;
+}
+#about_me{
+    margin-left: 20px;
 }
 
 #primary-image{
-    display: block;
-    width: 100%;
+    float:left;
+    max-width: 650px;
     height: auto;
+    margin-right: 40px;
+}
+
+@media screen and (max-width: 925px) {
+    #primary-image{
+        float: none;
+        max-width: 650px;
+        height: auto;
+        margin-right: 40px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #primary-image{
+        max-width: 100%;
+        height: auto;
+
+    }
+}
+
+    @media screen and (max-width: 1295px) {
+        #the_origin,
+        #my_history {
+            margin-left: 20px;
+        }
+        
+
 }
