@@ -1,58 +1,45 @@
 .container {
     position: relative;
-    margin: 20px auto;
+    margin: 1em auto;
     max-width: 1450px;  
     text-align: left; 
-}
-
-#the_origin,
-#my_history {
-    display: block;
-    margin-bottom: 20px;
-}
-
-h1{
-    margin: 0 auto 20px auto;
+    min-height: 90.2vh;
 }
 
 #primary{
     position: flex;
-    margin-bottom: 30px;
+    margin-bottom: 1.5em;
     min-height: 650px;
-}
-#about_me{
-    margin-left: 20px;
 }
 
 #primary-image{
-    float:left;
+    float: left;
     max-width: 650px;
-    height: auto;
-    margin-right: 40px;
+    margin-right: 2em;
+}
+
+h1{
+    margin: 0 
 }
 
 @media screen and (max-width: 925px) {
     #primary-image{
-        float: none;
-        max-width: 650px;
-        height: auto;
-        margin-right: 40px;
+        float: none; 
+        margin-right: 0;
     }
 }
 
 @media screen and (max-width: 650px) {
     #primary-image{
         max-width: 100%;
-        height: auto;
-
+        max-height: auto;
     }
 }
-
-    @media screen and (max-width: 1295px) {
-        #the_origin,
-        #my_history {
-            margin-left: 20px;
-        }
-        
-
+@media screen and (max-width: 1450px) {
+    #about_me,
+    #the_origin,
+    #my_history {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
 }
