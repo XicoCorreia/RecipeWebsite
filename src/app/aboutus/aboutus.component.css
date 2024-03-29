@@ -1,19 +1,19 @@
 .container {
     position: relative;
     margin: 1em auto;
-    max-width: 1450px;  
+    max-width: 1200px;  
     text-align: left; 
 }
 
 #primary{
     position: flex;
     margin-bottom: 1.5em;
-    min-height: 650px;
+    min-height: 500px;
 }
 
 #primary-image{
     float: left;
-    max-width: 650px;
+    max-width: 500px;
     margin-right: 2em;
 }
 
@@ -22,24 +22,26 @@ h1{
 }
 
 .route{
-    color:#a62031;
+    color: #a62031;
     font-weight: bold;
     padding-bottom: 0.5em;
 }
 .route a {
     color:#a62031;
-    
 }
 
-#r-home:hover{
+#r-home{
     text-decoration:underline;
 }
 
-@media screen and (max-width: 925px) {
+@media screen and (max-width: 740px) {
     #primary-image{
         float: none; 
         margin-right: 0;
         margin-bottom: 0.5em;
+    }
+    .container {
+        margin: 0 auto;
     }
     
 }
@@ -50,7 +52,7 @@ h1{
         max-height: auto;
     }
 }
-@media screen and (max-width: 1450px) {
+@media screen and (max-width: 1200px) {
     #about_me,
     #the_origin,
     #my_history {
