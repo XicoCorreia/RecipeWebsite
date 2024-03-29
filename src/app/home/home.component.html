@@ -6,36 +6,36 @@
             <a href="#" routerLink="/recipes/{{first.id}}" id="primary-button">See the Recipe</a> 
         </div>
     </div>
-    <div>
+    <div class="sections">
         <div class="title-button-container">
             <h1 class="title">Categories</h1>
             <a href="#" routerLink="/categories" id="secondary-button">View more</a> 
         </div>
-        
-        <ul id="categories">
-            <li *ngFor="let c of categories  | slice:0:4">
-                <a [routerLink]="'/categories/' + c.id"> 
-                <img src="{{c.imageUrl}}" alt={{c.name}} class="secondary-image">
-                <h3> {{c.name}} </h3>
-                </a>
-            </li>
-        </ul>
-       
+        <div class="grid-container">
+            <div *ngFor="let c of categories  | slice:0:4">
+                <article>
+                    <a [routerLink]="'/categories/' + c.id"> 
+                        <img src="{{c.imageUrl}}" alt={{c.name}} class="secondary-image">
+                        <h3> {{c.name}} </h3>
+                        </a>
+                </article>
+            </div>
+        </div>
     </div>
-    <div>
+    <div class="sections">
         <div class="title-button-container">
             <h1 class="title">Most Recent Recipes</h1>
             <a href="#" routerLink="/recipes" id="secondary-button"> View more </a> 
         </div>
-        <ul id="recent">
-            
-            <li *ngFor="let rr of recent_recipes  | slice:0:12">
-                <a [routerLink]="'/recipes/' + rr.id"> 
-                <img src="{{rr.imageUrl}}" alt= rr.name class="secondary-image">
-                <h3> {{rr.name}} </h3>
-                </a>
-            </li>
-            
-        </ul>
+        <div class="grid-container">
+            <div *ngFor="let rr of recent_recipes  | slice:0:12">
+                <article>
+                    <a [routerLink]="'/recipes/' + rr.id"> 
+                    <img src="{{rr.imageUrl}}" alt= rr.name class="secondary-image">
+                    <h3> {{rr.name}} </h3>
+                    </a>
+                </article>
+            </div>
+        </div>
     </div>
 </div>
