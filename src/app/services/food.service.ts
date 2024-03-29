@@ -38,4 +38,17 @@ export class FoodService {
   getAbout(): String {
     return '/assets/images/about.jpg';
   }
+
+  getCourseCategories():Category[] {
+    return sample_categories.filter(c => !c.parent_category)
+  }
+  
+  getDessertCategories():Category[] {
+    return sample_categories.filter(c => c.parent_category === "Dessert")
+  }
+
+  getBreakfastCategories():Category[] {
+    return sample_categories.filter(c => c.parent_category === "Breakfast")
+  }
+
 }

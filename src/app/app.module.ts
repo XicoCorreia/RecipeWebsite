@@ -9,6 +9,7 @@ import { RecipePageComponent } from './recipe-page/recipe-page.component';
 import { FooterComponent } from './footer/footer.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { RecipesComponent } from './recipes/recipes.component';
+import { CategoriesComponent } from './categories/categories.component';
 
 @NgModule({
   declarations: [
@@ -18,11 +19,12 @@ import { RecipesComponent } from './recipes/recipes.component';
     RecipePageComponent,
     FooterComponent,
     AboutusComponent,
-    RecipesComponent 
+    RecipesComponent,
+    CategoriesComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
