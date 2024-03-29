@@ -38,7 +38,7 @@
         <div class="grid-container">
             <div *ngFor="let b of breakfast" class="grid-item">
                 <article>
-                    <a [routerLink]="'/breakfast' + b.name.toLowerCase()"> 
+                    <a [routerLink]="'/breakfast/' + b.name.toLowerCase()"> 
                         <img src="{{b.imageUrl}}" alt="{{b.name}}" class="secondary-image">
                         <h3>{{b.name}}</h3>
                     </a>

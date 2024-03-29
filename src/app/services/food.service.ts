@@ -9,6 +9,7 @@ import { Icon } from '../shared/models/Icon';
 })
 export class FoodService {
 
+
   constructor() { }
 
   getIcon():String {
@@ -31,6 +32,10 @@ export class FoodService {
     return this.getAllRecipes().find(recipe => recipe.id == recipeId) ?? new Recipe();
   }
 
+  getRecipeByCategory(category:string):Recipe[]{
+    return this.getAllRecipes().filter(r => r.categories?.includes(category));
+  }
+
   getSocialIcons(): Icon[] {
     return sample_icons;
   }
@@ -49,6 +54,25 @@ export class FoodService {
 
   getBreakfastCategories():Category[] {
     return sample_categories.filter(c => c.parent_category === "Breakfast")
+  }
+
+  getCategoryByName(categoryName:string):Category{
+    return this.getAllCategories().find(c => c.name.toLowerCase() == categoryName.toLocaleLowerCase()) ?? new Recipe();
+  }
+
+  getsubCategories(name: string): Category[] {
+    return sample_categories.filter(c => c.parent_category?.toLowerCase() === name.toLowerCase())
+  }
+
+  getsubCategoriesRecipes(subCategories: Category[]): Recipe[][] {
+    const subCatRecipes: Recipe[][] = [];
+    subCategories.forEach(subCat => {
+      const recipesForSubCat: Recipe[] = sample_recipes.filter(recipe =>
+          recipe.categories?.some(cat => cat === subCat.name)
+      );
+      subCatRecipes.push(recipesForSubCat);
+  });
+  return subCatRecipes;
   }
 
 }

@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="route"> 
+        <a href="#" routerLink="/" id="r-underline">Home</a> 
+        > 
+        <a href="#" routerLink="/{{parent_category.toLowerCase()}}" id="r-underline">{{parent_category}}</a>
+        > {{category.name}}
+    </div>
+    <div id="primary">
+        <img src="{{category.imageUrl}}" alt={{category.name}} id="primary-image">
+        <div class="pic-text"> 
+            <h1 id="primary-description">{{category.name}}</h1>  
+        </div>
+    </div>
+    <p *ngIf="category.description">{{category.description}}</p>
+    <div class="section">
+        <h2>All {{category.name}} Recipes</h2>
+        <div class="grid-container">
+            <div *ngFor="let c of categoryRecipes">
+                <article>
+                    <a [routerLink]="'/recipes/' + c.id"> 
+                        <img src="{{c.imageUrl}}" alt={{c.name}} class="secondary-image">
+                        <p> {{c.name}} </p>
+                        </a>
+                </article>
+            </div>
+        </div>
+    </div>
+</div>

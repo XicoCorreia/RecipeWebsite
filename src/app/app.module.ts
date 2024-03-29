@@ -10,6 +10,8 @@ import { FooterComponent } from './footer/footer.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { RecipesComponent } from './recipes/recipes.component';
 import { CategoriesComponent } from './categories/categories.component';
+import { CategoryPageComponent } from './category-page/category-page.component';
+import { SubcategoryPageComponent } from './subcategory-page/subcategory-page.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { CategoriesComponent } from './categories/categories.component';
     FooterComponent,
     AboutusComponent,
     RecipesComponent,
-    CategoriesComponent
+    CategoriesComponent,
+    CategoryPageComponent,
+    SubcategoryPageComponent
   ],
   imports: [
     BrowserModule,

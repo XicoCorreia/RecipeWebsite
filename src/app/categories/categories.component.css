@@ -50,6 +50,7 @@ article {
 h3 {
     margin-top: 0.25em; 
     margin-bottom: 0;
+    color:#a62031;
 }
 
 @media screen and (max-width: 1200px) {

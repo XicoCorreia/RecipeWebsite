@@ -5,13 +5,17 @@ import { RecipePageComponent } from './recipe-page/recipe-page.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { RecipesComponent } from './recipes/recipes.component';
 import { CategoriesComponent } from './categories/categories.component';
+import { CategoryPageComponent } from './category-page/category-page.component';
+import { SubcategoryPageComponent } from './subcategory-page/subcategory-page.component';
 
 const routes: Routes = [
   {path: '', component:HomeComponent},
   {path: 'recipes/:id', component:RecipePageComponent},
   {path: 'about-us', component:AboutusComponent},
   {path: 'recipes', component:RecipesComponent},
-  {path: 'recipes-index', component:CategoriesComponent}
+  {path: 'recipes-index', component:CategoriesComponent},
+  {path: ':name', component:CategoryPageComponent},
+  {path: ':parent_category/:name', component:SubcategoryPageComponent},
 ];
 
 @NgModule({

@@ -1,0 +1,78 @@
+.container {
+    position: relative;
+    margin: 1em auto;
+    max-width: 1200px;
+    text-align: left;
+}
+
+.route {
+    color: #a62031;
+    font-weight: bold;
+    padding-bottom: 0.5em;
+}
+
+.route a {
+    color: #a62031;
+}
+
+#r-home {
+    text-decoration: underline;
+}
+
+#primary{
+    position: flex;
+    margin-bottom: 1.5em;
+    min-height: 250px;
+}
+
+#primary-image{
+    float: right;
+    max-width: 375px;
+    margin-left: 2em;
+}
+
+h1{
+    margin: 0 
+}
+
+.grid-container_1 {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); 
+    gap: 1em; 
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.grid-item {
+    margin: 0;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+}
+
+.secondary-image_1 {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+
+}
+
+p {
+    margin-top: 0.25em; 
+    margin-bottom: 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 1em; 
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.secondary-image {
+    width: 100%;
+    height: auto;
+}

@@ -6,6 +6,6 @@ export class Recipe{
     imageUrl!:string;
     steps!: string[];
     calories?: number;
-    categories?: Category[];
+    categories?: string[];
 
 }
