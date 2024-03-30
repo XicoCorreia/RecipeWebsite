@@ -5,25 +5,35 @@
         </a> 
     <nav>
         <ul>
+
             <li>
-                <a href="#" routerLink="/">Home</a> 
+                <div class="dropdown">
+                    <a href="#" class="navb" routerLink="/recipes">All recipes                       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19 9L12 16L5 9" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg></a> 
+                    <div class="dropdown-content">
+                      <a href="#">Link 1</a>
+                    </div>
+                  </div>
             </li>
             <li>
-                <a href="#" routerLink="/about-us">About us</a> 
+                <a href="#" class="navb" routerLink="/lunch">Lunch</a> 
             </li>
             <li>
-                <a href="#" routerLink="/recipes">All Recipes</a> 
+                <div class="dropdown">
+                    <a href="#" class="navb" routerLink="/dessert">Dessert
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19 9L12 16L5 9" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg></a> 
+                    <div class="dropdown-content">
+                      <a href="#">Link 1</a>
+                    </div>
+                  </div>
+            </li>
+            <li>
+                <a href="#" class="navb" routerLink="/about-us">About us</a> 
             </li>
         </ul>
     </nav>
-    <form id="search" role="search">
-        <input type="search" id="query" name="q"
-         placeholder="I'm craving..."
-         aria-label="Search through site content">
-         <button>
-            <svg viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg>
-          </button>
-      </form>
     </div>
-    <div id="line"><p>New recipes every week!</p></div>
 </header>
