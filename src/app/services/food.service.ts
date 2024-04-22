@@ -13,7 +13,7 @@ export class FoodService {
   constructor() { }
 
   getIcon():String {
-    return '/assets/images/icon.png';
+    return '/assets/images/icons/icon.png';
   }
 
   getFirstImage():Recipe {
