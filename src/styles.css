@@ -6,7 +6,7 @@
 
 body{
     margin: 0;
-    font-family:'Ruda', sans-serif;
+    font-family: 'Cormorant';
     font-size: 20px;
     
 }
@@ -23,6 +23,6 @@ h3{
     font-family: 'Cormorant';
 }
 
-a{
-    font-family: 'Cormorant';
+.route{
+font-family:'Ruda', sans-serif;
 }

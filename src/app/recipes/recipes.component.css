@@ -40,16 +40,22 @@ p{
 article {
     display: flex;
     flex-direction: column;
+   /* text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 0.5em;
+    background-color: rgb(255,240,219,0.8); */
 }
 
 .secondary-image {
+    aspect-ratio : 1 / 1;
     width: 100%;
-    height: auto;
+    object-fit: cover;
+    object-position: 0%;
 }
 
 h3 {
-    margin-top: 0.25em; 
-    margin-bottom: 0;
+    margin: 0;
+    padding-top: 0.25em; 
     color: #a62031;
 }
 
