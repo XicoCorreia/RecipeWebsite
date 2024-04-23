@@ -7,12 +7,23 @@
 
 #primary{
     position: relative;
+    height: 700px; 
 }
 
 #primary-image{
-    display: block;
     width: 100%;
-    height: auto;
+    height: 100%; 
+    object-fit: cover;
+    object-position: 0%; 
+}
+
+.external_div_text{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 100%;
+    width: 40%;
+    background:linear-gradient(to right, #000, #0000);
 }
 
 .pic-text {
@@ -20,21 +31,21 @@
     top: 50%;
     transform: translateY(-50%);
     padding-left: 3em;
-    max-width: 30%;
     color:white;
 }
 
 #primary-description{
     margin: 0 0 0.5em 0;
-    font-size: 2.5em;  
+    font-size: 2.25em;  
 }
 
 #primary-button{
     color: white;
     background-color: #a62031;
-    margin-top: 0.25em;
     padding: 1em;
+    font-size: 0.75em;
     border-radius: 0.25em;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .title{
@@ -67,13 +78,18 @@ article {
 }
 
 .secondary-image {
+    aspect-ratio : 1 / 1;
     width: 100%;
-    height: auto;
+    object-fit: cover;
+    object-position: 0%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 h3 {
-    margin-top: 0.25em; 
-    margin-bottom: 0;
+    margin: 0;
+    padding-top: 0.25em; 
+    padding-left: 0.5em;
+    
 }
 
 a{
