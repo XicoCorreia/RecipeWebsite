@@ -65,7 +65,11 @@ parent_category: "Breakfast",
 {id: '6', 
 name:"Burrito", 
 imageUrl:'/assets/images/categories/lunch.jpg',
-description: "Burrito",
+description: 
+"BurritoBurritoBurritoBurrito BurritoBurritoBurritoBurritoBurrito"+
+"BurritoBurritoBurritoBurrito BurritoBurritoBurritoBurritoBurrito"+
+"BurritoBurritoBurritoBurrito BurritoBurritoBurritoBurritoBurrito"+
+"BurritoBurritoBurritoBurrito BurritoBurritoBurritoBurritoBurrito",
 parent_category: "Lunch",
 },
 {id: '7', 
