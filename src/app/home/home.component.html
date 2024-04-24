@@ -30,7 +30,7 @@
             <a href="#" routerLink="/recipes" id="secondary-button"> View more </a> 
         </div>
         <div class="grid-container">
-            <div *ngFor="let rr of recent_recipes  | slice:0:12">
+            <div *ngFor="let rr of recent_recipes  | slice:0:8">
                 <article>
                     <a [routerLink]="'/recipes/' + rr.id"> 
                     <img src="{{rr.imageUrl}}" alt= rr.name class="secondary-image">

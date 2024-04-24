@@ -1,6 +1,6 @@
 .container {
     position: relative;
-    margin: 1em auto;
+    margin: 1em auto 2em auto;
     max-width: 1200px;
     text-align: left;
 }
@@ -8,7 +8,7 @@
 .route {
     color: #a62031;
     font-weight: bold;
-    padding-bottom: 0.5em;
+    padding-bottom: 0.75em;
 }
 
 .route a {
@@ -23,14 +23,16 @@ h1{
     margin: 0;
 }
 p{
-    margin: 0.25em auto 1em auto;
+    margin: 0.25em auto 0 auto;
+    
 }
 
 .grid-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr); 
     gap: 1em; 
-    margin-bottom: 1em;
+    margin: 1em auto 1em auto;
+
 }
 
 .grid-item {
@@ -40,10 +42,6 @@ p{
 article {
     display: flex;
     flex-direction: column;
-   /* text-align: center;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    padding: 0.5em;
-    background-color: rgb(255,240,219,0.8); */
 }
 
 .secondary-image {
@@ -51,6 +49,7 @@ article {
     width: 100%;
     object-fit: cover;
     object-position: 0%;
+    border-radius: 5px;
 }
 
 h3 {

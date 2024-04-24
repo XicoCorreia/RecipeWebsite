@@ -1,6 +1,6 @@
 .container {
     position: relative;
-    margin: 1em auto;
+    margin: 1em auto 2em auto;
     max-width: 1200px;   
     text-align: left; 
 }
@@ -96,13 +96,13 @@ a{
 }
 
 .section_categories, .section_most_recent{
-    margin-top: 1em;
+    margin-top: 3em;
     
 }
 .section_categories{
     padding: 1em 1em 1em 1em;
-    background-color: rgb(255,240,219,0.5);
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: rgb(255,240,219,0.6);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 

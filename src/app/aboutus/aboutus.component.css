@@ -1,6 +1,6 @@
 .container {
     position: relative;
-    margin: 1em auto;
+    margin: 1em auto 2em auto;
     max-width: 1200px;  
     text-align: left; 
 }
