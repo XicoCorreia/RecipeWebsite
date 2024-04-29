@@ -56,7 +56,7 @@ article {
 }
 
 .secondary-image {
-    aspect-ratio : 1 / 1;
+    aspect-ratio : 0.75 / 1;
     width: 100%;
     object-fit: cover;
     object-position: 0%;

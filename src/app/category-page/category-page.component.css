@@ -4,10 +4,17 @@
     max-width: 1200px;
 }
 
+
 #primary{
     position: flex;
     margin-bottom: 2em;
     height: 325px;
+    background-color: rgb(255,240,219,0.3);
+    padding: 1.5em;
+}
+
+p {
+    margin-top: 0.5em ;
 }
 
 #primary-image{
@@ -43,13 +50,7 @@
 }
 
 .section{
-    margin:1em auto 3em auto;
-}
-
-.even-section{
-    padding: 1em;
-    background-color: rgb(255,240,219,0.6);
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin: 2em auto 3em auto;
 }
 
 .grid-container {
@@ -85,7 +86,7 @@ a {
 }
 
 .secondary-image {
-    aspect-ratio : 1 / 1;
+    aspect-ratio : 0.75 / 1;
     width: 100%;
     object-fit: cover;
     object-position: 0%;

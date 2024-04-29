@@ -81,6 +81,14 @@ article {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
+.secondary-image-recipes {
+    aspect-ratio : 0.75 / 1;
+    width: 100%;
+    object-fit: cover;
+    object-position: 0%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
 h3 {
     padding-top: 0.25em; 
     padding-left: 0.5em;
