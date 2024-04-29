@@ -2,30 +2,6 @@
     position: relative;
     margin: 1em auto 2em auto;
     max-width: 1200px;
-    text-align: left;
-}
-
-.route {
-    color: #a62031;
-    font-weight: bold;
-    padding-bottom: 0.75em;
-}
-
-.route a {
-    color: #a62031;
-}
-
-#r-home {
-    text-decoration: underline;
-}
-
-h1{
-    margin: 0;
-}
-
-p{
-    margin: 0.25em auto 0 auto;
-    
 }
 
 .grid-container {
@@ -33,7 +9,6 @@ p{
     grid-template-columns: repeat(4, 1fr); 
     gap: 1em; 
     margin: 1em auto 1em auto;
-
 }
 
 .grid-item {
@@ -50,11 +25,13 @@ article {
     width: 100%;
     object-fit: cover;
     object-position: 0%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 h3 {
     margin: 0;
     padding-top: 0.25em; 
+    padding-left: 0.5em;
     color: #a62031;
 }
 

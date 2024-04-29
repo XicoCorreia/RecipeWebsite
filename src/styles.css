@@ -23,6 +23,35 @@ h3{
     font-family: 'Cormorant';
 }
 
+/*check*/
 .route{
-font-family:'Ruda', sans-serif;
+    font-family:'Ruda', sans-serif;
+    color: #a62031;
+    font-weight: bold;
+    padding-bottom: 0.75em;
 }
+.route a {
+    color:#a62031;
+}
+
+#r-home{
+    text-decoration:underline;
+}
+
+h1, h2{
+    margin: 0 
+}
+
+p {
+    margin: 0.25em auto 0 auto;
+}
+
+/*
+.container {
+    position: relative;
+    margin: 1em auto 2em auto;
+    max-width: 1200px;  
+    text-align: left; 
+}
+
+*/

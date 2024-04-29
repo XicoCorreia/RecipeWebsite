@@ -2,13 +2,15 @@
     position: relative;
     margin: 1em auto 2em auto;
     max-width: 1200px;  
-    text-align: left; 
 }
 
-#primary{
+#main{
     position: flex;
     margin-bottom: 1.5em;
-    min-height: 500px;
+    min-height: 540px;
+    text-align: justify;
+    padding: 1em;
+    background-color: rgb(255,240,219,0.6);
 }
 
 #primary-image{
@@ -17,21 +19,9 @@
     margin-right: 2em;
 }
 
-h1{
-    margin: 0 
-}
-
-.route{
-    color: #a62031;
-    font-weight: bold;
-    padding-bottom: 0.75em;
-}
-.route a {
-    color:#a62031;
-}
-
-#r-home{
-    text-decoration:underline;
+#the_origin, #my_history{
+    margin-bottom: 1em;
+    text-align: justify;
 }
 
 @media screen and (max-width: 740px) {
@@ -43,7 +33,6 @@ h1{
     .container {
         margin: 0 auto;
     }
-    
 }
 
 @media screen and (max-width: 650px) {
