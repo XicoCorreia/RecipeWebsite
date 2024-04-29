@@ -25,7 +25,7 @@
         <div class="grid-container">
             <div *ngFor="let d of desserts" class="grid-item">
                 <article>
-                    <a [routerLink]="'/desserts-recipes/' + d.path"> 
+                    <a [routerLink]="'/dessert-recipes/' + d.path"> 
                         <img src="{{d.imageUrl}}" alt="{{d.name}}" class="secondary-image">
                         <h3>{{d.name}}</h3>
                     </a>
