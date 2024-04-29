@@ -1,27 +1,39 @@
 .container {
     position: relative;
-    margin: 1em auto 3em auto;
+    margin: 0 auto 3em auto;
     max-width: 1200px;  
+    text-align: justify;
+}
+
+#primary-container{
+    width: calc(100vw); 
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(255,240,219,0.3);
+    margin-bottom: 2em;
+}
+
+.route{
+    padding-top: 1em;
 }
 
 #primary{
     position: flex;
-    margin-bottom: 2em;
-    min-height: 540px;
-    text-align: justify;
-    padding: 1em;
-    background-color: rgb(255,240,219,0.6);
+    max-width: 1200px;
+    min-height: 520px;  
+    margin: 0 auto;
 }
 
 #primary-image{
     float: left;
-    max-width: 500px;
+    max-height: 520px;
     margin-right: 2em;
+    padding-top: 0;
 }
 
-#the_origin, #my_history{
+#the-origin, #my-history{
     margin-bottom: 2em;
-    text-align: justify;
 }
 
 @media screen and (max-width: 740px) {
@@ -42,10 +54,10 @@
     }
 }
 @media screen and (max-width: 1200px) {
-    #about_me,
-    #the_origin,
-    #my_history {
-        margin-left: 1em;
-        margin-right: 1em;
+    #about-me,
+    #the-origin,
+    #my-history {
+        padding-left: 1em;
+        padding-right: 1em;
     }
 }
