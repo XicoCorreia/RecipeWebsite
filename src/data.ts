@@ -66,10 +66,10 @@ parent_category: "Breakfast",
 name:"Burrito", 
 imageUrl:'/assets/images/categories/lunch.jpg',
 description: 
-"BurritoBurritoBurritoBurrito BurritoBurritoBurritoBurritoBurrito"+
-"BurritoBurritoBurritoBurrito BurritoBurritoBurritoBurritoBurrito"+
-"BurritoBurritoBurritoBurrito BurritoBurritoBurritoBurritoBurrito"+
-"BurritoBurritoBurritoBurrito BurritoBurritoBurritoBurritoBurrito",
+"Discover the delightful world of burritos! From classic Mexican-style burritos bursting with seasoned meats, "+ 
+"beans, and cheese, to inventive fusion creations featuring bold flavors from around the globe, my burrito " +
+"recipes are sure to satisfy your cravings. Whether you prefer them stuffed with tender grilled chicken or veggies, "+
+"whether you want it for lunch or breakfast there's a burrito recipe here for you",
 parent_category: "Lunch",
 },
 {id: '7', 

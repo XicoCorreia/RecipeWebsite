@@ -2,7 +2,7 @@
     position: relative;
     margin: 1em auto 2em auto;
     max-width: 1200px;
-    text-align: left;
+    text-align: justify;
 }
 
 .route {
@@ -51,7 +51,7 @@
 
 p {
     margin-top: 0.75em; 
-    margin-bottom: 0;
+    margin-bottom: 1em;
     width: 100%;
 }
 
@@ -59,8 +59,7 @@ p {
     display: grid;
     grid-template-columns: repeat(4, 1fr); 
     gap: 1em; 
-    margin-bottom: 1em;
-    text-align: center;
+    margin: 1em auto 1em auto;
 }
 
 .grid-item {
@@ -71,12 +70,21 @@ h2{
     margin: 0;
 }
 
+h3 {
+    margin: 0;
+    padding-top: 0.25em; 
+    color: #a62031;
+}
+
 article {
     display: flex;
     flex-direction: column;
 }
 
 .secondary-image {
+    aspect-ratio : 1 / 1;
     width: 100%;
-    height: auto;
+    object-fit: cover;
+    object-position: 0%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
