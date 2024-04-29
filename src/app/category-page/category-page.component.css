@@ -1,6 +1,6 @@
 .container {
     position: relative;
-    margin: 1em auto;
+    margin: 1em auto 2em auto;
     max-width: 1200px;
     text-align: left;
 }
@@ -8,7 +8,7 @@
 .route {
     color: #a62031;
     font-weight: bold;
-    padding-bottom: 0.5em;
+    padding-bottom: 0.75em;
 }
 
 .route a {
@@ -21,26 +21,62 @@
 
 #primary{
     position: flex;
-    margin-bottom: 1.5em;
-    min-height: 250px;
+    margin-bottom: 2em;
+    height: 325px;
 }
 
 #primary-image{
+    aspect-ratio : 1 / 1;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0%;
     float: right;
-    max-width: 375px;
     margin-left: 2em;
 }
 
-h1{
-    margin: 0 
+p{
+    margin: 0.25em auto 0 auto;
 }
 
 .grid-container_1 {
     display: grid;
     grid-template-columns: repeat(7, 1fr); 
     gap: 1em; 
-    margin-bottom: 1em;
     text-align: center;
+} 
+
+.secondary-image_1 {
+    aspect-ratio : 1 / 1;
+    width: 100%;
+    object-fit: cover;
+    object-position: 0%;
+    border-radius: 50%;
+}
+
+#c_name{
+    color: #a62031;
+}
+
+.category_des{
+    text-align: justify;
+}
+
+.section{
+    margin:1em auto 3em auto;
+}
+
+
+.even-section{
+    padding: 1em;
+    background-color: rgb(255,240,219,0.6);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 1em; 
+    margin: 0.5em auto 0 auto;
 }
 
 .grid-item {
@@ -52,27 +88,31 @@ article {
     flex-direction: column;
 }
 
-.secondary-image_1 {
-    width: 100%;
-    height: auto;
-    border-radius: 50%;
 
+h2, h1{
+    margin: 0;
 }
 
-p {
-    margin-top: 0.25em; 
-    margin-bottom: 0;
+h3{
+    margin: 0;
+    padding-top: 0.25em; 
+    padding-left: 0.5em;
+    color: #a62031;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); 
-    gap: 1em; 
-    margin-bottom: 1em;
-    text-align: center;
+a{
+    color: #a62031;
+}
+
+.title-button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .secondary-image {
+    aspect-ratio : 1 / 1;
     width: 100%;
-    height: auto;
+    object-fit: cover;
+    object-position: 0%;
 }

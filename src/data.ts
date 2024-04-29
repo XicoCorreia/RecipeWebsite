@@ -7,7 +7,7 @@ export const sample_recipes: Recipe[] = [
     name: 'Mince meat w/vegetables',
     imageUrl: '/assets/images/recipes/mince_meat.jpg',
     steps: ["cook"],
-    categories: ["Lunch", "Steak"],
+    categories: ["Lunch", "Beef"],
     },
     {id: '2',
     name: 'Traditional Carbonara',
@@ -19,7 +19,7 @@ export const sample_recipes: Recipe[] = [
     name: 'BBQ Chicken',
     imageUrl: '/assets/images/recipes/chickenbbq.jpg',
     steps: ["cook"],
-    categories: ["Lunch", "Steak"],
+    categories: ["Lunch", "Chicken"],
     },
     {id: '4',
     name: 'Chicken Burrito',
@@ -39,7 +39,11 @@ export const sample_categories: Category[] = [
 {id: '1', 
 name:"Lunch", 
 imageUrl:'/assets/images/categories/lunch.jpg',
-description: "Lunch",
+description: "Welcome to my lunchtime haven, where flavor meets convenience and creativity knows no bounds! Dive into a diverse array of "+
+"lunch recipes featuring succulent chicken, hearty beef, savory pork, and more. Whether you're craving the sizzle of a juicy burger, "+
+"the comfort of a classic burrito, or the timeless appeal of a hotdog, our lunch recipes have you covered. Indulge in the richness of traditional "+
+"dishes from around the globe, from Italian carbonara and pasta delights to fragrant rice bowls bursting with international flavors. "+
+"Elevate your midday meal with our tantalizing lunch recipes that are sure to satisfy your hunger and ignite your culinary imagination.",
 },
 {id: '2', 
 name:"Breakfast", 
@@ -79,11 +83,17 @@ description: "cake",
 parent_category: "Dessert",
 },
 {id: '8', 
-name:"Steak", 
+name:"Beef", 
 imageUrl:'/assets/images/categories/lunch.jpg',
-description: "Steak",
+description: "Beef",
 parent_category: "Lunch",
 },
+{id: '8', 
+name:"Chicken", 
+imageUrl:'/assets/images/categories/lunch.jpg',
+description: "Chicken",
+parent_category: "Lunch",
+}
 ]
 
 export const sample_icons: Icon[] = [

@@ -5,44 +5,47 @@
     </div>
     <div id="primary">
         <img src={{category.imageUrl}} alt={{category.name}} id="primary-image">
-        <div>
+        <div class="category_des">
             <h1>{{category.name}}</h1>
             <p>{{category.description}}</p>
         </div>
     </div>
-    <div class="section">
+    <div class="section_1">
         <div class="grid-container_1">
             <div *ngFor="let c of subCategories">
                 <article>
                     <a [routerLink]=" c.name.toLowerCase()"> 
                         <img src="{{c.imageUrl}}" alt={{c.name}} class="secondary-image_1">
-                        <p> {{c.name}} </p>
+                        <p id="c_name"> {{c.name}} </p>
                         </a>
                 </article>
             </div>
         </div>
     </div>
-    <div class="section" *ngFor="let c of subCategories | slice:0:4; let i = index;">
-        <h2>{{c.name}} Recipes</h2>
+    <div class="section" *ngFor="let c of subCategories | slice:0:4; let i = index;" [ngClass]="i % 2 === 0 ? 'even-section' : 'odd-section'">
+        <div class="title-button-container">
+            <h2>{{c.name}} Recipes</h2>
+            <a href="#" routerLink="/recipes" id="secondary-button"> View more </a> 
+        </div>
         <div class="grid-container">
             <div *ngFor="let s of subCatRecipes[i]">
                 <article>
                     <a [routerLink]="'/recipes/' + s.id"> 
                         <img src="{{s.imageUrl}}" alt={{s.name}} class="secondary-image">
-                        <p> {{s.name}} </p>
+                        <h3> {{s.name}} </h3>
                         </a>
                 </article>
             </div>
         </div>
     </div>
-    <div class="section">
+    <div class="section_all">
         <h2>All {{category.name}} Recipes</h2>
         <div class="grid-container">
             <div *ngFor="let c of categoryRecipes">
                 <article>
                     <a [routerLink]="'/recipes/' + c.id"> 
                         <img src="{{c.imageUrl}}" alt={{c.name}} class="secondary-image">
-                        <p> {{c.name}} </p>
+                        <h3> {{c.name}} </h3>
                         </a>
                 </article>
             </div>
