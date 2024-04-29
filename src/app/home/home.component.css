@@ -1,8 +1,7 @@
 .container {
     position: relative;
-    margin: 1em auto 2em auto;
+    margin: 1em auto 3em auto;
     max-width: 1200px;   
-    text-align: left; 
 }
 
 #primary{
@@ -35,7 +34,7 @@
 }
 
 #primary-description{
-    margin: 0 0 0.5em 0;
+    margin-bottom: 0.5em;
     font-size: 2.25em;  
 }
 
@@ -48,23 +47,21 @@
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.title{
-    color: #a62031;
-    margin: 0;
-}
-
 .title-button-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 0.5em;
 }
 
+.title, a{
+    color: #a62031;
+}
 
 .grid-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr); 
     gap: 1em; 
+    margin: 0.5em auto 0 auto;
 }
 
 .grid-item {
@@ -85,26 +82,18 @@ article {
 }
 
 h3 {
-    margin: 0;
     padding-top: 0.25em; 
     padding-left: 0.5em;
 }
-
-
-a{
-    color:#a62031
-}
-
 .section_categories, .section_most_recent{
-    margin-top: 3em;
-    
+    margin: 3em auto;
 }
+
 .section_categories{
     padding: 1em;
     background-color: rgb(255,240,219,0.6);
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-
 
 @media (max-width: 1200px) {
     .section_categories, .section_most_recent{
