@@ -14,7 +14,7 @@
         <div class="grid-container_1">
             <div *ngFor="let c of subCategories">
                 <article>
-                    <a [routerLink]=" c.name.toLowerCase()"> 
+                    <a [routerLink]="c.path"> 
                         <img src="{{c.imageUrl}}" alt={{c.name}} class="secondary-image_1">
                         <p id="c_name"> {{c.name}} </p>
                         </a>
@@ -25,7 +25,7 @@
     <div class="section" *ngFor="let c of subCategories | slice:0:4; let i = index;" [ngClass]="i % 2 === 0 ? 'even-section' : 'odd-section'">
         <div class="title-button-container">
             <h2>{{c.name}} Recipes</h2>
-            <a href="#" routerLink="/recipes" id="secondary-button"> View more </a> 
+            <a href="#" [routerLink]="'/'+category.path+'/'+c.path"  id="secondary-button"> View more </a> 
         </div>
         <div class="grid-container">
             <div *ngFor="let s of subCatRecipes[i]">

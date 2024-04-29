@@ -16,7 +16,7 @@
         <div class="grid-container">
             <div *ngFor="let c of categories  | slice:0:4">
                 <article>
-                    <a [routerLink]=" c.name"> 
+                    <a [routerLink]=" c.path"> 
                         <img src="{{c.imageUrl}}" alt={{c.name}} class="secondary-image">
                         <h3> {{c.name}} </h3>
                         </a>

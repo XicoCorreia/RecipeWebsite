@@ -12,7 +12,7 @@ export class FoodService {
 
   constructor() { }
 
-  getIcon():String {
+  getIcon():string {
     return '/assets/images/icons/icon.png';
   }
 
@@ -40,7 +40,7 @@ export class FoodService {
     return sample_icons;
   }
 
-  getAbout(): String {
+  getAbout(): string {
     return '/assets/images/about.jpg';
   }
 
@@ -56,8 +56,12 @@ export class FoodService {
     return sample_categories.filter(c => c.parent_category === "Breakfast")
   }
 
-  getCategoryByName(categoryName:string):Category{
-    return this.getAllCategories().find(c => c.name.toLowerCase() == categoryName.toLocaleLowerCase()) ?? new Recipe();
+  getCategoryByPath(categoryPath:string):Category{
+    return this.getAllCategories().find(c => c.path == categoryPath) ?? new Category();
+  }
+
+  getNameByPath(categoryPath:string):string{
+    return this.getAllCategories().find(c => c.path == categoryPath)?.name ?? "";
   }
 
   getsubCategories(name: string): Category[] {

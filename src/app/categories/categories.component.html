@@ -12,7 +12,7 @@
         <div class="grid-container">
             <div *ngFor="let c of courses" class="grid-item">
                 <article>
-                    <a [routerLink]="'/' + c.name.toLowerCase()"> 
+                    <a [routerLink]="'/' + c.path"> 
                         <img src="{{c.imageUrl}}" alt="{{c.name}}" class="secondary-image">
                         <h3>{{c.name}}</h3>
                     </a>
@@ -25,7 +25,7 @@
         <div class="grid-container">
             <div *ngFor="let d of desserts" class="grid-item">
                 <article>
-                    <a [routerLink]="'/desserts/' + d.name.toLowerCase()"> 
+                    <a [routerLink]="'/desserts-recipes/' + d.path"> 
                         <img src="{{d.imageUrl}}" alt="{{d.name}}" class="secondary-image">
                         <h3>{{d.name}}</h3>
                     </a>
@@ -38,7 +38,7 @@
         <div class="grid-container">
             <div *ngFor="let b of breakfast" class="grid-item">
                 <article>
-                    <a [routerLink]="'/breakfast/' + b.name.toLowerCase()"> 
+                    <a [routerLink]="'/breakfast-recipes/' + b.path"> 
                         <img src="{{b.imageUrl}}" alt="{{b.name}}" class="secondary-image">
                         <h3>{{b.name}}</h3>
                     </a>

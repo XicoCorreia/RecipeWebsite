@@ -18,12 +18,10 @@ export class CategoryPageComponent {
   constructor(activatedRoute:ActivatedRoute, private foodService:FoodService) { 
     activatedRoute.params.subscribe((params) => {
       if(params['name'])
-      this.category = foodService.getCategoryByName(params['name']);
+      this.category = foodService.getCategoryByPath(params['name']);
       this.subCategories = this.foodService.getsubCategories(this.category.name);
       this.subCatRecipes = this.foodService.getsubCategoriesRecipes(this.subCategories);
       this.categoryRecipes = this.foodService.getRecipeByCategory(this.category.name);
     })
   }
-
-
 }
