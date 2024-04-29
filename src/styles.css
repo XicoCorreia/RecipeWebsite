@@ -15,15 +15,16 @@ a{
     text-decoration: none;
 }
 
-h1{
+h1, h2{
     font-family: 'Montserrat';
+    margin: 0 
 }
 
 h3{
     font-family: 'Cormorant';
+    margin: 0 
 }
 
-/*check*/
 .route{
     font-family:'Ruda', sans-serif;
     color: #a62031;
@@ -38,20 +39,7 @@ h3{
     text-decoration:underline;
 }
 
-h1, h2{
-    margin: 0 
-}
-
 p {
     margin: 0.25em auto 0 auto;
 }
 
-/*
-.container {
-    position: relative;
-    margin: 1em auto 2em auto;
-    max-width: 1200px;  
-    text-align: left; 
-}
-
-*/

@@ -5,20 +5,6 @@
     text-align: justify;
 }
 
-.route {
-    color: #a62031;
-    font-weight: bold;
-    padding-bottom: 0.75em;
-}
-
-.route a {
-    color: #a62031;
-}
-
-#r-underline{
-    text-decoration: underline;
-}
-
 #primary{
     position: relative;
     text-align: center;
@@ -30,7 +16,6 @@
     position: relative;
     transform: translateY(-50%);
     width: 100%;
-
 }
 
 .pic-text {
@@ -50,9 +35,8 @@
 }
 
 p {
-    margin-top: 0.75em; 
-    margin-bottom: 1em;
-    width: 100%;
+    margin-top: 2em; 
+    margin-bottom: 2em;
 }
 
 .grid-container {
@@ -66,16 +50,6 @@ p {
     margin: 0;
 }
 
-h2{
-    margin: 0;
-}
-
-h3 {
-    margin: 0;
-    padding-top: 0.25em; 
-    color: #a62031;
-}
-
 article {
     display: flex;
     flex-direction: column;
@@ -87,4 +61,10 @@ article {
     object-fit: cover;
     object-position: 0%;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+h3 {
+    padding-left: 0.5em;
+    padding-top: 0.25em; 
+    color: #a62031;
 }
