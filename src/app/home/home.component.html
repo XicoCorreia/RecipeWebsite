@@ -1,8 +1,8 @@
 <div class="container">
     <div id="primary">
         <img src="{{first.imageUrl}}" alt={{first.name}} id="primary-image">
-        <div class="external_div_text">
-            <div class="pic-text"> 
+        <div class="primary-text-container">
+            <div class="container-primary-description"> 
                 <h1 id="primary-description">{{first.name}}</h1> 
                 <a href="#" routerLink="/recipes/{{first.id}}" id="primary-button">See the Recipe</a> 
             </div>
@@ -17,7 +17,7 @@
             <div *ngFor="let c of categories  | slice:0:4">
                 <article>
                     <a [routerLink]=" c.path"> 
-                        <img src="{{c.imageUrl}}" alt={{c.name}} class="secondary-image">
+                        <img src="{{c.imageUrl}}" alt={{c.name}} class="secondary-image-categories">
                         <h3> {{c.name}} </h3>
                         </a>
                 </article>

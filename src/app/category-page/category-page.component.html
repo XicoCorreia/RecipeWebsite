@@ -1,28 +1,30 @@
 <div class="container">
-    <div class="route"> 
-        <a href="#" routerLink="/" id="r-home">Home</a> 
-        > {{category.name}}
-    </div>
-    <div id="primary">
-        <img src={{category.imageUrl}} alt={{category.name}} id="primary-image">
-        <div class="category_des">
-            <h1>{{category.name}}</h1>
-            <p>{{category.description}}</p>
+    <div id="container_primary">
+        <div class="route"> 
+            <a href="#" routerLink="/" id="r-home">Home</a> 
+            > {{category.name}}
+        </div>
+        <div id="primary">
+            <img src={{category.imageUrl}} alt={{category.name}} id="primary-image">
+            <div id="container_category_description">
+                <h1>{{category.name}}</h1>
+                <p id="primary-description">{{category.description}}</p>
+            </div>
         </div>
     </div>
-    <div class="section_1">
-        <div class="grid-container_1">
+    <div class="section-categories">
+        <div class="grid-container-subcategories">
             <div *ngFor="let c of subCategories">
                 <article>
                     <a [routerLink]="c.path"> 
-                        <img src="{{c.imageUrl}}" alt={{c.name}} class="secondary-image_1">
-                        <p id="c_name"> {{c.name}} </p>
+                        <img src="{{c.imageUrl}}" alt={{c.name}} class="secondary-image-subcategories">
+                        <p id="subcategory_name"> {{c.name}} </p>
                         </a>
                 </article>
             </div>
         </div>
     </div>
-    <div class="section" *ngFor="let c of subCategories | slice:0:4; let i = index;" [ngClass]="i % 2 === 0 ? 'even-section' : 'odd-section'">
+    <div class="sections" *ngFor="let c of subCategories | slice:0:4; let i = index;" [ngClass]="i % 2 === 0 ? 'even-section' : 'odd-section'">
         <div class="title-button-container">
             <h2>{{c.name}} Recipes</h2>
             <a href="#" [routerLink]="'/'+category.path+'/'+c.path"  id="secondary-button"> View more </a> 
@@ -38,7 +40,7 @@
             </div>
         </div>
     </div>
-    <div class="section_all">
+    <div class="section-all">
         <h2>All {{category.name}} Recipes</h2>
         <div class="grid-container">
             <div *ngFor="let c of categoryRecipes">

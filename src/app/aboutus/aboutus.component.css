@@ -1,10 +1,10 @@
 .container {
     position: relative;
-    margin: 1em auto 2em auto;
+    margin: 1em auto 3em auto;
     max-width: 1200px;  
 }
 
-#main{
+#primary{
     position: flex;
     margin-bottom: 2em;
     min-height: 540px;

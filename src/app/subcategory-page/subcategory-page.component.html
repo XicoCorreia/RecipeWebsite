@@ -1,17 +1,19 @@
 <div class="container">
-    <div class="route"> 
-        <a href="#" routerLink="/" id="r-home">Home</a> 
-        > 
-        <a href="#" routerLink="/{{parent_path}}" id="r-home">{{parent_name}}</a>
-        > {{category.name}}
-    </div>
-    <div id="primary">
-        <img src="{{category.imageUrl}}" alt={{category.name}} id="primary-image">
-        <div class="pic-text"> 
-            <h1 id="primary-description">{{category.name}}</h1>  
+    <div id="container_primary">
+        <div class="route"> 
+            <a href="#" routerLink="/" id="r-home">Home</a> 
+            > 
+            <a href="#" routerLink="/{{parent_path}}" id="r-home">{{parent_name}}</a>
+            > {{category.name}}
         </div>
+        <div id="primary">
+            <img src="{{category.imageUrl}}" alt={{category.name}} id="primary-image">
+            <div class="primary-text"> 
+                <h1 id="primary-title">{{category.name}}</h1>  
+            </div>
+        </div>
+        <p *ngIf="category.description" id="description">{{category.description}}</p>
     </div>
-    <p *ngIf="category.description">{{category.description}}</p>
     <div class="section">
         <h2>All {{category.name}} Recipes</h2>
         <div class="grid-container">

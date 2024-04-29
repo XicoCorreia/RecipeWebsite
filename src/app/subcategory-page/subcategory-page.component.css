@@ -1,14 +1,32 @@
 .container {
     position: relative;
-    margin: 1em auto 2em auto;
+    margin: 0 auto 3em auto;
     max-width: 1200px;
     text-align: justify;
+}
+
+#container_primary{
+    width: calc(100vw); 
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(255,240,219,0.3);
+    padding-top: 1em;
+    padding-bottom: 2em ;
+    margin-bottom: 2em;
+}
+
+.route{
+    max-width: 1200px;
+    margin: auto;
 }
 
 #primary{
     position: relative;
     text-align: center;
     max-height: 200px;
+    max-width: 1200px;
+    margin: auto;
     overflow: clip;
 }
 
@@ -18,7 +36,7 @@
     width: 100%;
 }
 
-.pic-text {
+.primary-text{
     position: absolute;
     text-align: center;
     top: 50%;
@@ -29,14 +47,13 @@
     color:black;
 }
 
-#primary-description{
-    margin: 0;
+#primary-title{
     font-size: 2.5em;  
 }
 
-p {
-    margin-top: 2em; 
-    margin-bottom: 2em;
+#description{
+    margin: 2em auto 0 auto; 
+    max-width: 1200px;
 }
 
 .grid-container {
