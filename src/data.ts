@@ -13,7 +13,7 @@ export const sample_recipes: Recipe[] = [
     name: 'Traditional Carbonara',
     imageUrl: '/assets/images/recipes/carbonara.jpg',
     steps: ["cook"],
-    categories: ["Main"],
+    categories: ["Main", "Pasta"],
     },
     {id: '3',
     name: 'BBQ Chicken',
@@ -85,7 +85,7 @@ export const sample_recipes: Recipe[] = [
     name: 'Popcorn chicken',
     imageUrl: '',
     steps: ["cook"],
-    categories: ["Main"],
+    categories: ["Main", "Chicken"],
     },
     {id: '15',
     name: 'Semifrio gelatina',
@@ -163,21 +163,21 @@ export const main_Categories: Category[] = [
 
 
 export const sub_categories_Main: Category[] = [
-    {id: '5', 
+    {id: '11', 
     name:"Beef",
     path:"beef", 
     imageUrl:'',
     description: "Beef",
     parent_category: "Main",
     },
-    {id: '6', 
+    {id: '12', 
     name:"Chicken", 
     path:"chicken",
     imageUrl:'',
     description: "Chicken",
     parent_category: "Main",
     },
-    {id: '7', 
+    {id: '13', 
     name:"Burritos",
     path:"burritos", 
     imageUrl:'',
@@ -187,26 +187,33 @@ export const sub_categories_Main: Category[] = [
     "recipes are sure to satisfy your cravings. Whether you prefer them stuffed with tender grilled chicken or veggies, "+
     "whether you want it for lunch or breakfast there's a burrito recipe here for you",
     parent_category: "Main",
-    }
+    },
+    {id: '14', 
+    name:"Pasta", 
+    path:"pasta",
+    imageUrl:'',
+    description: "pasta",
+    parent_category: "Main",
+    },
 
 ]
 
 export const sub_categories_Breakfast: Category[] = [
-    {id: '8', 
+    {id: '20', 
     name:"Oats", 
     path:"oats",
     imageUrl:'',
     description: "Oats",
     parent_category: "Breakfast",
     },
-    {id: '10', 
+    {id: '21', 
     name:"Smoothies", 
     path:"smoothies",
     imageUrl:'',
     description: "smoothie",
     parent_category: "Breakfast",
     },
-    {id: '11', 
+    {id: '22', 
     name:"Sandwhiches", 
     path:"sandwhich",
     imageUrl:'',
@@ -217,7 +224,7 @@ export const sub_categories_Breakfast: Category[] = [
 
 
 export const sub_categories_Dessert: Category[] = [
-    {id: '9', 
+    {id: '30', 
     name:"Cake", 
     path:"cake",
     imageUrl:'-',
@@ -227,7 +234,7 @@ export const sub_categories_Dessert: Category[] = [
 ]
 
 export const sub_categories_Sides: Category[] = [
-    {id: '12', 
+    {id: '40', 
     name:"Salads", 
     path:"salad",
     imageUrl:'-',
