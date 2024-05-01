@@ -1,6 +1,7 @@
 header{
   box-shadow: 0 4px 20px -8px gray;
 }
+
 .container{
   margin: 0 auto;
   max-width: 1200px;  
@@ -12,12 +13,7 @@ header{
 #icon{
   display: block;
   height: 5em;
-  width: auto;
   padding: 1em 0;
-}
-
-#icon_route{
-  max-width: 375px;
 }
 
 nav{
@@ -27,8 +23,8 @@ nav{
 
 nav ul{
     list-style-type: none;
-    height: 100px;
     align-items: center;
+    height: 100%;
     margin: 0;
 }
 nav ul li{
@@ -36,12 +32,16 @@ nav ul li{
     height: 100%;
 }
 .navb{
-    padding: 34px 0.5em;
+    display: flex; 
+    align-items: center; 
+    height: 100%;
+    padding:auto;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
     color:#a62031;
     font-size: 1.3em;
-    display: flex; /* Set display to flex */
-    align-items: center; 
 }
+
 .navb:hover{
   color: rgb(255,240,219);
   background-color: #a62031;
@@ -50,6 +50,7 @@ nav ul li{
 .dropdown {
   position: relative;
   display: inline-block;
+  height: 100%;
 }
 
 .dropdown-content {
