@@ -19,6 +19,7 @@ export class CategoryPageComponent {
     activatedRoute.params.subscribe((params) => {
       if(params['name'])
       this.category = foodService.getCategoryByPath(params['name']);
+      console.log(this.category);
       this.subCategories = this.foodService.getsubCategories(this.category.name);
       this.subCatRecipes = this.foodService.getsubCategoriesRecipes(this.subCategories);
       this.categoryRecipes = this.foodService.getRecipeByCategory(this.category.name);

@@ -180,7 +180,7 @@ export const main_Categories: Category[] = [
 export const sub_categories_Main: Category[] = [
     {id: '11', 
     name:"Beef",
-    path:"beef", 
+    path:"main-recipes/beef", 
     imageUrl:'/assets/images/categories/beef.jpeg',
     description: "Savor the richness of our beef recipes! From tender steaks to hearty stews and beyond, our collection showcases "+
     "the versatility and deliciousness of beef. Explore a world of savory flavors and satisfying textures as you discover new favorites "+
@@ -190,7 +190,7 @@ export const sub_categories_Main: Category[] = [
     },
     {id: '12', 
     name:"Chicken", 
-    path:"chicken",
+    path:"main-recipes/chicken",
     imageUrl:'/assets/images/categories/chicken.jpeg',
     description: "Feast on a world of flavor with our chicken recipes! From succulent grilled breasts to savory stews and more, our "+
     "collection of chicken dishes offers something for every palate. Explore a variety of cooking methods and flavor profiles as you "+
@@ -200,7 +200,7 @@ export const sub_categories_Main: Category[] = [
     },
     {id: '13', 
     name:"Burritos",
-    path:"burritos", 
+    path:"main-recipes/burritos", 
     imageUrl:'/assets/images/categories/burrito.jpeg',
     description: 
     "Discover the delightful world of burritos! From classic Mexican-style burritos bursting with seasoned meats, "+ 
@@ -211,7 +211,7 @@ export const sub_categories_Main: Category[] = [
     },
     {id: '14', 
     name:"Pasta", 
-    path:"pasta",
+    path:"main-recipes/pasta",
     imageUrl:'/assets/images/categories/pasta.jpg',
     description: "Dive into our delightful collection of pasta recipes, where traditional flavors meet creative twists. From the "+
     "comforting classics like Spaghetti Bolognese and Fettuccine Alfredo to inventive dishes that will surprise your palate, our pasta "+
@@ -225,7 +225,7 @@ export const sub_categories_Main: Category[] = [
 export const sub_categories_Breakfast: Category[] = [
     {id: '20', 
     name:"Oats", 
-    path:"oats",
+    path:"breakfast-recipes/oats",
     imageUrl:'/assets/images/categories/oats.png',
     description: "Discover the versatility of oats in our collection of oat-based recipes. From comforting porridges to innovative oat bars, "+
     "our selection showcases the hearty and healthful qualities of oats. Ideal for breakfasts, snacks, or even savory dishes, these recipes "+
@@ -234,7 +234,7 @@ export const sub_categories_Breakfast: Category[] = [
     },
     {id: '21', 
     name:"Smoothies", 
-    path:"smoothies",
+    path:"breakfast-recipes/smoothies",
     imageUrl:'/assets/images/categories/smoothie.png',
     description: "Energize your day with our delicious smoothie recipes. Packed with fruits, vegetables, and other nutritious ingredients, "+
     "these smoothies are perfect for a quick breakfast or a revitalizing snack. Explore a spectrum of flavors and combinations that are not "+
@@ -243,7 +243,7 @@ export const sub_categories_Breakfast: Category[] = [
     },
     {id: '22', 
     name:"Sandwhiches", 
-    path:"sandwhiches",
+    path:"breakfast-recipes/sandwhiches",
     imageUrl:'/assets/images/categories/sandwhich.jpg',
     description: "Kickstart your morning with our collection of hearty breakfast sandwiches. Each recipe is packed with flavorful ingredients "+
     "like eggs, cheese, and meats, all nestled between slices of freshly toasted bread or bagels. Whether you're craving something classic or "+
@@ -256,7 +256,7 @@ export const sub_categories_Breakfast: Category[] = [
 export const sub_categories_Dessert: Category[] = [
     {id: '30', 
     name:"Cake", 
-    path:"cake",
+    path:"dessert-recipes/cake",
     imageUrl:'/assets/images/categories/cake.png',
     description: "Indulge in our wide array of cake recipes, perfect for any celebration or sweet craving. From classic chocolate to sophisticated "+
     "fruit layers, each recipe promises moist, fluffy textures and rich flavors. Whether you're a novice baker or a seasoned pastry chef, find your "+
@@ -268,7 +268,7 @@ export const sub_categories_Dessert: Category[] = [
 export const sub_categories_Sides: Category[] = [
     {id: '40', 
     name:"Salads", 
-    path:"salad",
+    path:"dessert-recipes/salad",
     imageUrl:'/assets/images/categories/salad.jpg',
     description: "Brighten your meals with our vibrant salad recipes. From crisp greens to hearty grains, these dishes are packed with "+
     "nutrients and bursting with flavor. Perfect for a light lunch or a refreshing side, each recipe offers simple instructions and fresh "+

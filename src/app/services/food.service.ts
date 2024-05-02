@@ -8,9 +8,7 @@ import { Icon } from '../shared/models/Icon';
   providedIn: 'root'
 })
 export class FoodService {
-
-
-  constructor() { }
+  constructor() {}
 
   getIcon():string {
     return '/assets/images/icons/icon.png';
@@ -63,6 +61,11 @@ export class FoodService {
   getNameByPath(categoryPath:string):string{
     return this.getAllCategories().find(c => c.path == categoryPath)?.name ?? "";
   }
+
+  getPathByName(categoryName: string): string {
+    return this.getAllCategories().find(c => c.name == categoryName)?.path ?? "";
+  }
+
 
   getsubCategories(name: string): Category[] {
     return sample_categories.filter(c => c.parent_category?.toLowerCase() === name.toLowerCase())

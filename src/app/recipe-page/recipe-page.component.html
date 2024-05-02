@@ -1,2 +1,10 @@
-<h1>{{recipe.name}}</h1>
-<h2>{{recipe.steps}}</h2>
+<div class="container">
+        <div class="route"> 
+            <a href="#" routerLink="/" id="r-home">Home</a> >
+            <ng-container *ngFor="let category of recipe.categories;">
+                <a href="#" [routerLink]="'/'+ getPath(category)" id="r-home">{{ category }}</a> >
+            </ng-container>
+            {{recipe.name}}
+        </div>
+        <h1>{{recipe.name}}</h1>
+    </div>

@@ -10,10 +10,14 @@ import { Recipe } from '../shared/models/Recipe';
 export class RecipePageComponent {
   recipe!: Recipe;
 
-  constructor(activatedRoute:ActivatedRoute, foodService:FoodService) { 
+  constructor(activatedRoute:ActivatedRoute,private foodService:FoodService) { 
     activatedRoute.params.subscribe((params) => {
       if(params['id'])
       this.recipe = foodService.getRecipeById(params['id']);
     })
+  }
+
+  getPath(name: string): string {
+    return this.foodService.getPathByName(name); 
   }
 }
