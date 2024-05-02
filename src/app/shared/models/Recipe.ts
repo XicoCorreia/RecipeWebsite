@@ -5,6 +5,7 @@ export class Recipe{
     name!:string;
     imageUrl!:string;
     steps!: string;
+    url_steps!:string;
     introduction!: string;
     description!:string;
     date!: string;

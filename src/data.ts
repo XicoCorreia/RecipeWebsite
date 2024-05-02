@@ -12,6 +12,7 @@ export const sample_recipes: Recipe[] = [
     description:"comida comida comida comida comida comida",
     subtitle:"Why you are going to cook this recipe every week",
     introduction:"comida comida comida comida ",
+    url_steps:'/assets/images/recipes/mince_meat.jpg',
     url_ingredients: '/assets/images/recipes/mince_meat.jpg',
     ingredients: "Here are the ingredients you will need:<br>" +
     "<ol> <li>Water</li> <li>Tomato</li> <li>Lettuce</li> </ol>" +

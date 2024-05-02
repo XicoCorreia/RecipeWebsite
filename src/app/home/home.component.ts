@@ -16,6 +16,7 @@ export class HomeComponent {
     steps: '',
     categories: [],
     date: '',
+    url_steps:'',
     description: '',
     introduction:'',
     ingredients:''
