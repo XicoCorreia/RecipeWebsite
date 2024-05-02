@@ -13,8 +13,12 @@ export class HomeComponent {
     id: '',
     name: '',
     imageUrl: '',
-    steps: [],
-    categories: []
+    steps: '',
+    categories: [],
+    date: '',
+    description: '',
+    introduction:'',
+    ingredients:''
   };
   
   categories:Category[] = [];

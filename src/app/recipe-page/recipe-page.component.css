@@ -2,5 +2,38 @@
     position: relative;
     margin: 1em auto 3em auto;
     max-width: 1200px;
-    text-align: justify;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 1em; 
+    margin: 0.5em auto 0 auto;
+}
+
+.grid-item {
+    margin: 0;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+}
+
+h3 {
+    padding-top: 0.25em; 
+    padding-left: 0.5em;
+    color: #a62031;
+}
+
+a {
+    color: #a62031;
+}
+
+.secondary-image {
+    aspect-ratio : 1 / 1;
+    width: 100%;
+    object-fit: cover;
+    object-position: 0%;
 }

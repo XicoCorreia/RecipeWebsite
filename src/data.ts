@@ -5,10 +5,21 @@ import { Icon } from './app/shared/models/Icon'
 export const sample_recipes: Recipe[] = [
     {id: '1',
     name: 'Mince meat w/vegetables',
+    date: "02 May 2024",
     imageUrl: '/assets/images/recipes/mince_meat.jpg',
-    steps: [],
+    steps: "<ol> <li>Water</li> <li>Tomato</li> <li>Lettuce</li> </ol>",
     categories: ["Main", "Beef"],
-    },
+    description:"comida comida comida comida comida comida",
+    subtitle:"Why you are going to cook this recipe every week",
+    introduction:"comida comida comida comida ",
+    url_ingredients: '/assets/images/recipes/mince_meat.jpg',
+    ingredients: "Here are the ingredients you will need:<br>" +
+    "<ol> <li>Water</li> <li>Tomato</li> <li>Lettuce</li> </ol>" +
+    "You can see it here."
+    }
+]
+/*
+export const recipes_no_photos: Recipe[] = [
     {id: '2',
     name: 'Traditional Carbonara',
     imageUrl: '/assets/images/recipes/carbonara.jpg',
@@ -99,9 +110,6 @@ export const sample_recipes: Recipe[] = [
     steps: [],
     categories: ["Breakfast", "Sandwhiches"],
     },
-]
-
-export const recipes_no_photos: Recipe[] = [
     {id: '7',
     name: 'Frango à brás',
     imageUrl: '',
@@ -133,7 +141,7 @@ export const recipes_no_photos: Recipe[] = [
     categories: ["Dessert"],
     },
 ]
-
+*/
 
 export const main_Categories: Category[] = [
     {id: '1', 
