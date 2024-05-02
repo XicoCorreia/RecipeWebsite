@@ -1,9 +1,114 @@
 .container {
     position: relative;
-    margin: 1em auto 3em auto;
+    margin: 0 auto 3em auto;
     max-width: 1200px;
 }
 
+#container_primary{
+    width: calc(100vw); 
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(255,240,219,0.3);
+    padding-top: 1em;
+    padding-bottom: 2em ;
+    margin-bottom: 1em;
+}
+
+.route{
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+#header{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#header_info {
+    display: flex;
+    align-items: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+#title{
+    font-size: 3em;
+}
+
+#profile-image{
+    aspect-ratio : 1 / 1;
+    width: 3.5em;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#route-about{
+    margin: 0 0 0 1em ;
+}
+
+#date{
+    font-size: 0.75em;
+    color: #A9A9A9;
+}
+
+#jump-container{
+    max-width: 1200px;
+    margin: 2em auto 0 auto;
+    
+}
+
+#jump{
+    color: white;
+    background-color: #a62031;
+    padding: 1em;
+    border-radius: 0.25em;
+}
+
+.container-recipe{
+    width: 800px;
+}
+
+p{
+    text-align: justify;
+    margin-top: 1em;
+}
+
+
+#introduction-text{
+    margin-bottom: 1em;
+}
+
+#first-image{
+    aspect-ratio: 0.75/1;
+    width: 100%;
+    object-fit: cover;
+    object-position: 0%;
+    margin-bottom: 2em;
+}
+
+#description{
+    margin-bottom: 1em;
+}
+
+#ingredients-image{
+    width: 100%;
+    margin-bottom: 2em;
+}
+
+#recipe-container{
+    width: 800px;
+}
+
+#steps-image{
+    width: 100%;
+    margin-bottom: 2em;
+}
+
+.more-recipes-container{
+    margin-bottom: 2em;
+}
 
 .grid-container {
     display: grid;
@@ -36,4 +141,10 @@ a {
     width: 100%;
     object-fit: cover;
     object-position: 0%;
+}
+
+#recipe-card-container{
+    border: #a62031;
+    border-style: solid;
+    border-width: 2px;
 }

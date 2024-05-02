@@ -4,19 +4,28 @@ import { Icon } from './app/shared/models/Icon'
 
 export const sample_recipes: Recipe[] = [
     {id: '1',
-    name: 'Mince meat w/vegetables',
+    name: 'Ground Beef with Veggies',
     date: "02 May 2024",
+    introduction:"During the 20 years I lived with my mom, this was one of my favorite dishes that she cooked, "+
+    "not only because I kept asking when the food was ready and it took roughly 30 minutes, but also because it "+
+    "tasted amazing. So when I moved out, of course, I needed to try to cook it myself.",
     imageUrl: '/assets/images/recipes/mince_meat.jpg',
-    steps: "<ol> <li>Water</li> <li>Tomato</li> <li>Lettuce</li> </ol>",
+    subtitle:"Perfect recipe to clean out your fridge",
+    description:"Whip up a speedy, nutritious dinner with our one-pan Ground Beef Veggie Skillet. With minimal ingredients but maximum flavor, "+
+    "it's perfect for busy weeknights. Customize your meat and veggies to suit your taste - it's a versatile recipe that's easy to tweak.<br> <br> Got some "+
+    "ground beef and assorted veggies in your fridge that need using up? Look no further than this Ground Beef Veggie Skillet! It's the ultimate "+
+    "clean-out-the-fridge meal, packed with satisfying flavors and requiring just a handful of ingredients.",
+    url_ingredients: '/assets/images/recipes/ingredients.jpg',
+    ingredients: "Here are the essential ingredients for this recipe:<br>" +
+    "<ol> <li><b>Ground beef: </b>I use 96% for a more low calorie recipe but you can use which one you prefer.</li>"+
+    " <li><b>Tomato sauce: </b> Essencial to give and don't make it dry.</li>"+
+    "<li><b>Veggies: </b> Here just grab whatever veggies you have on your fridge, I prefer to use brocolli, carrots, cauliflower, corn and peas.</li>" +
+    "<li><b>Spices: </b> For spices I use paprika, onion powder, garlic powder, salt and pepper. </li></ol>",
+    steps: "<ol><li>Add the meat to a pan a cook it medium heat</li>"+
+    "<li>Put the heat down and add the tomato sauce, spices and veggies, if you are cooking pasta add a around 100ml of pasta water, otherwise you can just add water.</li>"+
+    "<li>Keep stirring for 5 minutes and then on low heat let it cook for 20 min and done!</li> </ol>",
+    url_steps:'/assets/images/recipes/steps.jpg',
     categories: ["Main", "Beef"],
-    description:"comida comida comida comida comida comida",
-    subtitle:"Why you are going to cook this recipe every week",
-    introduction:"comida comida comida comida ",
-    url_steps:'/assets/images/recipes/mince_meat.jpg',
-    url_ingredients: '/assets/images/recipes/mince_meat.jpg',
-    ingredients: "Here are the ingredients you will need:<br>" +
-    "<ol> <li>Water</li> <li>Tomato</li> <li>Lettuce</li> </ol>" +
-    "You can see it here."
     }
 ]
 /*
