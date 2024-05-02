@@ -35,4 +35,7 @@ export class RecipePageComponent {
   get formattedIngredients() {
     return this.recipe.ingredients.replace(/\n/g, '<br>');
   }
+  scroll(el: HTMLElement) {
+      el.scrollIntoView();
+    }
 }

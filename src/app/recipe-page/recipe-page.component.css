@@ -66,6 +66,10 @@
     border-radius: 0.25em;
 }
 
+#jump:hover{
+    cursor: pointer;
+}
+
 .container-recipe{
     width: 800px;
 }

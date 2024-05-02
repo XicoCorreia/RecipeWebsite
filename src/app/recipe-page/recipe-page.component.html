@@ -19,7 +19,7 @@
             </div>
         </div>
         <div id="jump-container">
-            <a href='/recipes/{{recipe.id}}/#recipe-card-container' target="_self" id="jump">Jump to recipe</a>
+            <a (click)="scroll(target)" id="jump">Jump to recipe</a>
         </div>
     </div>
         <div class="container-recipe">
@@ -52,7 +52,7 @@
                     </div>
                 </div>
             </div>
-        <div id="recipe-card-container">
+        <div id="recipe-card-container" #target>
             Working on recipe card...
         </div>
     </div>
