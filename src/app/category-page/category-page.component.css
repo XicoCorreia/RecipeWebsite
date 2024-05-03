@@ -37,11 +37,6 @@
     text-align: center;
 }
 
-.grid-article {
-    display: flex;
-    flex-direction: column;
-}
-
 .image-grid-subcategory {
     aspect-ratio : 1 / 1;
     width: 100%;
@@ -52,30 +47,6 @@
 
 .section{
     margin: 2em auto 3em auto;
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); 
-    gap: 1em; 
-    margin: 0.5em auto 0 auto;
-}
-
-.grid-item {
-    margin: 0;
-}
-
-.image-grid-recipes  {
-    aspect-ratio : 0.75 / 1;
-    width: 100%;
-    object-fit: cover;
-    object-position: 0%;
-}
-
-.image-title {
-    padding-top: 0.25em; 
-    padding-left: 0.5em;
-    color: #a62031;
 }
 
 .title-button-container {

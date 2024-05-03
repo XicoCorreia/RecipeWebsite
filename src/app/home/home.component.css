@@ -67,45 +67,6 @@
     color: #a62031;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); 
-    gap: 1em; 
-    margin: 0.5em auto 0 auto;
-}
-
-.grid-item {
-    margin: 0;
-}
-
-.grid-article {
-    display: flex;
-    flex-direction: column;
-}
-
-.image-grid-category {
-    aspect-ratio : 1 / 1;
-    width: 100%;
-    object-fit: cover;
-    object-position: 0%;
-    box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
-}
-
-.secondary-image-recipes {
-    aspect-ratio : 0.75 / 1;
-    width: 100%;
-    object-fit: cover;
-    object-position: 0%;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-
-.image-title {
-    padding-top: 0.25em; 
-    padding-left: 0.5em;
-    color:#a62031
-}
-
-
 @media (max-width: 1200px) {
     .section {
         margin-left: 1em;

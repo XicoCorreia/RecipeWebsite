@@ -50,32 +50,6 @@
     max-width: 1200px;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); 
-    gap: 1em; 
-    margin: 1em auto 1em auto;
-}
-
-.grid-item {
-    margin: 0;
-}
-
-.grid-article {
-    display: flex;
-    flex-direction: column;
-}
-
-.image-grid-recipes {
-    aspect-ratio : 0.75 / 1;
-    width: 100%;
-    object-fit: cover;
-    object-position: 0;
-    box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
-}
-
-.image-title {
-    padding-left: 0.5em;
-    padding-top: 0.25em; 
-    color: #a62031;
+.section{
+    margin: 2em auto 3em auto;
 }

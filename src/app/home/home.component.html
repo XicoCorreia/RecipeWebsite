@@ -33,7 +33,7 @@
             <div *ngFor="let rr of recent_recipes  | slice:0:8">
                 <article class="grid-article">
                     <a [routerLink]="'/recipes/' + rr.id"> 
-                    <img src="{{rr.imageUrl}}" alt= {{rr.name}} class="secondary-image-recipes">
+                    <img src="{{rr.imageUrl}}" alt= {{rr.name}} class="image-grid-recipe">
                     <h3> {{rr.name}} </h3>
                     </a>
                 </article>

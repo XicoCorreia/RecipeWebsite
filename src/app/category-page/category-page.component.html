@@ -33,7 +33,7 @@
             <div *ngFor="let s of subCatRecipes[i]">
                 <article class="grid-article">
                     <a [routerLink]="'/recipes/' + s.id"> 
-                        <img src="{{s.imageUrl}}" alt={{s.name}} class="image-grid-recipes">
+                        <img src="{{s.imageUrl}}" alt={{s.name}} class="image-grid-recipe">
                         <h3 class="image-title"> {{s.name}} </h3>
                         </a>
                 </article>
@@ -46,7 +46,7 @@
             <div *ngFor="let c of categoryRecipes">
                 <article class="grid-article">
                     <a [routerLink]="'/recipes/' + c.id"> 
-                        <img src="{{c.imageUrl}}" alt={{c.name}} class="image-grid-recipes">
+                        <img src="{{c.imageUrl}}" alt={{c.name}} class="image-grid-recipe">
                         <h3 class="image-title"> {{c.name}} </h3>
                         </a>
                 </article>

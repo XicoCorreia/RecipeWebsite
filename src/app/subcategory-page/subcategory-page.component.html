@@ -14,13 +14,13 @@
         </div>
         <p *ngIf="category.description" id="main-text">{{category.description}}</p>
     </div>
-    <div>
+    <div class="section">
         <h2>All {{category.name}} Recipes</h2>
         <div class="grid-container">
             <div *ngFor="let c of categoryRecipes">
                 <article class="grid-article">
                     <a [routerLink]="'/recipes/' + c.id"> 
-                        <img src="{{c.imageUrl}}" alt={{c.name}} class="image-grid-recipes">
+                        <img src="{{c.imageUrl}}" alt={{c.name}} class="image-grid-recipe">
                         <h3 class="image-title"> {{c.name}} </h3>
                         </a>
                 </article>
