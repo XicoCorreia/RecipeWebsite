@@ -160,7 +160,7 @@ export const recipes_no_photos: Recipe[] = [
 ]
 */
 
-export const main_categories: Category[] = [
+export const course_categories: Category[] = [
     {id: '1', 
     name:"Main", 
     path:"main-recipes",
@@ -349,7 +349,6 @@ export const categories_cuisine: Category[] = [
     "our recipes bring the taste of Portugal to your table with every bite. Experience the richness of Portuguese cuisine with our quick and easy recipes today!"},
 ]
 
-
 export const sub_categories: Category[] = [
     {id: '51', 
     name:"Burritos",
@@ -391,16 +390,16 @@ export const sub_categories: Category[] = [
     },
     {id: '81', 
     name:"Salads", 
-    path:"dessert-recipes/salad",
+    path:"sides-recipes/salad",
     imageUrl:'/assets/images/categories/salad.jpg',
     description: "Brighten your meals with our vibrant salad recipes. From crisp greens to hearty grains, these dishes are packed with "+
     "nutrients and bursting with flavor. Perfect for a light lunch or a refreshing side, each recipe offers simple instructions and fresh "+
     "ideas to help you enjoy the goodness of nature’s bounty.",
-    parent_category: "Sides",
+    parent_category: "Sides & Appetizers",
     }
 ]
 
-export const sample_categories: Category[] = main_categories.concat(categories_ingredient, categories_cuisine, sub_categories, categories_special);
+export const sample_categories: Category[] = course_categories.concat(categories_ingredient, categories_cuisine, sub_categories, categories_special);
 
 export const sample_icons: Icon[] = [
     {id: '1', 

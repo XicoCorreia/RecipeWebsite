@@ -1,0 +1,25 @@
+- course
+beverages
+soup
+sandwich
+
+
+- ingredient
+vegetables
+cheese
+seafood
+fish 
+fruit
+eggs
+salmon
+
+
+- method
+slow cooker
+instant pot
+grilling
+oven
+crockpot
+cooking_basics
+baked
+

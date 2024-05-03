@@ -4,6 +4,11 @@
     max-width: 1200px;
 }
 
+.grid-container {
+    grid-template-columns: repeat(5, 1fr); 
+}
+
+
 @media screen and (max-width: 1200px) {
     .container{
         margin-left: 1em;

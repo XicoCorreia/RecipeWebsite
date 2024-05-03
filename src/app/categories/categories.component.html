@@ -21,19 +21,6 @@
         </div>
     </div>
     <div class="section">
-        <h2>Special Categories</h2>
-        <div class="grid-container">
-            <div *ngFor="let s of special" class="grid-item">
-                <article class = "grid-article">
-                    <a [routerLink]="'/' + s.path"> 
-                        <img src="{{s.imageUrl}}" alt="{{s.name}}" class="image-grid-category">
-                        <h3 class="image-title">{{s.name}}</h3>
-                    </a>
-                </article>
-            </div>
-        </div>
-    </div>
-    <div class="section">
         <h2>Dessert Recipes</h2>
         <div class="grid-container">
             <div *ngFor="let d of desserts" class="grid-item">
@@ -47,13 +34,39 @@
         </div>
     </div>
     <div class="section">
-        <h2>Breakfast Recipes</h2>
+        <h2>By Ingredient</h2>
         <div class="grid-container">
-            <div *ngFor="let b of breakfast" class="grid-item">
+            <div *ngFor="let s of ingredient" class="grid-item">
                 <article class = "grid-article">
-                    <a [routerLink]="'/' + b.path"> 
-                        <img src="{{b.imageUrl}}" alt="{{b.name}}" class="image-grid-category">
-                        <h3>{{b.name}}</h3>
+                    <a [routerLink]="'/' + s.path"> 
+                        <img src="{{s.imageUrl}}" alt="{{s.name}}" class="image-grid-category">
+                        <h3 class="image-title">{{s.name}}</h3>
+                    </a>
+                </article>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <h2>By Cuisine</h2>
+        <div class="grid-container">
+            <div *ngFor="let s of cuisine" class="grid-item">
+                <article class = "grid-article">
+                    <a [routerLink]="'/' + s.path"> 
+                        <img src="{{s.imageUrl}}" alt="{{s.name}}" class="image-grid-category">
+                        <h3 class="image-title">{{s.name}}</h3>
+                    </a>
+                </article>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <h2>Special Categories</h2>
+        <div class="grid-container">
+            <div *ngFor="let s of special" class="grid-item">
+                <article class = "grid-article">
+                    <a [routerLink]="'/' + s.path"> 
+                        <img src="{{s.imageUrl}}" alt="{{s.name}}" class="image-grid-category">
+                        <h3 class="image-title">{{s.name}}</h3>
                     </a>
                 </article>
             </div>

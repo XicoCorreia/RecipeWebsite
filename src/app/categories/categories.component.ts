@@ -11,8 +11,9 @@ import { Category } from '../shared/models/Category';
 export class CategoriesComponent {
   courses:Category[] = [];
   desserts:Category[] = [];
-  breakfast:Category[] = [];
+  ingredient:Category[] = [];
   special:Category[] = [];
+  cuisine:Category[] = [];
 
   constructor(private foodService:FoodService) {
 
@@ -21,7 +22,8 @@ export class CategoriesComponent {
   ngOnInit(): void {
     this.courses = this.foodService.getCourseCategories();
     this.desserts = this.foodService.getDessertCategories();
-    this.breakfast = this.foodService.getBreakfastCategories();
     this.special = this.foodService.getSpecialCategories();
+    this.ingredient = this.foodService.getIngredientsCategories();
+    this.cuisine = this.foodService.getCuisineCategories();
   }
 }
