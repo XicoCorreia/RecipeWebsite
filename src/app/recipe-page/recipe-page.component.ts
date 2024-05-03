@@ -12,6 +12,7 @@ export class RecipePageComponent {
   image!: string;
   main_category!:string;
   categoryRecipes!:Recipe[];
+  recent_recipes!:Recipe[];
 
   constructor(activatedRoute:ActivatedRoute,private foodService:FoodService) { 
     activatedRoute.params.subscribe((params) => {
@@ -20,6 +21,7 @@ export class RecipePageComponent {
       const list_length = this.recipe.categories.length;
       this.main_category = this.recipe.categories[list_length - 1];
       this.categoryRecipes = this.foodService.getRecipeByCategory(this.main_category);
+      this.recent_recipes = this.foodService.getAllRecipes();
     })
   }
 

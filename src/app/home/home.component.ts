@@ -19,7 +19,14 @@ export class HomeComponent {
     url_steps:'',
     description: '',
     introduction:'',
-    ingredients:''
+    ingredients:'',
+    nutrituional_values: {
+      calories: "",
+      carbohydrates: "",
+      protein: "",
+      fat:  "",
+      fiber: "",
+  }
   };
   
   categories:Category[] = [];

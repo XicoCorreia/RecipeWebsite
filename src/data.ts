@@ -26,6 +26,13 @@ export const sample_recipes: Recipe[] = [
     "<li>Keep stirring for 5 minutes and then on low heat let it cook for 20 min and done!</li> </ol>",
     url_steps:'/assets/images/recipes/steps.jpg',
     categories: ["Main", "Beef"],
+    nutrituional_values: {
+        calories: "100kcal",
+        carbohydrates: "100g",
+        protein: "100g",
+        fat:  "100g",
+        fiber: "100g",
+    }
     }
 ]
 /*

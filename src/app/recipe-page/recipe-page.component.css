@@ -12,7 +12,7 @@
     background-color: rgb(255,240,219,0.3);
     padding-top: 1em;
     padding-bottom: 2em ;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
 }
 
 .route{
@@ -63,7 +63,6 @@
     color: white;
     background-color: #a62031;
     padding: 1em;
-    border-radius: 0.25em;
 }
 
 #jump:hover{
@@ -71,7 +70,91 @@
 }
 
 .container-recipe{
+    display: flex;
+}
+
+.container-left{
     width: 800px;
+}
+
+.nutritional-card{
+    border: #a62031;
+    border-width: 2px;
+    border-style: solid;
+    margin-left: 2em;
+    margin-bottom: 2em;
+    padding: 1em;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.nutritional-card h3{
+    color:#a62031;
+}
+
+.nutritional-card h6{
+    margin:0;
+}
+
+.about_me_card{
+    border: #a62031;
+    border-width: 2px;
+    border-style: solid;
+    margin-left: 2em;
+    text-align: center;
+    padding: 1em;
+    height: 650px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#about-image{
+    aspect-ratio: 1 / 1;
+    width: 250px;
+    object-fit: cover;
+    object-position: 0;
+    border-radius: 50%;
+}
+#about-text{
+    text-align: center;
+}
+
+#about-btn{
+    color: white;
+    background-color: #a62031;
+    padding: 1em;
+}
+
+#btn{
+    text-align: center;
+    margin-top: 2em;
+}
+
+#about-btn:hover{
+    cursor: pointer;
+}
+
+.latest{
+    margin-left: 2em;  
+    margin-top: 2em;
+}
+
+.grid-container-1 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); 
+    gap: 1em; 
+    margin-top: 1em;
+}
+
+.latest a{
+    display: flex;
+}
+
+.latest-title{
+    padding-top: 0.5em;
+    padding-left: 1em;
+}
+
+.image-grid-category{
+    width: 180px;
 }
 
 p{
@@ -81,6 +164,7 @@ p{
 
 
 #introduction-text{
+    margin-top: 0;
     margin-bottom: 1em;
 }
 
@@ -128,16 +212,6 @@ p{
 article {
     display: flex;
     flex-direction: column;
-}
-
-h3 {
-    padding-top: 0.25em; 
-    padding-left: 0.5em;
-    color: #a62031;
-}
-
-a {
-    color: #a62031;
 }
 
 .secondary-image {

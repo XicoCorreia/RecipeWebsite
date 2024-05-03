@@ -1,4 +1,4 @@
-import { Category } from "./Category";
+import { Nutritional } from "./Nutritional";
 
 export class Recipe{
     id!:string;
@@ -14,4 +14,5 @@ export class Recipe{
     ingredients!: string;
     subtitle?:string;
     calories?: number;
+    nutrituional_values!: Nutritional;
 }
