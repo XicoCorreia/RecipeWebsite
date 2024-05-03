@@ -13,6 +13,7 @@ body{
 
 a{
     text-decoration: none;
+    color:#a62031;
 }
 
 h1, h2{
@@ -31,9 +32,6 @@ h3{
     font-weight: bold;
     padding-bottom: 0.75em;
 }
-a {
-    color:#a62031;
-}
 
 .r-home{
     text-decoration:underline;
@@ -43,18 +41,18 @@ p {
     margin: 0.25em auto 0 auto;
 }
 
-/*
-about-me, sub-category, category
 .full-width-background{
     width: calc(100vw); 
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    background-color: rgb(255, 240, 219, 0.3);
+    background-color: rgb(255,240,219,0.3);
+    padding-top: 1em;
+    padding-bottom: 3em ;
     margin-bottom: 2em;
 }
 
---------------------
+/*
 recipes, categories,home, category-page, sub-category
 .grid-container {
     display: grid;

@@ -1,9 +1,9 @@
 <div class="container">
     <div id="container_primary">
         <div class="route"> 
-            <a href="#" routerLink="/" id="r-home">Home</a> >
+            <a href="#" routerLink="/" class="r-home">Home</a> >
             <ng-container *ngFor="let category of recipe.categories;">
-                <a href="#" [routerLink]="'/'+ getPath(category)" id="r-home">{{ category }}</a> >
+                <a href="#" [routerLink]="'/'+ getPath(category)" class="r-home">{{ category }}</a> >
             </ng-container>
             {{recipe.name}}
         </div>

@@ -4,17 +4,6 @@
     max-width: 1200px;
 }
 
-.full-width-background{
-    width: calc(100vw); 
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: rgb(255,240,219,0.3);
-    padding-top: 1em;
-    padding-bottom: 3em ;
-    margin-bottom: 2em;
-}
-
 .route{
     max-width: 1200px;
     margin: auto;
