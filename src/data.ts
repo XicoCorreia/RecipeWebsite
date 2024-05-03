@@ -190,39 +190,17 @@ export const main_categories: Category[] = [
      "occasion or simply treating yourself to a well-deserved indulgence, our dessert recipes are sure to impress and delight. "
     },
     {id: '4', 
-    name:"Sides", 
+    name:"Sides & Appetizers", 
     path:"sides-recipes",
     imageUrl:'/assets/images/categories/sides.jpeg',
-    description: "Elevate any meal with our delectable selection of sides! From crisp and refreshing salads to crispy golden fries and "+
-    "beyond, our sides category offers the perfect accompaniments to complement any dish. Explore a bounty of flavors and textures as you "+
-    "discover our diverse range of side dishes designed to tantalize your taste buds and elevate your dining experience. "+
-    "Whether you're looking for something light and nutritious to balance out your meal or crave indulgent comfort food to satisfy your "+
-    "cravings, our sides category has something for everyone. ",
+    description: "Enhance every dining experience with our tantalizing selection of sides and appetizers! From crisp, garden-fresh salads to crispy, "+
+    "golden fries and beyond, our menu of accompaniments elevates every dish. Delve into a world of flavors and textures with our diverse range of "+
+    "appetizers, designed to tantalize your taste buds and elevate your meal. Whether you seek light and nutritious options to balance your plate or "+
+    "crave indulgent comfort foods to satisfy your cravings, our selection has something to suit every palate and preference."
     },
 ]
 
-export const categories_special: Category[] = [
-    {id: '5', 
-    name:"Low Calorie", 
-    path:"lowcalorie-recipes",
-    imageUrl:'/assets/images/categories/lowcalorie.jpeg',
-    description: "Embark on a journey of culinary delight with my low-calorie recipes, crafted with a passion for flavor and a dedication to "+
-    "wellness. As someone who found joy in cooking through a focus on healthier eating, I understand the importance of meals that are both "+
-    "satisfying and nourishing. My low-calorie category offers a treasure trove of dishes that prioritize wholesome ingredients without "+
-    "compromising on taste. Let's redefine the art of cooking, one delicious and nutritious dish at a time.",
-    },
-    {id: '6', 
-    name:"Air Fryer", 
-    path:"airfryer-recipes",
-    imageUrl:'/assets/images/categories/airfryer.jpg',
-    description: "Embark on a journey of culinary delight with my low-calorie recipes, crafted with a passion for flavor and a dedication to "+
-    "wellness. As someone who found joy in cooking through a focus on healthier eating, I understand the importance of meals that are both "+
-    "satisfying and nourishing. My low-calorie category offers a treasure trove of dishes that prioritize wholesome ingredients without "+
-    "compromising on taste. Let's redefine the art of cooking, one delicious and nutritious dish at a time.",
-    }
-]
-
-export const sub_categories_Main: Category[] = [
+export const categories_ingredient: Category[] = [
     {id: '11', 
     name:"Beef",
     path:"main-recipes/beef", 
@@ -244,6 +222,136 @@ export const sub_categories_Main: Category[] = [
     parent_category: "Main",
     },
     {id: '13', 
+    name:"Pasta", 
+    path:"main-recipes/pasta",
+    imageUrl:'/assets/images/categories/pasta.jpg',
+    description: "Dive into our delightful collection of pasta recipes, where traditional flavors meet creative twists. From the "+
+    "comforting classics like Spaghetti Bolognese and Fettuccine Alfredo to inventive dishes that will surprise your palate, our pasta "+
+    "section has something for everyone. Whether you're looking for quick weekday meals or impressive dishes for special occasions, our "+
+    "carefully curated recipes are designed to suit all levels of culinary expertise. Let's bring the warmth and joy of perfect pasta to your table!",
+    parent_category: "Main",
+    },
+    {id: '14', 
+    name:"Pork", 
+    path:"main-recipes/pork",
+    imageUrl:'/assets/images/categories/pork.jpg',
+    description: "Discover the savory delights of our pork recipes! From succulent pork chops to flavorful roasts and more, our collection showcases "+
+    "the versatility and deliciousness of pork. Dive into a world of savory flavors and tender textures as you explore our diverse range of pork dishes. "+
+    "Whether you're in the mood for a classic barbecue favorite, a comforting stew, or something exotic and adventurous, our pork recipes will tantalize "+
+    "your taste buds and leave you coming back for more.",
+    parent_category: "Main",
+    },
+    {id: '15', 
+    name:"Chocolate", 
+    path:"dessert-recipes/chocolate",
+    imageUrl:'/assets/images/categories/chocolate.jpg',
+    description: "Indulge in the luxurious world of chocolate with our decadent recipes! From rich, velvety cakes to melt-in-your-mouth truffles and beyond, "+
+    "our collection celebrates the irresistible allure of chocolate in all its forms. Explore the depths of flavor and richness as you dive into our diverse "+
+    "range of chocolate creations. Whether you're craving a comforting classic or seeking to impress with a sophisticated dessert, our chocolate recipes promise "+
+    "to satisfy your sweetest cravings and leave you with a lingering taste of bliss.",
+    parent_category: "Dessert",
+    },
+    {id: '16', 
+    name:"Oats", 
+    path:"breakfast-recipes/oats",
+    imageUrl:'/assets/images/categories/oats.png',
+    description: "Discover the versatility of oats in our collection of oat-based recipes. From comforting porridges to innovative oat bars, "+
+    "our selection showcases the hearty and healthful qualities of oats. Ideal for breakfasts, snacks, or even savory dishes, these recipes "+
+    "provide delicious options to fuel your day with wholesome goodness.",
+    parent_category: "Breakfast",
+    },
+]
+
+export const categories_special: Category[] = [
+    {id: '31', 
+    name:"Low Calorie", 
+    path:"lowcalorie-recipes",
+    imageUrl:'/assets/images/categories/lowcalorie.jpeg',
+    description: "Embark on a journey of culinary delight with my low-calorie recipes, crafted with a passion for flavor and a dedication to "+
+    "wellness. As someone who found joy in cooking through a focus on healthier eating, I understand the importance of meals that are both "+
+    "satisfying and nourishing. My low-calorie category offers a treasure trove of dishes that prioritize wholesome ingredients without "+
+    "compromising on taste. Let's redefine the art of cooking, one delicious and nutritious dish at a time.",
+    },
+    {id: '32', 
+    name:"Air Fryer", 
+    path:"airfryer-recipes",
+    imageUrl:'/assets/images/categories/airfryer.jpg',
+    description: "Embark on a journey of culinary delight with my low-calorie recipes, crafted with a passion for flavor and a dedication to "+
+    "wellness. As someone who found joy in cooking through a focus on healthier eating, I understand the importance of meals that are both "+
+    "satisfying and nourishing. My low-calorie category offers a treasure trove of dishes that prioritize wholesome ingredients without "+
+    "compromising on taste. Let's redefine the art of cooking, one delicious and nutritious dish at a time.",
+    },
+    {id: '33', 
+    name:"Skillet", 
+    path:"skillet-recipes",
+    imageUrl:'/assets/images/recipes/skillet.jpg',
+    description: "Experience the sizzle and simplicity of skillet recipes! From hearty one-pan meals to flavorful stir-fries and more, our collection "+
+    "celebrates the convenience and versatility of cooking in a skillet. Dive into a world of bold flavors and effortless cooking as you explore our diverse "+
+    "range of skillet creations. Whether you're a busy weeknight chef seeking quick and satisfying meals or a culinary adventurer looking to experiment with "+
+    "new flavors and techniques, our skillet recipes offer something for every taste and occasion. ",
+    },
+    {id: '34', 
+    name:"30min Recipes", 
+    path:"30min-recipes",
+    imageUrl:'/assets/images/recipes/30min.jpg',
+    description: "Embrace the joy of quick and delicious cooking with our 30-minute recipes! Perfect for busy weeknights or anytime you need a satisfying meal "+
+    "in a hurry, our collection showcases the beauty of efficiency without sacrificing flavor. Dive into a world of mouthwatering dishes that can be prepared "+
+    "from start to finish in just 30 minutes or less. Whether you're craving hearty pastas, flavorful stir-fries, or comforting soups, our recipes are designed "+
+    "to streamline your time in the kitchen while maximizing taste and enjoyment. Say goodbye to long hours spent cooking and hello to quick, delicious meals that "+
+    "will leave you feeling satisfied and ready to conquer the day!"
+    }, 
+]
+
+export const categories_cuisine: Category[] = [
+    {id: '41', 
+    name:"Asian", 
+    path:"asian-recipes",
+    imageUrl:'/assets/images/recipes/asian.jpg',
+    description: "Explore the vibrant flavors of Asia with our collection of quick and easy Asian cuisine recipes! From aromatic Thai curries to "+
+    "savory Japanese stir-fries, our dishes capture the essence of traditional Asian cooking. Discover bold flavors, exotic ingredients, and simple "+
+    "cooking techniques that bring the taste of Asia to your table in 30 minutes or less. Whether you're craving spicy Korean barbecue or comforting "+
+    "Vietnamese pho, our recipes offer something for every palate. Experience the magic of Asian cuisine in your own kitchen today!"
+    },
+    {id: '42', 
+    name:"Italian", 
+    path:"italian-recipes",
+    imageUrl:'/assets/images/recipes/italian.jpg',
+    description: "Delight in the taste of Italy with our quick and easy Italian cuisine recipes! From classic pasta dishes to flavorful risottos and more, "+
+    "our collection brings the flavors of Italy to your table in 30 minutes or less. Experience the richness of Italian cuisine with simple yet satisfying "+
+    "recipes that celebrate fresh ingredients and timeless flavors. Whether you're craving a comforting bowl of spaghetti carbonara or a hearty mushroom "+
+    "risotto, our recipes offer the taste of Italy with every bite. Buon appetito!"
+    },
+    {id: '43', 
+    name:"Indian", 
+    path:"indian-recipess",
+    imageUrl:'/assets/images/recipes/indian.jpg',
+    description: "Embark on a culinary journey to India with our quick and flavorful Indian cuisine recipes! From aromatic curries to spicy biryanis and more, "+
+    "our collection captures the essence of Indian cooking in 30 minutes or less. Indulge in the rich and diverse flavors of Indian spices, lentils, and vegetables, "+
+    "all in the comfort of your own kitchen. Whether you're craving the warmth of a butter chicken curry or the tanginess of aloo chaat, our recipes bring the "+
+    "vibrant tastes of India to your table with every dish. Spice up your mealtime with our quick and easy Indian recipes today!"
+},
+    {id: '44', 
+    name:"Mexican", 
+    path:"mexican-recipes",
+    imageUrl:'/assets/images/recipes/mexican.jpg',
+    description: "Transport your taste buds to Mexico with our quick and vibrant Mexican cuisine recipes! From zesty tacos to hearty enchiladas and more, our "+
+    "collection captures the essence of Mexican flavors in 30 minutes or less. Experience the bold and lively tastes of chili peppers, cilantro, and lime as you "+
+    "explore our diverse range of dishes. Whether you're craving the crunch of a crispy taco or the warmth of a comforting bowl of chili, our recipes offer a fiesta "+
+    "of flavor with every bite. Spice up your mealtime with our quick and easy Mexican recipes today!"
+},
+    {id: '45', 
+    name:"Portuguese", 
+    path:"portuguese-recipes",
+    imageUrl:'/assets/images/recipes/portuguese.jpg',
+    description: "Explore the vibrant flavors of Portugal, my homeland, with our quick and flavorful Portuguese recipes! From iconic seafood stews to beloved bacalhau "+
+    "dishes, each recipe captures the essence of Portuguese cuisine in 30 minutes or less. Indulge in the rich heritage of fresh ingredients and time-honored "+
+    "traditions that make Portuguese food one of the best in the world. Whether it's the comforting warmth of caldo verde or the sweet delights of pastéis de nata, "+
+    "our recipes bring the taste of Portugal to your table with every bite. Experience the richness of Portuguese cuisine with our quick and easy recipes today!"},
+]
+
+
+export const sub_categories: Category[] = [
+    {id: '51', 
     name:"Burritos",
     path:"main-recipes/burritos", 
     imageUrl:'/assets/images/categories/burrito.jpeg',
@@ -254,30 +362,7 @@ export const sub_categories_Main: Category[] = [
     "whether you want it for lunch or breakfast there's a burrito recipe here for you",
     parent_category: "Main",
     },
-    {id: '14', 
-    name:"Pasta", 
-    path:"main-recipes/pasta",
-    imageUrl:'/assets/images/categories/pasta.jpg',
-    description: "Dive into our delightful collection of pasta recipes, where traditional flavors meet creative twists. From the "+
-    "comforting classics like Spaghetti Bolognese and Fettuccine Alfredo to inventive dishes that will surprise your palate, our pasta "+
-    "section has something for everyone. Whether you're looking for quick weekday meals or impressive dishes for special occasions, our "+
-    "carefully curated recipes are designed to suit all levels of culinary expertise. Let's bring the warmth and joy of perfect pasta to your table!",
-    parent_category: "Main",
-    },
-
-]
-
-export const sub_categories_Breakfast: Category[] = [
-    {id: '20', 
-    name:"Oats", 
-    path:"breakfast-recipes/oats",
-    imageUrl:'/assets/images/categories/oats.png',
-    description: "Discover the versatility of oats in our collection of oat-based recipes. From comforting porridges to innovative oat bars, "+
-    "our selection showcases the hearty and healthful qualities of oats. Ideal for breakfasts, snacks, or even savory dishes, these recipes "+
-    "provide delicious options to fuel your day with wholesome goodness.",
-    parent_category: "Breakfast",
-    },
-    {id: '21', 
+    {id: '52', 
     name:"Smoothies", 
     path:"breakfast-recipes/smoothies",
     imageUrl:'/assets/images/categories/smoothie.png',
@@ -286,7 +371,7 @@ export const sub_categories_Breakfast: Category[] = [
     "only tasty but also health-boosting, designed to keep you hydrated and satisfied.",
     parent_category: "Breakfast",
     },
-    {id: '22', 
+    {id: '53', 
     name:"Sandwhiches", 
     path:"breakfast-recipes/sandwhiches",
     imageUrl:'/assets/images/categories/sandwhich.jpg',
@@ -294,12 +379,8 @@ export const sub_categories_Breakfast: Category[] = [
     "like eggs, cheese, and meats, all nestled between slices of freshly toasted bread or bagels. Whether you're craving something classic or "+
     "looking for a new twist on your morning routine, our sandwiches are sure to energize your day with deliciousness.",
     parent_category: "Breakfast",
-    }
-]
-
-
-export const sub_categories_Dessert: Category[] = [
-    {id: '30', 
+    },
+    {id: '54', 
     name:"Cake", 
     path:"dessert-recipes/cake",
     imageUrl:'/assets/images/categories/cake.png',
@@ -307,11 +388,8 @@ export const sub_categories_Dessert: Category[] = [
     "fruit layers, each recipe promises moist, fluffy textures and rich flavors. Whether you're a novice baker or a seasoned pastry chef, find your "+
     "next favorite cake here and make every occasion a little sweeter.",
     parent_category: "Dessert",
-    }
-]
-
-export const sub_categories_Sides: Category[] = [
-    {id: '40', 
+    },
+    {id: '81', 
     name:"Salads", 
     path:"dessert-recipes/salad",
     imageUrl:'/assets/images/categories/salad.jpg',
@@ -322,8 +400,7 @@ export const sub_categories_Sides: Category[] = [
     }
 ]
 
-export const sample_categories: Category[] = main_categories.concat(sub_categories_Main ,sub_categories_Breakfast, sub_categories_Dessert, 
-    sub_categories_Sides, categories_special);
+export const sample_categories: Category[] = main_categories.concat(categories_ingredient, categories_cuisine, sub_categories, categories_special);
 
 export const sample_icons: Icon[] = [
     {id: '1', 
