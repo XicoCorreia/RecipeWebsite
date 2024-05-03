@@ -12,6 +12,7 @@ import { RecipesComponent } from './recipes/recipes.component';
 import { CategoriesComponent } from './categories/categories.component';
 import { CategoryPageComponent } from './category-page/category-page.component';
 import { SubcategoryPageComponent } from './subcategory-page/subcategory-page.component';
+import { ScrollToTopComponent } from './scroll-to-top/scroll-to-top.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { SubcategoryPageComponent } from './subcategory-page/subcategory-page.co
     RecipesComponent,
     CategoriesComponent,
     CategoryPageComponent,
-    SubcategoryPageComponent
+    SubcategoryPageComponent,
+    ScrollToTopComponent
   ],
   imports: [
     BrowserModule,
