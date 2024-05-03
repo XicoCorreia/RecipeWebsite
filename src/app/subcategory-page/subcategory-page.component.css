@@ -9,11 +9,6 @@
     padding-bottom: 2em ;
 }
 
-.route{
-    max-width: 1200px;
-    margin: auto;
-}
-
 .main-container{
     position: relative;
     text-align: center;
@@ -48,8 +43,4 @@
     margin-top: 2em; 
     text-align: justify;
     max-width: 1200px;
-}
-
-.section{
-    margin: 2em auto 3em auto;
 }

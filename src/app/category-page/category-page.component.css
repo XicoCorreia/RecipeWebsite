@@ -4,11 +4,6 @@
     max-width: 1200px;
 }
 
-.route{
-    max-width: 1200px;
-    margin: auto;
-}
-
 .main-container{
     margin: 0 auto;
     position: flex;
@@ -43,10 +38,6 @@
     object-fit: cover;
     object-position: 0%;
     border-radius: 50%;
-}
-
-.section{
-    margin: 2em auto 3em auto;
 }
 
 .title-button-container {

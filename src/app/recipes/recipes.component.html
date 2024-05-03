@@ -5,14 +5,16 @@
     </div>
     <h1>All Recipes</h1>
     <p>This is where you will find all of my recipes! Enjoy!</p>
-    <div class="grid-container">
-        <div *ngFor="let r of recipes" class="grid-item">
-            <article class="grid-article">
-                <a [routerLink]="'/recipes/' + r.id"> 
-                    <img src="{{r.imageUrl}}" alt="{{r.name}}" class="image-grid-recipe">
-                    <h3 class = "image-title">{{r.name}}</h3>
-                </a>
-            </article>
+    <div class="section">
+        <div class="grid-container">
+            <div *ngFor="let r of recipes" class="grid-item">
+                <article class="grid-article">
+                    <a [routerLink]="'/recipes/' + r.id"> 
+                        <img src="{{r.imageUrl}}" alt="{{r.name}}" class="image-grid-recipe">
+                        <h3 class = "image-title">{{r.name}}</h3>
+                    </a>
+                </article>
+            </div>
         </div>
     </div>
 </div>

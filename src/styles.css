@@ -30,6 +30,8 @@ h3{
     color: #a62031;
     font-weight: bold;
     padding-bottom: 0.75em;
+    max-width: 1200px;
+    margin: auto;
 }
 
 .r-home{
@@ -88,4 +90,8 @@ p {
     padding-top: 0.25em; 
     padding-left: 0.5em;
     color:#a62031;
+}
+
+.section{
+    margin: 2em auto 3em auto;
 }
