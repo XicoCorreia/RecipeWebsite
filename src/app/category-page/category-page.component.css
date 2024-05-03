@@ -4,7 +4,7 @@
     max-width: 1200px;
 }
 
-#container_primary{
+.full-width-background{
     width: calc(100vw); 
     position: relative;
     left: 50%;
@@ -20,7 +20,7 @@
     margin: auto;
 }
 
-#primary{
+.main-container{
     margin: 0 auto;
     position: flex;
     max-width: 1200px;
@@ -36,12 +36,9 @@
     margin-left: 2em;
 }
 
-#container_category_description{
-    text-align: justify;
-}
-
-#primary-description {
+.category-description {
     margin-top: 0.5em ;
+    text-align: justify;
 }
 
 .grid-container-subcategories {
@@ -49,9 +46,14 @@
     grid-template-columns: repeat(7, 1fr); 
     gap: 1em; 
     text-align: center;
-} 
+}
 
-.secondary-image-subcategories {
+.grid-article {
+    display: flex;
+    flex-direction: column;
+}
+
+.image-grid-subcategory {
     aspect-ratio : 1 / 1;
     width: 100%;
     object-fit: cover;
@@ -59,11 +61,7 @@
     border-radius: 50%;
 }
 
-#subcategory_name{
-    color: #a62031;
-}
-
-.sections{
+.section{
     margin: 2em auto 3em auto;
 }
 
@@ -78,18 +76,16 @@
     margin: 0;
 }
 
-article {
-    display: flex;
-    flex-direction: column;
+.image-grid-recipes  {
+    aspect-ratio : 0.75 / 1;
+    width: 100%;
+    object-fit: cover;
+    object-position: 0%;
 }
 
-h3 {
+.image-title {
     padding-top: 0.25em; 
     padding-left: 0.5em;
-    color: #a62031;
-}
-
-a {
     color: #a62031;
 }
 
@@ -99,9 +95,3 @@ a {
     align-items: center;
 }
 
-.secondary-image {
-    aspect-ratio : 0.75 / 1;
-    width: 100%;
-    object-fit: cover;
-    object-position: 0%;
-}

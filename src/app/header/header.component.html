@@ -1,33 +1,33 @@
 <header>
     <div class="container">
-        <a href="#" routerLink="/" id="icon_route">
-            <img src="{{icon}}" alt="" id="icon">
+        <a href="#" routerLink="/">
+            <img src="{{icon}}" alt="Logo" class="icon-image">
         </a> 
-    <nav>
-        <ul>
+        <nav class="header-menu">
+            <ul>
 
-            <li>
-                <div class="dropdown">
-                    <a href="#" class="navb" routerLink="/recipes">All recipes                       
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M19 9L12 16L5 9" stroke="gray" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </a> 
-                    <div class="dropdown-content">
-                        <a href="#" routerLink="/recipes-index">By category</a>
+                <li>
+                    <div class="dropdown">
+                        <a href="#" class="header-menu-route" routerLink="/recipes">All recipes                       
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19 9L12 16L5 9" stroke="gray" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a> 
+                        <div class="dropdown-content">
+                            <a href="#" routerLink="/recipes-index">By category</a>
+                        </div>
                     </div>
-                  </div>
-            </li>
-            <li>
-                <a href="#" class="navb" routerLink="/main-recipes">Main Dishes</a>
-            </li>
-            <li>
-                <a href="#" class="navb" routerLink="/dessert-recipes">Dessert</a> 
-            </li>
-            <li>
-                <a href="#" class="navb" routerLink="/about-me">About Me</a> 
-            </li>
-        </ul>
-    </nav>
+                </li>
+                <li>
+                    <a href="#" class="header-menu-route" routerLink="/main-recipes">Main Dishes</a>
+                </li>
+                <li>
+                    <a href="#" class="header-menu-route" routerLink="/dessert-recipes">Dessert</a> 
+                </li>
+                <li>
+                    <a href="#" class="header-menu-route" routerLink="/about-me">About Me</a> 
+                </li>
+            </ul>
+        </nav>
     </div>
 </header>

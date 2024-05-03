@@ -11,10 +11,10 @@
         <h2>Recipes by Course</h2>
         <div class="grid-container">
             <div *ngFor="let c of courses" class="grid-item">
-                <article>
+                <article class = "grid-article">
                     <a [routerLink]="'/' + c.path"> 
-                        <img src="{{c.imageUrl}}" alt="{{c.name}}" class="secondary-image">
-                        <h3>{{c.name}}</h3>
+                        <img src="{{c.imageUrl}}" alt="{{c.name}}" class="image-grid-category">
+                        <h3 class="image-title">{{c.name}}</h3>
                     </a>
                 </article>
             </div>
@@ -24,9 +24,9 @@
         <h2>Dessert Recipes</h2>
         <div class="grid-container">
             <div *ngFor="let d of desserts" class="grid-item">
-                <article>
+                <article class = "grid-article">
                     <a [routerLink]="'/' + d.path"> 
-                        <img src="{{d.imageUrl}}" alt="{{d.name}}" class="secondary-image">
+                        <img src="{{d.imageUrl}}" alt="{{d.name}}" class="image-grid-category">
                         <h3>{{d.name}}</h3>
                     </a>
                 </article>
@@ -37,9 +37,9 @@
         <h2>Breakfast Recipes</h2>
         <div class="grid-container">
             <div *ngFor="let b of breakfast" class="grid-item">
-                <article>
+                <article class = "grid-article">
                     <a [routerLink]="'/' + b.path"> 
-                        <img src="{{b.imageUrl}}" alt="{{b.name}}" class="secondary-image">
+                        <img src="{{b.imageUrl}}" alt="{{b.name}}" class="image-grid-category">
                         <h3>{{b.name}}</h3>
                     </a>
                 </article>

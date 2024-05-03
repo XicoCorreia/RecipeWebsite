@@ -2,10 +2,9 @@
     position: relative;
     margin: 0 auto 3em auto;
     max-width: 1200px;
-    text-align: justify;
 }
 
-#container_primary{
+.full-width-background{
     width: calc(100vw); 
     position: relative;
     left: 50%;
@@ -21,22 +20,22 @@
     margin: auto;
 }
 
-#primary{
+.main-container{
     position: relative;
     text-align: center;
     max-height: 200px;
     max-width: 1200px;
     margin: auto;
-    overflow: clip;
+    overflow: hidden;
 }
 
-#primary-image{
+#main-image{
     position: relative;
     transform: translateY(-50%);
     width: 100%;
 }
 
-.primary-text{
+.main-title{
     position: absolute;
     text-align: center;
     top: 50%;
@@ -47,12 +46,13 @@
     color:black;
 }
 
-#primary-title{
+#title{
     font-size: 2.5em;  
 }
 
-#description{
-    margin: 2em auto 0 auto; 
+#main-text{
+    margin-top: 2em; 
+    text-align: justify;
     max-width: 1200px;
 }
 
@@ -67,20 +67,20 @@
     margin: 0;
 }
 
-article {
+.grid-article {
     display: flex;
     flex-direction: column;
 }
 
-.secondary-image {
+.image-grid-recipes {
     aspect-ratio : 0.75 / 1;
     width: 100%;
     object-fit: cover;
-    object-position: 0%;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    object-position: 0;
+    box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
 }
 
-h3 {
+.image-title {
     padding-left: 0.5em;
     padding-top: 0.25em; 
     color: #a62031;

@@ -1,53 +1,53 @@
 <div class="container">
-    <div id="container_primary">
+    <div class="full-width-background">
         <div class="route"> 
-            <a href="#" routerLink="/" id="r-home">Home</a> 
+            <a href="#" routerLink="/" class="r-home">Home</a> 
             > {{category.name}}
         </div>
-        <div id="primary">
+        <div class="main-container">
             <img src={{category.imageUrl}} alt={{category.name}} id="primary-image">
-            <div id="container_category_description">
+            <div>
                 <h1>{{category.name}}</h1>
-                <p id="primary-description">{{category.description}}</p>
+                <p class="category-description">{{category.description}}</p>
             </div>
         </div>
     </div>
-    <div class="section-categories">
+    <div class="section">
         <div class="grid-container-subcategories">
             <div *ngFor="let c of subCategories">
-                <article>
+                <article class="grid-article">
                     <a [routerLink]="'/' + c.path"> 
-                        <img src="{{c.imageUrl}}" alt={{c.name}} class="secondary-image-subcategories">
+                        <img src="{{c.imageUrl}}" alt={{c.name}} class="image-grid-subcategory">
                         <p id="subcategory_name"> {{c.name}} </p>
                         </a>
                 </article>
             </div>
         </div>
     </div>
-    <div class="sections" *ngFor="let c of subCategories | slice:0:4; let i = index;" [ngClass]="i % 2 === 0 ? 'even-section' : 'odd-section'">
+    <div class="section" *ngFor="let c of subCategories | slice:0:4; let i = index;">
         <div class="title-button-container">
             <h2>{{c.name}} Recipes</h2>
             <a href="#" [routerLink]="'/' + c.path"  id="secondary-button"> View more </a> 
         </div>
         <div class="grid-container">
             <div *ngFor="let s of subCatRecipes[i]">
-                <article>
+                <article class="grid-article">
                     <a [routerLink]="'/recipes/' + s.id"> 
-                        <img src="{{s.imageUrl}}" alt={{s.name}} class="secondary-image">
-                        <h3> {{s.name}} </h3>
+                        <img src="{{s.imageUrl}}" alt={{s.name}} class="image-grid-recipes">
+                        <h3 class="image-title"> {{s.name}} </h3>
                         </a>
                 </article>
             </div>
         </div>
     </div>
-    <div class="section-all">
+    <div class="section">
         <h2>All {{category.name}} Recipes</h2>
         <div class="grid-container">
             <div *ngFor="let c of categoryRecipes">
-                <article>
+                <article class="grid-article">
                     <a [routerLink]="'/recipes/' + c.id"> 
-                        <img src="{{c.imageUrl}}" alt={{c.name}} class="secondary-image">
-                        <h3> {{c.name}} </h3>
+                        <img src="{{c.imageUrl}}" alt={{c.name}} class="image-grid-recipes">
+                        <h3 class="image-title"> {{c.name}} </h3>
                         </a>
                 </article>
             </div>

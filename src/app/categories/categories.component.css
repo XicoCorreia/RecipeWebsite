@@ -4,6 +4,10 @@
     max-width: 1200px;
 }
 
+.section {
+    margin: 2em auto;
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr); 
@@ -15,27 +19,23 @@
     margin: 0;
 }
 
-article {
+.grid-article {
     display: flex;
     flex-direction: column;
 }
 
-.secondary-image {
+.image-grid-category {
     aspect-ratio : 1 / 1;
     width: 100%;
     object-fit: cover;
-    object-position: 0%;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    object-position: 0;
+    box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
 }
 
-h3 {
+.image-title {
     padding-top: 0.25em; 
     padding-left: 0.5em;
     color:#a62031;
-}
-
-.section {
-    margin: 2em auto;
 }
 
 @media screen and (max-width: 1200px) {
