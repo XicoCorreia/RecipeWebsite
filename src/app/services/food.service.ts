@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Recipe } from '../shared/models/Recipe';
-import { sample_categories, sample_icons, sample_recipes } from 'src/data';
+import { categories_special, main_categories, sample_categories, sample_icons, sample_recipes, sub_categories_Breakfast, sub_categories_Dessert } from 'src/data';
 import { Category } from '../shared/models/Category';
 import { Icon } from '../shared/models/Icon';
 
@@ -8,6 +8,7 @@ import { Icon } from '../shared/models/Icon';
   providedIn: 'root'
 })
 export class FoodService {
+
   constructor() {}
 
   getIcon():string {
@@ -43,15 +44,19 @@ export class FoodService {
   }
 
   getCourseCategories():Category[] {
-    return sample_categories.filter(c => !c.parent_category)
+    return main_categories;
   }
   
   getDessertCategories():Category[] {
-    return sample_categories.filter(c => c.parent_category === "Dessert")
+    return sub_categories_Dessert;
   }
 
   getBreakfastCategories():Category[] {
-    return sample_categories.filter(c => c.parent_category === "Breakfast")
+    return sub_categories_Breakfast;
+  }
+
+  getSpecialCategories(): Category[] {
+    return categories_special;
   }
 
   getCategoryByPath(categoryPath:string):Category{

@@ -12,7 +12,7 @@
             </div>
         </div>
     </div>
-    <div class="section">
+    <div *ngIf="subCatRecipes.length != 0" class="section">
         <div class="grid-container-subcategories">
             <div *ngFor="let c of subCategories">
                 <article class="grid-article">

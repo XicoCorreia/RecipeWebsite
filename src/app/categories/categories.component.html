@@ -21,6 +21,19 @@
         </div>
     </div>
     <div class="section">
+        <h2>Special Categories</h2>
+        <div class="grid-container">
+            <div *ngFor="let s of special" class="grid-item">
+                <article class = "grid-article">
+                    <a [routerLink]="'/' + s.path"> 
+                        <img src="{{s.imageUrl}}" alt="{{s.name}}" class="image-grid-category">
+                        <h3 class="image-title">{{s.name}}</h3>
+                    </a>
+                </article>
+            </div>
+        </div>
+    </div>
+    <div class="section">
         <h2>Dessert Recipes</h2>
         <div class="grid-container">
             <div *ngFor="let d of desserts" class="grid-item">

@@ -153,7 +153,7 @@ export const recipes_no_photos: Recipe[] = [
 ]
 */
 
-export const main_Categories: Category[] = [
+export const main_categories: Category[] = [
     {id: '1', 
     name:"Main", 
     path:"main-recipes",
@@ -191,9 +191,29 @@ export const main_Categories: Category[] = [
     "discover our diverse range of side dishes designed to tantalize your taste buds and elevate your dining experience. "+
     "Whether you're looking for something light and nutritious to balance out your meal or crave indulgent comfort food to satisfy your "+
     "cravings, our sides category has something for everyone. ",
-    }
+    },
 ]
 
+export const categories_special: Category[] = [
+    {id: '5', 
+    name:"Low Calorie", 
+    path:"lowcalorie-recipes",
+    imageUrl:'/assets/images/categories/lowcalorie.jpeg',
+    description: "Embark on a journey of culinary delight with my low-calorie recipes, crafted with a passion for flavor and a dedication to "+
+    "wellness. As someone who found joy in cooking through a focus on healthier eating, I understand the importance of meals that are both "+
+    "satisfying and nourishing. My low-calorie category offers a treasure trove of dishes that prioritize wholesome ingredients without "+
+    "compromising on taste. Let's redefine the art of cooking, one delicious and nutritious dish at a time.",
+    },
+    {id: '6', 
+    name:"Air Fryer", 
+    path:"airfryer-recipes",
+    imageUrl:'/assets/images/categories/airfryer.jpg',
+    description: "Embark on a journey of culinary delight with my low-calorie recipes, crafted with a passion for flavor and a dedication to "+
+    "wellness. As someone who found joy in cooking through a focus on healthier eating, I understand the importance of meals that are both "+
+    "satisfying and nourishing. My low-calorie category offers a treasure trove of dishes that prioritize wholesome ingredients without "+
+    "compromising on taste. Let's redefine the art of cooking, one delicious and nutritious dish at a time.",
+    }
+]
 
 export const sub_categories_Main: Category[] = [
     {id: '11', 
@@ -295,7 +315,8 @@ export const sub_categories_Sides: Category[] = [
     }
 ]
 
-export const sample_categories: Category[] = main_Categories.concat(sub_categories_Main ,sub_categories_Breakfast, sub_categories_Dessert, sub_categories_Sides);
+export const sample_categories: Category[] = main_categories.concat(sub_categories_Main ,sub_categories_Breakfast, sub_categories_Dessert, 
+    sub_categories_Sides, categories_special);
 
 export const sample_icons: Icon[] = [
     {id: '1', 
