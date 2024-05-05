@@ -7,6 +7,10 @@
     padding-bottom: 0.5em;
 }
 
+p{
+    margin: 0.5em auto 0 auto;
+}
+
 ul{
     list-style-type: none;
     padding: 0;

@@ -10,7 +10,7 @@ export const sample_recipes: Recipe[] = [
     "not only because I kept asking when the food was ready and it took roughly 30 minutes, but also because it "+
     "tasted amazing. So when I moved out, of course, I needed to try to cook it myself.",
     imageUrl: '/assets/images/recipes/mince_meat.jpg',
-    subtitle:"Perfect recipe to clean out your fridge",
+    subtitle:"Perfect recipe to clean out your fridge -",
     description:"Whip up a speedy, nutritious dinner with our one-pan Ground Beef Veggie Skillet. With minimal ingredients but maximum flavor, "+
     "it's perfect for busy weeknights. Customize your meat and veggies to suit your taste - it's a versatile recipe that's easy to tweak.<br> <br> Got some "+
     "ground beef and assorted veggies in your fridge that need using up? Look no further than this Ground Beef Veggie Skillet! It's the ultimate "+
