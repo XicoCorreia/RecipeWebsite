@@ -2,16 +2,21 @@ export class Recipe{
     id!:string;
     name!:string;
     date!: string;
+    categories!: string[];
     imageUrl!:string;
     introduction!: string;
     subtitle?:string;
     description!:string;
     url_ingredients?:string;
-    ingredients!: TitleDescription[];
-    steps!: TitleDescription[]; 
+    ingredients!: IntroductionContent;
+    steps!: IntroductionContent;
     url_steps!:string;
     nutrituional_values!: TitleDescription[]; 
-    categories!: string[];
+}
+
+export class IntroductionContent{
+    introduction?: string;
+    content!: TitleDescription[];
 }
 
 export class TitleDescription{

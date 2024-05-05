@@ -8,6 +8,7 @@ export const sample_recipes: Recipe[] = [
         name: 'Ground Beef with Veggies',
         date: "02 May 2024",
         imageUrl: '/assets/images/recipes/mince_meat.jpg',
+        categories: ["Main", "Beef"],
         introduction:"During the 20 years I lived with my mom, this was one of my favorite dishes that she cooked, "+
         "not only because I kept asking when the food was ready and it took roughly 30 minutes, but also because it "+
         "tasted amazing. So when I moved out, of course, I needed to try to cook it myself.",
@@ -15,48 +16,124 @@ export const sample_recipes: Recipe[] = [
         "it's perfect for busy weeknights. Customize your meat and veggies to suit your taste - it's a versatile recipe that's easy to tweak.<br> <br> Got some "+
         "ground beef and assorted veggies in your fridge that need using up? Look no further than this Ground Beef Veggie Skillet! It's the ultimate "+
         "clean-out-the-fridge meal, packed with satisfying flavors and requiring just a handful of ingredients.",
-        ingredients: [
-            {title: "Ground beef", 
-            description:"I use 96% for a more low calorie recipe but you can use which one you prefer."
-            },
-            {title: "Seasonings", 
-            description:"For seasoning I use paprika, onion powder, garlic powder, salt and pepper."
-            },
-            {title: "Tomato Sauce", 
-            description:"Essencial to give and don't make it dry."
-            },
-            {title: "Veggies", 
-            description:"Here just grab whatever veggies you have on your fridge, I prefer to use brocolli, carrots, cauliflower, corn and peas."
-            }
-        ],
-        steps: [
-            {description: "Add the meat to a pan a cook it medium heat"  
-            },
-            {description: "Put the heat down and add the tomato sauce, spices and veggies, if you are cooking pasta add a around 100ml of pasta water, otherwise you can just add water."
-            },
-            {description: "Keep stirring for 5 minutes and then on low heat let it cook for 20 min and done!"
-            }
-        ],
+        ingredients: {
+            introduction: "Here is everything you will need:",
+            content:[
+                {title: "Ground beef", 
+                description:"I use 96% for a more low calorie recipe but you can use which one you prefer."
+                },
+                {title: "Seasonings", 
+                description:"For seasoning I use paprika, onion powder, garlic powder, salt and pepper."
+                },
+                {title: "Tomato Sauce", 
+                description:"Essencial to give and don't make it dry."
+                },
+                {title: "Veggies", 
+                description:"Here just grab whatever veggies you have on your fridge, I prefer to use brocolli, carrots, cauliflower, corn and peas."
+                }
+            ]
+        },
+        steps: {
+            introduction: "Here is how to make this amazing recipe:",
+            content:[
+                {description: "Add the meat to a pan a cook it medium heat"  
+                },
+                {description: "Put the heat down and add the tomato sauce, spices and veggies, if you are cooking pasta add a around 100ml of pasta water, otherwise you can just add water."
+                },
+                {description: "Keep stirring for 5 minutes and then on low heat let it cook for 20 min and done!"
+                }
+            ]
+        },
         url_steps:'/assets/images/recipes/steps.jpg',
-        categories: ["Main", "Beef"],
         nutrituional_values: [
             {title: "Calories",
-            description: "100kcal"
+            description: "NDF"
             },
             {title: "Carbohydrates",
-            description: "100g"
+            description: "NDF"
             },
             {title: "Protein",
-            description: "100g"
+            description: "NDF"
             },
             {title: "Fat",
-            description: "100g"
+            description: "NDF"
             },
             {title: "Fiber",
-            description: "100g"
+            description: "NDF"
             }
         ]
-    }
+    },
+    {id: '5',
+    name: 'Apple Turnovers',
+    imageUrl: '/assets/images/recipes/apple_turnovers.jpg',
+    date: "05 May 2024",
+    categories: ["Dessert", "Air Fryer"],
+    introduction:"I always loved apple, and as everybody knows, apple and cinnamon belong together. So, I decided to combine these timeless "+
+    "flavors into a delightful pastry that captures the essence of autumn in every bite. ",
+    description:"Indulge in the comforting embrace of our apple turnover, where buttery layers of pastry envelop a generous filling of cinnamon-kissed "+
+    "apples. Each bite offers a symphony of flavors – the tartness of the apples harmonizing with the warmth of cinnamon, all encased in a crisp, golden "+
+    "crust. Baked to perfection, our turnovers boast a tantalizing aroma that beckons with promises of sweet satisfaction. Whether enjoyed as a morning "+
+    "treat or an afternoon delight, our apple turnovers are sure to evoke nostalgic memories and leave taste buds craving more. Experience the epitome of "+
+    "autumnal bliss with every delectable bite.",
+    ingredients: {
+        introduction: "Here is everything you will need:",
+        content:[
+            {title: "Apples", 
+            description:"Our main character in the pastry."
+            },
+            {title: "Cinnamon and sugar/stevia", 
+            description:"I used stevia to make it less caloric but you can use whatever you have at home."
+            },
+            {title: "Store bought puff pastry", 
+            description:"I bought mine on lidl but choose your favorite one."
+            },
+            {title: "Lemon", 
+            description:"The secret ingredient to make the sauce juicy and not so sweet."
+            },
+            {title: "Milk", 
+            description:"Used to give that yellow and crispy color to the pastry, you can use milk or eggs."
+            }
+        ]
+    },
+    steps:{ 
+        introduction: "As you can see bellow it is easy, fast and in the delicious:",
+        content:[
+            {description: "Cut half of an apple in cubes."  
+            },
+            {description: "Add both cinnamon and sugar in a pot, mix them together and add the apple and coat them."
+            },
+            {description: "Add some of the lemon juice to the apples."
+            },
+            {
+            description: "Cut the pastry in a rectangle and put the coated apples in the middle."
+            },
+            {
+            description: "Close the pastry by bringing the corners to the middle and twisting. Brush the milk onto the puff pastry."
+            },
+            {
+            description: "Put it in the airfryer at 180ºC for 10 minutes and enjoy! "
+            }
+        ]
+    },
+    url_steps:'/assets/images/recipes/steps.jpg',
+    nutrituional_values: [
+        {title: "Calories",
+        description: "NDF"
+        },
+        {title: "Carbohydrates",
+        description: "NDF"
+        },
+        {title: "Protein",
+        description: "NDF"
+        },
+        {title: "Fat",
+        description: "NDF"
+        },
+        {title: "Fiber",
+        description: "NDF"
+        }
+    ]
+    },   
 ]
 /*
 export const recipes_no_photos: Recipe[] = [
@@ -78,12 +155,7 @@ export const recipes_no_photos: Recipe[] = [
     steps: [],
     categories: ["Main", "Burritos", "Chicken"],
     },
-    {id: '5',
-    name: 'Apple Turnovers',
-    imageUrl: '/assets/images/recipes/apple_turnovers.jpg',
-    steps: [],
-    categories: ["Dessert"],
-    },   
+
     {id: '6',
     name: 'Breakfast Burrito',
     imageUrl: '/assets/images/recipes/breakfast_burrito.jpg',

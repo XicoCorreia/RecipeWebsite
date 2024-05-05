@@ -34,9 +34,9 @@
                 <img *ngIf="recipe.url_ingredients" src="{{recipe.url_ingredients}}" alt="ingredients_image" id="ingredients-image" >
                 <h2 id="subtitle">What You'll need to make {{recipe.name}}</h2>
                 <div class="recipe-text">
-                    Here is everything you will need: 
+                    {{recipe.ingredients.introduction}}
                     <ul class="listing">
-                        <li *ngFor="let ingredient of recipe.ingredients">
+                        <li *ngFor="let ingredient of recipe.ingredients.content">
                             <b *ngIf="ingredient.title" >{{ingredient.title}}:</b>  {{ingredient.description}}
                         </li>
                     </ul>
@@ -45,8 +45,9 @@
             <div class="recipe-container">
                 <h2>{{recipe.name}} Recipe</h2>
                 <div class="recipe-text">
+                    {{recipe.steps.introduction}}
                     <ol class="listing">
-                        <li *ngFor="let step of recipe.steps">
+                        <li *ngFor="let step of recipe.steps.content">
                             <b *ngIf="step.title" >{{step.title}}:</b>  {{step.description}}
                         </li>
                     </ol>
@@ -54,7 +55,7 @@
                 <img src="{{recipe.url_steps}}" alt="steps_image" id="steps-image">
             </div>
             <div class="more-recipes-container">
-                <h2 class="title">More {{main_category}} Recipes</h2>
+                <h2>More {{main_category}} Recipes</h2>
                 <div class="grid-container">
                     <div *ngFor="let s of categoryRecipes | slice:0:4">
                         <article >
@@ -81,7 +82,7 @@
                         <h2>Ingredients</h2>
                         <div class="recipe-text">
                             <ul class="listing">
-                                <li *ngFor="let ingredient of recipe.ingredients">
+                                <li *ngFor="let ingredient of recipe.ingredients.content">
                                     <b *ngIf="ingredient.title">{{ingredient.title}}:</b> {{ingredient.description}}
                                 </li>
                             </ul>
@@ -90,7 +91,7 @@
                     <div>
                         <h2>Instructions</h2>
                         <ol id="listing">
-                            <li *ngFor="let step of recipe.steps">
+                            <li *ngFor="let step of recipe.steps.content">
                                 <b *ngIf="step.title" >{{step.title}}:</b> {{step.description}}
                             </li>
                         </ol>

@@ -13,13 +13,13 @@ export class HomeComponent {
     id: '',
     name: '',
     imageUrl: '',
-    steps:  [],
+    steps:  {content:[]},
     categories: [],
     date: '',
     url_steps:'',
     description: '',
     introduction:'',
-    ingredients:[],
+    ingredients:{content:[]},
     nutrituional_values: []
   };
   
