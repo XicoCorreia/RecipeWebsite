@@ -27,9 +27,7 @@ export class HomeComponent {
   recent_recipes:Recipe[] = [];
   airfryer_recipes:Recipe[] = [];
 
-  constructor(private foodService:FoodService) {
-
-  }
+  constructor(private foodService:FoodService) {}
 
   ngOnInit(): void {
     this.first = this.foodService.getFirstImage();

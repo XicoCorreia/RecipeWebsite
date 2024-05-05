@@ -16,7 +16,7 @@ export class FoodService {
   }
 
   getFirstImage():Recipe {
-    return sample_recipes[0]
+    return sample_recipes.reverse()[0];
   }
 
   getAllCategories():Category[] {
