@@ -3,9 +3,8 @@ import {Recipe} from './app/shared/models/Recipe'
 import { Icon } from './app/shared/models/Icon'
 
 export const sample_recipes: Recipe[] = [
-    {   
+    {name: 'Ground Beef with Veggies',
     id: '1',
-    name: 'Ground Beef with Veggies',
     date: "02 May 2024",
     imageUrl: '/assets/images/recipes/mince_meat.jpg',
     categories: ["Main", "Beef"],
@@ -30,8 +29,7 @@ export const sample_recipes: Recipe[] = [
             },
             {title: "Veggies", 
             description:"Here just grab whatever veggies you have on your fridge, I prefer to use brocolli, carrots, cauliflower, corn and peas."
-            }
-        ]
+            }]
         },
     steps: {
         introduction: "Here is how to make this amazing recipe:",
@@ -41,9 +39,8 @@ export const sample_recipes: Recipe[] = [
             {description: "Put the heat down and add the tomato sauce, spices and veggies, if you are cooking pasta add a around 100ml of pasta water, otherwise you can just add water."
             },
             {description: "Keep stirring for 5 minutes and then on low heat let it cook for 20 min and done!"
-            }
-        ]
-    },
+            }]
+        },
     url_steps:'/assets/images/recipes/steps.jpg',
     nutrituional_values: [
         {title: "Calories",
@@ -60,12 +57,10 @@ export const sample_recipes: Recipe[] = [
         },
         {title: "Fiber",
         description: "NDF"
-        }
-    ]
+        }]
     },
-    {
+    {name: 'Apple Turnovers',
     id: '5',
-    name: 'Apple Turnovers',
     imageUrl: '/assets/images/recipes/apple_turnovers.jpg',
     date: "05 May 2024",
     categories: ["Dessert", "Air Fryer"],
@@ -93,9 +88,8 @@ export const sample_recipes: Recipe[] = [
             },
             {title: "Milk", 
             description:"Used to give that yellow and crispy color to the pastry, you can use milk or eggs."
-            }
-        ]
-    },
+            }]
+        },
     steps:{ 
         introduction: "As you can see bellow it is easy, fast and in the delicious:",
         content:[
@@ -113,9 +107,8 @@ export const sample_recipes: Recipe[] = [
             },
             {
             description: "Put it in the airfryer at 180ºC for 10 minutes and enjoy! "
-            }
-        ]
-    },
+            }]
+        },
     url_steps:'/assets/images/recipes/steps.jpg',
     nutrituional_values: [
         {title: "Calories",
@@ -132,8 +125,7 @@ export const sample_recipes: Recipe[] = [
         },
         {title: "Fiber",
         description: "NDF"
-        }
-    ]
+        }]
     },   
 ]
 /*
