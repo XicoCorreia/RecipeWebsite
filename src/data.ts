@@ -4,66 +4,67 @@ import { Icon } from './app/shared/models/Icon'
 
 export const sample_recipes: Recipe[] = [
     {   
-        id: '1',
-        name: 'Ground Beef with Veggies',
-        date: "02 May 2024",
-        imageUrl: '/assets/images/recipes/mince_meat.jpg',
-        categories: ["Main", "Beef"],
-        introduction:"During the 20 years I lived with my mom, this was one of my favorite dishes that she cooked, "+
-        "not only because I kept asking when the food was ready and it took roughly 30 minutes, but also because it "+
-        "tasted amazing. So when I moved out, of course, I needed to try to cook it myself.",
-        description:"Whip up a speedy, nutritious dinner with our one-pan Ground Beef Veggie Skillet. With minimal ingredients but maximum flavor, "+
-        "it's perfect for busy weeknights. Customize your meat and veggies to suit your taste - it's a versatile recipe that's easy to tweak.<br> <br> Got some "+
-        "ground beef and assorted veggies in your fridge that need using up? Look no further than this Ground Beef Veggie Skillet! It's the ultimate "+
-        "clean-out-the-fridge meal, packed with satisfying flavors and requiring just a handful of ingredients.",
-        ingredients: {
-            introduction: "Here is everything you will need:",
-            content:[
-                {title: "Ground beef", 
-                description:"I use 96% for a more low calorie recipe but you can use which one you prefer."
-                },
-                {title: "Seasonings", 
-                description:"For seasoning I use paprika, onion powder, garlic powder, salt and pepper."
-                },
-                {title: "Tomato Sauce", 
-                description:"Essencial to give and don't make it dry."
-                },
-                {title: "Veggies", 
-                description:"Here just grab whatever veggies you have on your fridge, I prefer to use brocolli, carrots, cauliflower, corn and peas."
-                }
-            ]
+    id: '1',
+    name: 'Ground Beef with Veggies',
+    date: "02 May 2024",
+    imageUrl: '/assets/images/recipes/mince_meat.jpg',
+    categories: ["Main", "Beef"],
+    introduction:"During the 20 years I lived with my mom, this was one of my favorite dishes that she cooked, "+
+    "not only because I kept asking when the food was ready and it took roughly 30 minutes, but also because it "+
+    "tasted amazing. So when I moved out, of course, I needed to try to cook it myself.",
+    description:"Whip up a speedy, nutritious dinner with our one-pan Ground Beef Veggie Skillet. With minimal ingredients but maximum flavor, "+
+    "it's perfect for busy weeknights. Customize your meat and veggies to suit your taste - it's a versatile recipe that's easy to tweak.<br> <br> Got some "+
+    "ground beef and assorted veggies in your fridge that need using up? Look no further than this Ground Beef Veggie Skillet! It's the ultimate "+
+    "clean-out-the-fridge meal, packed with satisfying flavors and requiring just a handful of ingredients.",
+    ingredients: {
+        introduction: "Here is everything you will need:",
+        content:[
+            {title: "Ground beef", 
+            description:"I use 96% for a more low calorie recipe but you can use which one you prefer."
+            },
+            {title: "Seasonings", 
+            description:"For seasoning I use paprika, onion powder, garlic powder, salt and pepper."
+            },
+            {title: "Tomato Sauce", 
+            description:"Essencial to give and don't make it dry."
+            },
+            {title: "Veggies", 
+            description:"Here just grab whatever veggies you have on your fridge, I prefer to use brocolli, carrots, cauliflower, corn and peas."
+            }
+        ]
         },
-        steps: {
-            introduction: "Here is how to make this amazing recipe:",
-            content:[
-                {description: "Add the meat to a pan a cook it medium heat"  
-                },
-                {description: "Put the heat down and add the tomato sauce, spices and veggies, if you are cooking pasta add a around 100ml of pasta water, otherwise you can just add water."
-                },
-                {description: "Keep stirring for 5 minutes and then on low heat let it cook for 20 min and done!"
-                }
-            ]
-        },
-        url_steps:'/assets/images/recipes/steps.jpg',
-        nutrituional_values: [
-            {title: "Calories",
-            description: "NDF"
+    steps: {
+        introduction: "Here is how to make this amazing recipe:",
+        content:[
+            {description: "Add the meat to a pan a cook it medium heat"  
             },
-            {title: "Carbohydrates",
-            description: "NDF"
+            {description: "Put the heat down and add the tomato sauce, spices and veggies, if you are cooking pasta add a around 100ml of pasta water, otherwise you can just add water."
             },
-            {title: "Protein",
-            description: "NDF"
-            },
-            {title: "Fat",
-            description: "NDF"
-            },
-            {title: "Fiber",
-            description: "NDF"
+            {description: "Keep stirring for 5 minutes and then on low heat let it cook for 20 min and done!"
             }
         ]
     },
-    {id: '5',
+    url_steps:'/assets/images/recipes/steps.jpg',
+    nutrituional_values: [
+        {title: "Calories",
+        description: "NDF"
+        },
+        {title: "Carbohydrates",
+        description: "NDF"
+        },
+        {title: "Protein",
+        description: "NDF"
+        },
+        {title: "Fat",
+        description: "NDF"
+        },
+        {title: "Fiber",
+        description: "NDF"
+        }
+    ]
+    },
+    {
+    id: '5',
     name: 'Apple Turnovers',
     imageUrl: '/assets/images/recipes/apple_turnovers.jpg',
     date: "05 May 2024",
