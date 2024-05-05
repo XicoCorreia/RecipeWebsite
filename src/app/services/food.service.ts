@@ -24,7 +24,7 @@ export class FoodService {
   }
 
   getAllRecipes():Recipe[] {
-    return sample_recipes;
+    return sample_recipes.reverse();
   }
 
   getRecipeById(recipeId:string):Recipe{

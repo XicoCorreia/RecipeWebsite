@@ -13,20 +13,14 @@ export class HomeComponent {
     id: '',
     name: '',
     imageUrl: '',
-    steps: '',
+    steps:  [],
     categories: [],
     date: '',
     url_steps:'',
     description: '',
     introduction:'',
-    ingredients:'',
-    nutrituional_values: {
-      calories: "",
-      carbohydrates: "",
-      protein: "",
-      fat:  "",
-      fiber: "",
-  }
+    ingredients:[],
+    nutrituional_values: []
   };
   
   categories:Category[] = [];

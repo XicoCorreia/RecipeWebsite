@@ -33,10 +33,7 @@ export class RecipePageComponent {
   getPath(name: string): string {
     return this.foodService.getPathByName(name); 
   }
-
-  get formattedIngredients() {
-    return this.recipe.ingredients.replace(/\n/g, '<br>');
-  }
+  
   scroll(el: HTMLElement) {
       el.scrollIntoView();
     }

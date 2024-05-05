@@ -1,18 +1,20 @@
-import { Nutritional } from "./Nutritional";
-
 export class Recipe{
     id!:string;
     name!:string;
-    imageUrl!:string;
-    steps!: string;
-    url_steps!:string;
-    introduction!: string;
-    description!:string;
     date!: string;
-    categories!: string[];
-    url_ingredients?:string;
-    ingredients!: string;
+    imageUrl!:string;
+    introduction!: string;
     subtitle?:string;
-    calories?: number;
-    nutrituional_values!: Nutritional;
+    description!:string;
+    url_ingredients?:string;
+    ingredients!: TitleDescription[];
+    steps!: TitleDescription[]; 
+    url_steps!:string;
+    nutrituional_values!: TitleDescription[]; 
+    categories!: string[];
+}
+
+export class TitleDescription{
+    title?:string;
+    description!: string;
 }

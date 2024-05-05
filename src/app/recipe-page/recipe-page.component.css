@@ -88,22 +88,41 @@
     width: 100%;
     object-fit: cover;
     object-position: 0;
-    margin-bottom: 2em;
+    margin-bottom: 0;
 }
 
 .recipe-text{
     margin:0;
     margin-top: 1em;
+    margin-bottom: 1em;
 }
 
-#ingredients-image, #steps-image{
+#subtitle{
+    margin-top: 40px;
+}
+
+#steps-image{
     width: 100%;
     margin-top: 1em;
     margin-bottom: 2em;
 }
 
+#ingredients-image{
+    width: 100%;
+    margin-top: 1em;
+}
+
 .more-recipes-container, .ingredients-container{
     margin-bottom: 2em;
+}
+
+.listing{
+    margin: 0.5em 0;
+}
+
+.nutritional{
+    list-style-type: none;
+    padding-left: 1em ;
 }
 
 .recipe-card-container{
