@@ -225,4 +225,41 @@ article {
     border: #a62031;
     border-style: solid;
     border-width: 2px;
+
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.recipe-card-header{
+    display: flex;
+    margin-bottom: 1em;
+    background-color: rgb(255,240,219,0.5);
+    padding: 2em;
+    border-bottom: 2px solid #a62031;
+}
+
+.recipe-card{
+    padding: 0 2em;
+}
+
+.recipe-card.add{
+    padding-bottom: 2em;
+}
+
+
+
+.image-card{
+    grid-area: right;
+    margin-left: 2em;
+}
+
+#recipe-card-image{
+    display: block;
+    aspect-ratio : 1 / 1;
+    width: 250px;
+    object-fit: cover;
+    object-position: 0%;
+}
+
+h6{
+    margin: 0;
 }

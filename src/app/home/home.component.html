@@ -26,6 +26,22 @@
     </div>
     <div class="section">
         <div class="title-button-container">
+            <h1 class="title">Air Fryer Recipes</h1>
+            <a href="#" routerLink="/recipes"> View more </a> 
+        </div>
+        <div class="grid-container">
+            <div *ngFor="let ar of airfryer_recipes | slice:0:4">
+                <article class="grid-article">
+                    <a [routerLink]="'/recipes/' + ar.id"> 
+                    <img src="{{ar.imageUrl}}" alt= {{ar.name}} class="image-grid-recipe">
+                    <h3> {{ar.name}} </h3>
+                    </a>
+                </article>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="title-button-container">
             <h1 class="title">Most Recent Recipes</h1>
             <a href="#" routerLink="/recipes"> View more </a> 
         </div>

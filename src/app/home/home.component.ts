@@ -31,6 +31,7 @@ export class HomeComponent {
   
   categories:Category[] = [];
   recent_recipes:Recipe[] = [];
+  airfryer_recipes:Recipe[] = [];
 
   constructor(private foodService:FoodService) {
 
@@ -40,5 +41,6 @@ export class HomeComponent {
     this.first = this.foodService.getFirstImage();
     this.categories = this.foodService.getAllCategories();
     this.recent_recipes = this.foodService.getAllRecipes();
+    this.airfryer_recipes = this.foodService.getRecipeByCategory("Air Fryer");
   }
 }

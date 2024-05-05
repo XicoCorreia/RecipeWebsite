@@ -43,8 +43,8 @@
             <div class="more-recipes-container">
                 <h2 class="title">More {{main_category}} Recipes</h2>
                 <div class="grid-container">
-                    <div *ngFor="let s of categoryRecipes">
-                        <article>
+                    <div *ngFor="let s of categoryRecipes | slice:0:4">
+                        <article *ngIf="s.id !== recipe.id">
                             <a [routerLink]="'/recipes/' + s.id"> 
                                 <img src="{{s.imageUrl}}" alt={{s.name}} class="secondary-image">
                                 <h3 class="image-title"> {{s.name}} </h3>
@@ -54,7 +54,38 @@
                 </div>
             </div>
             <div id="recipe-card-container" #target>
-                Working on recipe card...
+                <div class="recipe-card-header">
+                    <div class="recipe-card-description">
+                        <h2>{{recipe.name}}</h2>
+                        <p>{{recipe.introduction}}</p>
+                    </div>
+                    <div class="image-card">
+                        <img src="{{recipe.imageUrl}}" alt="{{recipe.name}}" id="recipe-card-image">
+                    </div>
+                </div>
+                <div class="recipe-card">
+                    <h2>Ingredients</h2>
+                    <p [innerHTML]="recipe.ingredients"></p>
+                </div>
+                <div class="recipe-card">
+                    <h2>Instructions</h2>
+                    <p [innerHTML]="recipe.steps"></p>
+                </div>
+                <div class="recipe-card">
+                    <h3>Nutrition</h3>
+                    <h6>per serving</h6>
+                    <ul>
+                        <li *ngIf = "recipe.nutrituional_values.calories" >Calories: {{recipe.nutrituional_values.calories}}</li>
+                        <li *ngIf = "recipe.nutrituional_values.carbohydrates">Carbohydrates: {{recipe.nutrituional_values.carbohydrates}}</li>
+                        <li *ngIf = "recipe.nutrituional_values.protein">Protein: {{recipe.nutrituional_values.protein}}</li>
+                        <li *ngIf = "recipe.nutrituional_values.fat">Fat: {{recipe.nutrituional_values.fat}}</li>
+                        <li *ngIf = "recipe.nutrituional_values.fiber">Fiber: {{recipe.nutrituional_values.fiber}}</li>
+                    </ul>
+                </div>
+                <div class="recipe-card add">
+                    <h2>Additional Info</h2>
+                    <p><b>Categories:</b> {{recipe.categories}}</p>
+                </div>
             </div>
         </div>
         <div class="container-right">
