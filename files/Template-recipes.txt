@@ -1,0 +1,28 @@
+  { name
+    id: 
+    date: 
+    categories: [],
+    imageUrl: 
+    introduction:
+    subtitle:
+    description:
+    url_ingredients:
+    ingredients: {
+        introduction: 
+        content:[
+            {title: 
+            description:
+            }]
+        },
+    steps: {
+        introduction: 
+        content:[
+            {description:   
+            }]
+        },
+    url_steps:
+    nutrituional_values: [
+        {title:
+        description: 
+	  }]
+    },
