@@ -7,6 +7,8 @@
 
 .full-width-background{
     margin-bottom: 1em;
+    padding-bottom: 3em;
+
 }
 
 .route{
@@ -27,22 +29,40 @@ p{
     margin-bottom: 2em;
 }
 
-
 #primary-image{
     float: left;
-    max-height: 520px;
+    max-width: 520px;
     margin-right: 2em;
     padding-top: 0;
+}
+
+@media screen and (max-width: 1200px) {
+    .full-width-background{
+        padding: 0em 1em 2em 1em;
+    }
+    .section{
+        margin-top: 1.5em;
+        margin-bottom: 1.5em;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
 }
 
 @media screen and (max-width: 740px) {
     .container {
         margin: 0 auto;
     }
-}
-@media screen and (max-width: 1200px) {
+
+    #primary-image{
+        max-width: 100%;
+        margin: 1em 0em;
+    }
+    .full-width-background{
+        margin-bottom: 0.5em;
+        padding-bottom: 1em;
+    }
     .section{
-        padding-left: 1em;
-        padding-right: 1em;
+        margin-top: 1em;
+        margin-bottom: 1em;
     }
 }

@@ -81,3 +81,9 @@ header{
 
 .dropdown:hover .dropdown-content {display: block;}
 
+
+@media (max-width: 768px) {
+  .header-menu{
+    display: none;
+  }
+}
