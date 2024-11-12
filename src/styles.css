@@ -102,3 +102,13 @@ h3,h4,h6{
         height: 50vh; 
     }
 }
+
+/*For tablets (768px and below)*/ 
+@media (max-width: 270px) {
+    .grid-container {
+        grid-template-columns: 1fr; 
+    }
+    .main-image-container {
+        height: 50vh; 
+    }
+}
