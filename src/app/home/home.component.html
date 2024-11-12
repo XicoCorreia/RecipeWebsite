@@ -4,14 +4,14 @@
         <div class="main-text-button-container">
             <div class="main-text-button"> 
                 <h1 id="main-text">{{first.name}}</h1> 
-                <a href="#" routerLink="/recipes/{{first.id}}" id="main-button">See the Recipe</a> 
+                <a routerLink="/recipes/{{first.id}}" id="main-button">See the Recipe</a> 
             </div>
         </div>
     </div>
     <div class="section categories">
         <div class="title-button-container">
             <h1 class="title">Categories</h1>
-            <a href="#" routerLink="/recipes-index">View more</a> 
+            <a routerLink="/recipes-index">View more</a> 
         </div>
         <div class="grid-container">
             <div *ngFor="let c of categories  | slice:0:4">
@@ -27,7 +27,7 @@
     <div class="section">
         <div class="title-button-container">
             <h1 class="title">Air Fryer Recipes</h1>
-            <a href="#" routerLink="/recipes"> View more </a> 
+            <a routerLink="/airfryer-recipes"> View more </a> 
         </div>
         <div class="grid-container">
             <div *ngFor="let ar of airfryer_recipes | slice:0:4">
@@ -43,7 +43,7 @@
     <div class="section">
         <div class="title-button-container">
             <h1 class="title">Most Recent Recipes</h1>
-            <a href="#" routerLink="/recipes"> View more </a> 
+            <a routerLink="/recipes"> View more </a> 
         </div>
         <div class="grid-container">
             <div *ngFor="let rr of recent_recipes  | slice:0:8">

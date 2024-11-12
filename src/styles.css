@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Ruda:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 
 *{
     box-sizing: border-box;
@@ -90,3 +92,23 @@ h3,h4,h6{
 .section{
     margin: 2em auto 3em auto;
 }
+/*
+For tablets (768px and below) 
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+    .main-image-container {
+        height: 50vh; 
+    }
+}
+
+ For mobile phones (480px and below) 
+@media (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: 1fr; 
+    }
+    .main-image-container {
+        height: 40vh; /
+    }
+}*/
