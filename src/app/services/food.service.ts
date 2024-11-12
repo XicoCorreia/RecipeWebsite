@@ -15,7 +15,7 @@ export class FoodService {
   constructor() {}
 
   getIcon():string {
-    return '/assets/images/icons/icon.png';
+    return 'assets/images/icons/icon.png';
   }
 
   getFirstImage():Recipe {
