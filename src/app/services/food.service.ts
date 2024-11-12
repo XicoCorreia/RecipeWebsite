@@ -1,9 +1,11 @@
 import { Injectable } from '@angular/core';
 import { Recipe } from '../shared/models/Recipe';
-import { categories_cuisine, categories_ingredient, categories_special, course_categories, sample_categories, sample_icons, sample_recipes} from 'src/data';
+import { categories_cuisine, categories_ingredient, categories_special, course_categories, sample_categories} from 'src/dataCategories';
 import { Category } from '../shared/models/Category';
 import { Icon } from '../shared/models/Icon';
 import { EnumCategories } from '../shared/models/EnumCategories';
+import { sample_recipes } from 'src/dataRecipes';
+import { sample_icons } from 'src/dataIcons';
 
 @Injectable({
   providedIn: 'root'

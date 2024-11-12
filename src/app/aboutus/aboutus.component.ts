@@ -19,10 +19,7 @@ export class AboutusComponent {
   ngOnInit(): void {
     this.image = this.foodService.getAbout();
     this.titleService.setTitle("About Me - Nelas Recipes");
-    this.metaService.addTags([
-      {name: 'keywords', content: 'your keywords content'},
-      {name: 'description', content: 'your page description content'},
-    ]);
+    this.metaService.updateTag( {name: 'description', content: 'your page description content'});
   }
 
 }
