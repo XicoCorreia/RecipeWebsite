@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { FoodService } from '../services/food.service';
 import { Recipe } from '../shared/models/Recipe';
 import { Category } from '../shared/models/Category';
+import { EnumCategories } from '../shared/models/EnumCategories';
 
 @Component({
   selector: 'app-home',
@@ -13,13 +14,22 @@ export class HomeComponent {
     id: '',
     name: '',
     imageUrl: '',
-    steps:  {content:[]},
+    steps:  {
+      content: [],
+      image: '',
+      subtitle: ''
+    },
     categories: [],
     date: '',
-    url_steps:'',
-    description: '',
-    introduction:'',
-    ingredients:{content:[]},
+    introduction:{
+      introduction: '',
+      description: ''
+    },
+    ingredients:{
+      content: [],
+      image: '',
+      subtitle: ''
+    },
     nutrituional_values: []
   };
   
@@ -33,6 +43,6 @@ export class HomeComponent {
     this.first = this.foodService.getFirstImage();
     this.categories = this.foodService.getAllCategories();
     this.recent_recipes = this.foodService.getAllRecipes();
-    this.airfryer_recipes = this.foodService.getRecipeByCategory("Air Fryer");
+    this.airfryer_recipes = this.foodService.getRecipeByCategory(EnumCategories.AirFryer);
   }
 }

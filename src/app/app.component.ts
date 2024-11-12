@@ -8,7 +8,7 @@ import { OnInit } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  title = 'recipe-website';
+  title = 'Nelas Recipes';
 
   constructor(private router: Router) {}
 

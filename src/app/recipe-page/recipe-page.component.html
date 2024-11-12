@@ -25,14 +25,14 @@
     <div class="container-recipe">
         <div class="container-left">
             <div class="introduction-description-container">
-                <p id="introduction-text" [innerHTML]="recipe.introduction"></p>
+                <p id="introduction-text" [innerHTML]="recipe.introduction.introduction"></p>
                 <img src="{{recipe.imageUrl}}" alt="{{recipe.name}}" id="first-image">
-                <h2 *ngIf="recipe.subtitle" id="subtitle" >{{recipe.subtitle}}</h2>
-                <p class="recipe-text" [innerHTML] = "recipe.description"></p>
+                <h2 *ngIf="recipe.introduction.subtitle" id="subtitle" >{{recipe.introduction.subtitle}}</h2>
+                <p class="recipe-text" [innerHTML] = "recipe.introduction.description"></p>
             </div>
             <div class="ingredients-container">
-                <img *ngIf="recipe.url_ingredients" src="{{recipe.url_ingredients}}" alt="ingredients_image" id="ingredients-image" >
-                <h2 id="subtitle">What You'll need to make {{recipe.name}}</h2>
+                <img *ngIf="recipe.ingredients.image" src="{{recipe.ingredients.image}}" alt="ingredients_image" id="ingredients-image" >
+                <h2 id="subtitle">{{recipe.ingredients.subtitle}}</h2>
                 <div class="recipe-text">
                     {{recipe.ingredients.introduction}}
                     <ul class="listing">
@@ -43,7 +43,7 @@
                 </div>  
             </div>
             <div class="recipe-container">
-                <h2>{{recipe.name}} Recipe</h2>
+                <h2>{{recipe.steps.subtitle}}</h2>
                 <div class="recipe-text">
                     {{recipe.steps.introduction}}
                     <ol class="listing">
@@ -52,7 +52,7 @@
                         </li>
                     </ol>
                 </div>
-                <img src="{{recipe.url_steps}}" alt="steps_image" id="steps-image">
+                <img src="{{recipe.steps.image}}" alt="steps_image" id="steps-image">
             </div>
             <div class="more-recipes-container">
                 <h2>More {{main_category}} Recipes</h2>

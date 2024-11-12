@@ -1,6 +1,8 @@
+import { EnumCategories } from "./EnumCategories";
+
 export class Category{
     id!:string;
-    name!:string;
+    name!: EnumCategories;
     imageUrl!:string;
     path!:string;
     description?:string;

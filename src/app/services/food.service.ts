@@ -3,6 +3,7 @@ import { Recipe } from '../shared/models/Recipe';
 import { categories_cuisine, categories_ingredient, categories_special, course_categories, sample_categories, sample_icons, sample_recipes} from 'src/data';
 import { Category } from '../shared/models/Category';
 import { Icon } from '../shared/models/Icon';
+import { EnumCategories } from '../shared/models/EnumCategories';
 
 @Injectable({
   providedIn: 'root'
@@ -31,7 +32,7 @@ export class FoodService {
     return this.getAllRecipes().find(recipe => recipe.id == recipeId) ?? new Recipe();
   }
 
-  getRecipeByCategory(category:string):Recipe[]{
+  getRecipeByCategory(category:EnumCategories):Recipe[]{
     return this.getAllRecipes().filter(r => r.categories?.includes(category));
   }
 

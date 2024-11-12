@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { FoodService } from '../services/food.service';
 import { Recipe } from '../shared/models/Recipe';
+import { EnumCategories } from '../shared/models/EnumCategories';
 @Component({
   selector: 'app-recipe-page',
   templateUrl: './recipe-page.component.html',
@@ -10,7 +11,7 @@ import { Recipe } from '../shared/models/Recipe';
 export class RecipePageComponent {
   recipe!: Recipe;
   image!: string;
-  main_category!:string;
+  main_category!:EnumCategories;
   categoryRecipes!:Recipe[];
   recent_recipes!:Recipe[];
 
