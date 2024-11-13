@@ -31,7 +31,7 @@ import { ScrollToTopComponent } from './scroll-to-top/scroll-to-top.component';
     ScrollToTopComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     RouterModule,
     AppRoutingModule,
 
