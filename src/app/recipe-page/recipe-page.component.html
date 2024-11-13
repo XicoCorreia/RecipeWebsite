@@ -11,7 +11,7 @@
             <h1 id="title">{{recipe.name}}</h1>
             <div class="header-by">
                 <a href="#" routerLink="/about-me">
-                    <img src={{image}} alt="About" id="header-image">
+                    <img src={{image}} alt="Portrait of Francisco Correia, author of Nela's Recipes" id="header-image">
                 </a>
                 <p id="header-about"> 
                     <em>by</em><b><a href="#" routerLink="/about-me" > Francisco Correia </a></b> <span id="date">on {{recipe.date}} </span>
@@ -26,12 +26,12 @@
         <div class="container-left">
             <div class="introduction-description-container">
                 <p id="introduction-text" [innerHTML]="recipe.introduction.introduction"></p>
-                <img src="{{recipe.imageUrl}}" alt="{{recipe.name}}" id="first-image">
+                <img src="{{recipe.imageUrl}}" alt="Main image of the recipe: {{recipe.name}}" id="first-image">
                 <h2 *ngIf="recipe.introduction.subtitle" id="subtitle" >{{recipe.introduction.subtitle}}</h2>
                 <p class="recipe-text" [innerHTML] = "recipe.introduction.description"></p>
             </div>
             <div class="ingredients-container">
-                <img *ngIf="recipe.ingredients.image" src="{{recipe.ingredients.image}}" alt="ingredients_image" id="ingredients-image" >
+                <img *ngIf="recipe.ingredients.image" src="{{recipe.ingredients.image}}" alt="Ingredients needed for {{recipe.name}}" id="ingredients-image" >
                 <h2 id="subtitle">{{recipe.ingredients.subtitle}}</h2>
                 <div class="recipe-text">
                     {{recipe.ingredients.introduction}}
@@ -52,7 +52,7 @@
                         </li>
                     </ol>
                 </div>
-                <img src="{{recipe.steps.image}}" alt="steps_image" id="steps-image">
+                <img src="{{recipe.steps.image}}" alt="Step-by-step image for making {{recipe.name}}" id="steps-image">
             </div>
             <div class="more-recipes-container">
                 <h2>More {{main_category}} Recipes</h2>
@@ -60,7 +60,7 @@
                     <div *ngFor="let s of categoryRecipes | slice:0:4" class="grid-item">
                         <article class = "grid-article">
                             <a [routerLink]="'/recipes/' + s.id"> 
-                                <img src="{{s.imageUrl}}" alt={{s.name}} class="image-grid-category">
+                                <img src="{{s.imageUrl}}" alt="Image of recipe {{s.name}} in the {{main_category}} category" class="image-grid-category">
                                 <h3 class="image-title"> {{s.name}} </h3>
                             </a>
                         </article>
@@ -70,7 +70,7 @@
             <div class="recipe-card-container" #target>
                 <div class="recipe-card-header">
                     <div class="main">
-                        <img src="{{recipe.imageUrl}}" alt="{{recipe.name}}" id="recipe-card-image">
+                        <img src="{{recipe.imageUrl}}" alt="Detailed view of the completed {{recipe.name}} recipe" id="recipe-card-image">
                         <div class="recipe-card-description">
                             <h2>{{recipe.name}}</h2>
                             <p class="recipe-text" [innerHTML]="recipe.introduction.description"></p>
@@ -124,7 +124,7 @@
                 </ul>
             </div>
             <div class="about_me_card">
-                <img src={{image}} alt="About" id="about-image">
+                <img src={{image}} alt="Portrait of Francisco Correia, author of Nela's Recipes" id="about-image">
                 <h3>Welcome to Nela's Recipes</h3>
                 <p class="recipe-text">I'm Francisco, and I'm passionate about preparing nutritious and flavorful meals. Additionally, I'm pursuing studies in computer science, 
                     and I have a keen interest in sports and a deep love for traveling.
@@ -137,7 +137,7 @@
                     <div *ngFor="let rr of recent_recipes  | slice:0:4">
                         <article class="grid-article">
                             <a [routerLink]="'/recipes/' + rr.id"> 
-                            <img src="{{rr.imageUrl}}" alt= {{rr.name}} class="image-grid-category" id="image-latest">
+                            <img src="{{rr.imageUrl}}" alt= "Latest recipe: {{rr.name}}" class="image-grid-category" id="image-latest">
                             <h4 class="latest-title"> {{rr.name}} </h4>
                             </a>
                         </article>
