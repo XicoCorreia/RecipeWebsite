@@ -2,12 +2,12 @@
     position: relative;
     margin: 0em auto 3em auto;
     max-width: 1200px;
-    text-align: justify;
 }
 
 .full-width-background{
     margin-bottom: 1em;
     padding-bottom: 3em;
+    text-align: justify;
 }
 
 .route{

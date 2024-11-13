@@ -210,3 +210,22 @@
 .image-grid-category{
     width: 160px;
 }
+
+@media screen and (max-width: 1200px) {
+    .section{
+        margin-top: 1.5em;
+        margin-bottom: 1.5em;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        margin: 0 auto;
+    }
+    .section{
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+}
