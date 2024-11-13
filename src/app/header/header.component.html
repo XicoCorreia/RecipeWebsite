@@ -4,8 +4,7 @@
             <img src="{{icon}}" alt="Nelas Recipes Logo" class="icon-image">
         </a> 
         <nav class="header-menu">
-            <ul>
-
+            <ul class="header-list">
                 <li>
                     <div class="dropdown">
                         <a href="#" class="header-menu-route" routerLink="/recipes">All recipes                       
@@ -33,6 +32,23 @@
                     <a href="#" class="header-menu-route" routerLink="/about-me">About</a> 
                 </li>
             </ul>
+
+             <!-- Mobile Dropdown -->
+             <div class="dropdown-mobile" [ngClass]="{'active': isDropdownOpen}">
+                <a href="#" class="header-menu-route" id="mobile-dropdown-toggle" (click)="toggleDropdown($event)">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" id="menu">
+                        <path d="M5 6L19 6M5 12L19 12M5 18L19 18" stroke="gray" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a> 
+                <div class="dropdown-content-mobile">
+                    <a href="#" routerLink="/recipes" class="sub-list" (click)="closeDropdown()">All recipes</a>
+                    <a href="#" routerLink="/recipes-index" class="sub-list" (click)="closeDropdown()">By category</a>
+                    <a href="#" routerLink="/breakfast-recipes" class="sub-list" (click)="closeDropdown()">Breakfast</a>
+                    <a href="#" routerLink="/main-recipes" class="sub-list" (click)="closeDropdown()">Main Dish</a>
+                    <a href="#" routerLink="/dessert-recipes" class="sub-list" (click)="closeDropdown()">Dessert</a>
+                    <a href="#" routerLink="/about-me" class="sub-list" (click)="closeDropdown()">About</a>
+                </div>
+            </div>
         </nav>
     </div>
 </header>
