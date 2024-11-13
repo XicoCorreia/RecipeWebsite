@@ -38,7 +38,7 @@ export const sample_recipes: Recipe[] = [
             image: 'assets/images/recipes/steps.jpg',
             subtitle: 'Recipe'
         },
-        nutrituional_values: [
+        nutritional_values: [
             {title: "Calories", description: "NDF"},
             {title: "Carbohydrates", description: "NDF"},
             {title: "Protein", description: "NDF"},
@@ -86,7 +86,7 @@ export const sample_recipes: Recipe[] = [
             image: 'assets/images/recipes/steps.jpg',
             subtitle: 'Recipe Apple Turnovers'
         },
-        nutrituional_values: [
+        nutritional_values: [
             {title: "Calories", description: "NDF"},
             {title: "Carbohydrates", description: "NDF"},
             {title: "Protein", description: "NDF"},
@@ -130,7 +130,7 @@ export const sample_recipes: Recipe[] = [
             image: 'assets/images/recipes/steps.jpg',
             subtitle: 'Recipe'
         },
-        nutrituional_values: [
+        nutritional_values: [
             {title: "Calories", description: "NDF"},
             {title: "Carbohydrates", description: "NDF"},
             {title: "Protein", description: "NDF"},
@@ -174,7 +174,7 @@ export const sample_recipes: Recipe[] = [
             image: 'assets/images/recipes/steps.jpg',
             subtitle: 'Recipe'
         },
-        nutrituional_values: [
+        nutritional_values: [
             {title: "Calories", description: "NDF"},
             {title: "Carbohydrates", description: "NDF"},
             {title: "Protein", description: "NDF"},
@@ -218,7 +218,7 @@ export const sample_recipes: Recipe[] = [
             image: 'assets/images/recipes/steps.jpg',
             subtitle: 'Recipe'
         },
-        nutrituional_values: [
+        nutritional_values: [
             {title: "Calories", description: "NDF"},
             {title: "Carbohydrates", description: "NDF"},
             {title: "Protein", description: "NDF"},
@@ -262,7 +262,7 @@ export const sample_recipes: Recipe[] = [
             image: 'assets/images/recipes/steps.jpg',
             subtitle: 'Recipe'
         },
-        nutrituional_values: [
+        nutritional_values: [
             {title: "Calories", description: "NDF"},
             {title: "Carbohydrates", description: "NDF"},
             {title: "Protein", description: "NDF"},
@@ -306,7 +306,7 @@ export const sample_recipes: Recipe[] = [
             image: 'assets/images/recipes/steps.jpg',
             subtitle: 'Recipe'
         },
-        nutrituional_values: [
+        nutritional_values: [
             {title: "Calories", description: "NDF"},
             {title: "Carbohydrates", description: "NDF"},
             {title: "Protein", description: "NDF"},

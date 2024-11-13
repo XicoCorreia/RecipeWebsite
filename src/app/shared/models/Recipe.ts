@@ -11,7 +11,7 @@ export class Recipe{
     ingredients!: IngredientsStepsContent;
     steps!: IngredientsStepsContent;
     
-    nutrituional_values!: TitleDescription[]; 
+    nutritional_values!: TitleDescription[]; 
 }
 
 export class IntroductionContent{
