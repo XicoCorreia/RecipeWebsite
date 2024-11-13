@@ -37,13 +37,16 @@ export class RecipePageComponent implements OnInit, OnDestroy {
         this.main_category = this.recipe.categories[list_length - 1];
         this.categoryRecipes = this.foodService.getRecipeByCategory(this.main_category);
         this.recent_recipes = this.foodService.getAllRecipes();
-
-        // Update meta tags after loading new recipe data
-        this.updateMetaTags();
       }
     });
   }
 
+  ngAfterViewInit(): void {
+
+        // Update meta tags after loading new recipe data
+        this.updateMetaTags();
+  }
+  
   updateMetaTags(): void {
     // Set the dynamic page title and meta tags for the recipe
     this.titleService.setTitle(`${this.recipe.name} | Nela's Recipes`);
