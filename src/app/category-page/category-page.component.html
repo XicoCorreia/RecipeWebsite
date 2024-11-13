@@ -1,15 +1,13 @@
 <div class="container">
     <div class="full-width-background">
-        <div class="route"> 
-            <a href="#" routerLink="/" class="r-home">Home</a> 
-            > {{category.name}}
-        </div>
-        <div class="main-container">
+        <div class="main">
             <img src={{category.imageUrl}} alt="{{category.name}} category image" id="primary-image">
-            <div>
-                <h1>{{category.name}}</h1>
-                <p class="category-description">{{category.description}}</p>
+            <div class="route"> 
+                <a href="#" routerLink="/" class="r-home">Home</a> 
+                > {{category.name}}
             </div>
+            <h1>{{category.name}}</h1>
+            <p class="category-description">{{category.description}}</p>
         </div>
     </div>
     <div *ngIf="subCatRecipes.length != 0" class="section">

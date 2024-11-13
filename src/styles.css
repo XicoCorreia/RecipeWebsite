@@ -96,15 +96,22 @@ h3,h4,h6{
 /*For tablets (768px and below)*/ 
 @media (max-width: 768px) {
     .grid-container {
-        grid-template-columns: repeat(2, 1fr); 
+        grid-template-columns: repeat(3, 1fr); 
     }
     .main-image-container {
         height: 50vh; 
     }
 }
 
+@media (max-width: 500px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+
 /*For tablets (768px and below)*/ 
-@media (max-width: 270px) {
+@media (max-width: 300px) {
     .grid-container {
         grid-template-columns: 1fr; 
     }

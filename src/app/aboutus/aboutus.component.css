@@ -38,7 +38,7 @@ p{
 
 @media screen and (max-width: 1200px) {
     .full-width-background{
-        padding: 0em 1em 2em 1em;
+        padding: 1em 1em 2em 1em;
     }
     .section{
         margin-top: 1.5em;
