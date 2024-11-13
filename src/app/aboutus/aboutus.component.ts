@@ -25,8 +25,8 @@ export class AboutusComponent {
     this.metaService.updateTag({ name: 'description', content: 'Discover the story behind Nela\'s Recipes. Meet Francisco Correia, a passionate cook, traveler, and fitness enthusiast, on his journey from Portugal to Copenhagen.' });
     this.metaService.updateTag({ property: 'og:title', content: 'About Me | Nela\'s Recipes' });
     this.metaService.updateTag({ property: 'og:description', content: 'Meet Francisco, the creator of Nela\'s Recipes, and learn about his passion for cooking and his journey from Portugal to Denmark.' });
-    this.metaService.updateTag({ property: 'og:image', content: 'assets/images/icons/profile-photo.jpg' });
-    this.metaService.updateTag({ property: 'og:url', content: 'https://nelasrecipes.com/assets/images/about.jpg' });
+    this.metaService.updateTag({ property: 'og:image', content: 'https://nelasrecipes.com/assets/images/about.jpg' });
+    this.metaService.updateTag({ property: 'og:url', content: 'https://nelasrecipes.com/about-me' });
 
     // Structured data for the About Me page
     const structuredData = {
@@ -35,7 +35,7 @@ export class AboutusComponent {
       "name": "Francisco Correia",
       "description": "Creator of Nela's Recipes, passionate about cooking, fitness, and travel.",
       "image": "https://nelasrecipes.com/assets/images/about.jpg",  
-      "url": "https://www.nelasrecipes.com/about",
+      "url": "https://www.nelasrecipes.com/about-me",
       "sameAs": [
         "https://www.facebook.com/francisco.correia.39/",  
         "https://www.instagram.com/xicocorreia17/",

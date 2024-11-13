@@ -60,7 +60,7 @@ export class CategoryPageComponent implements OnInit, OnDestroy {
     });
     this.metaService.updateTag({
       property: 'og:url',
-      content: `https://www.nelasrecipes.com/${this.category.name.toLowerCase()}`
+      content: `https://www.nelasrecipes.com/${this.category.path}`
     });
 
     // Structured data for the main category page
@@ -70,7 +70,7 @@ export class CategoryPageComponent implements OnInit, OnDestroy {
       "name": `${this.category.name} Recipes | Nela's Recipes`,
       "description": `Find a curated selection of ${this.category.name.toLowerCase()} recipes on Nela's Recipes.`,
       "image": `https://www.nelasrecipes.com/${this.category.imageUrl}`,
-      "url": `https://www.nelasrecipes.com/${this.category.name.toLowerCase()}`,
+      "url": `https://www.nelasrecipes.com/${this.category.path}`,
       "hasPart": this.subCategories.map((subCategory) => ({
         "@type": "CreativeWork",
         "name": subCategory.name

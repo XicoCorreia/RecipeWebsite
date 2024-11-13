@@ -51,7 +51,7 @@ export class HomeComponent {
 
     this.metaService.updateTag({ property: 'og:title', content: 'Nela\'s Recipes' });
     this.metaService.updateTag({ property: 'og:description', content: 'Explore Nela\'s delicious recipes, from breakfast to dinner, including air fryer recipes and more!' });
-    this.metaService.updateTag({ property: 'og:image', content: 'https://nelasrecipes.com/assets/images/icons/icon.png' }); 
+    this.metaService.updateTag({ property: 'og:image', content: 'https://nelasrecipes.com/assets/images/icons/favicon.png' }); 
     this.metaService.updateTag({ property: 'og:url', content: 'https://www.nelasrecipes.com' });
 
     const structuredData = {
@@ -59,7 +59,7 @@ export class HomeComponent {
       "@type": "WebPage",
       "name": "Nela's Recipes - Home",
       "description": "Explore a wide range of delicious recipes including air fryer recipes, recent recipes, and more.",
-      "image": 'https://nelasrecipes.com/assets/images/icons/icon.png', 
+      "image": 'https://nelasrecipes.com/assets/images/icons/favicon.png', 
       "url": "https://www.nelasrecipes.com",
       "mainEntityOfPage": "https://www.nelasrecipes.com",
       "mainEntity": {
