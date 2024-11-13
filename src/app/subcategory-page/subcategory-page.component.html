@@ -7,7 +7,7 @@
             > {{category.name}}
         </div>
         <div class="main-container">
-            <img src="{{category.imageUrl}}" alt={{category.name}} id="main-image">
+            <img src="{{category.imageUrl}}" alt="{{category.name}} category image" id="main-image">
             <div class="main-title"> 
                 <h1 id="title">{{category.name}}</h1>  
             </div>
@@ -20,7 +20,7 @@
             <div *ngFor="let c of categoryRecipes">
                 <article class="grid-article">
                     <a [routerLink]="'/recipes/' + c.id"> 
-                        <img src="{{c.imageUrl}}" alt={{c.name}} class="image-grid-recipe">
+                        <img src="{{c.imageUrl}}" alt="{{c.name}} recipe" class="image-grid-recipe">
                         <h3 class="image-title"> {{c.name}} </h3>
                         </a>
                 </article>

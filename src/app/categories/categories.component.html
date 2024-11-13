@@ -13,7 +13,7 @@
             <div *ngFor="let c of courses" class="grid-item">
                 <article class = "grid-article">
                     <a [routerLink]="'/' + c.path"> 
-                        <img src="{{c.imageUrl}}" alt="{{c.name}}" class="image-grid-category">
+                        <img src="{{c.imageUrl}}" alt="Recipes for {{c.name}} - {{c.name}} course" class="image-grid-category">
                         <h3 class="image-title">{{c.name}}</h3>
                     </a>
                 </article>
@@ -26,7 +26,7 @@
             <div *ngFor="let d of desserts" class="grid-item">
                 <article class = "grid-article">
                     <a [routerLink]="'/' + d.path"> 
-                        <img src="{{d.imageUrl}}" alt="{{d.name}}" class="image-grid-category">
+                        <img src="{{d.imageUrl}}" alt="{{d.name}} dessert recipe" class="image-grid-category">
                         <h3>{{d.name}}</h3>
                     </a>
                 </article>
@@ -39,7 +39,7 @@
             <div *ngFor="let s of ingredient" class="grid-item">
                 <article class = "grid-article">
                     <a [routerLink]="'/' + s.path"> 
-                        <img src="{{s.imageUrl}}" alt="{{s.name}}" class="image-grid-category">
+                        <img src="{{s.imageUrl}}" alt="Recipes with {{s.name}}" class="image-grid-category">
                         <h3 class="image-title">{{s.name}}</h3>
                     </a>
                 </article>
@@ -52,7 +52,7 @@
             <div *ngFor="let s of cuisine" class="grid-item">
                 <article class = "grid-article">
                     <a [routerLink]="'/' + s.path"> 
-                        <img src="{{s.imageUrl}}" alt="{{s.name}}" class="image-grid-category">
+                        <img src="{{s.imageUrl}}" alt="{{s.name}} cuisine recipes" class="image-grid-category">
                         <h3 class="image-title">{{s.name}}</h3>
                     </a>
                 </article>
@@ -65,7 +65,7 @@
             <div *ngFor="let s of special" class="grid-item">
                 <article class = "grid-article">
                     <a [routerLink]="'/' + s.path"> 
-                        <img src="{{s.imageUrl}}" alt="{{s.name}}" class="image-grid-category">
+                        <img src="{{s.imageUrl}}" alt="Special recipes: {{s.name}}" class="image-grid-category">
                         <h3 class="image-title">{{s.name}}</h3>
                     </a>
                 </article>

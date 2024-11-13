@@ -5,7 +5,7 @@
             > {{category.name}}
         </div>
         <div class="main-container">
-            <img src={{category.imageUrl}} alt={{category.name}} id="primary-image">
+            <img src={{category.imageUrl}} alt="{{category.name}} category image" id="primary-image">
             <div>
                 <h1>{{category.name}}</h1>
                 <p class="category-description">{{category.description}}</p>
@@ -17,7 +17,7 @@
             <div *ngFor="let c of subCategories">
                 <article class="grid-article">
                     <a [routerLink]="'/' + c.path"> 
-                        <img src="{{c.imageUrl}}" alt={{c.name}} class="image-grid-subcategory">
+                        <img src="{{c.imageUrl}}" alt="{{c.name}} subcategory image" class="image-grid-subcategory">
                         <p id="subcategory_name"> {{c.name}} </p>
                         </a>
                 </article>
@@ -33,7 +33,7 @@
             <div *ngFor="let s of subCatRecipes[i]">
                 <article class="grid-article">
                     <a [routerLink]="'/recipes/' + s.id"> 
-                        <img src="{{s.imageUrl}}" alt={{s.name}} class="image-grid-recipe">
+                        <img src="{{s.imageUrl}}" alt="{{s.name}} recipe" class="image-grid-recipe">
                         <h3 class="image-title"> {{s.name}} </h3>
                         </a>
                 </article>
@@ -46,7 +46,7 @@
             <div *ngFor="let c of categoryRecipes">
                 <article class="grid-article">
                     <a [routerLink]="'/recipes/' + c.id"> 
-                        <img src="{{c.imageUrl}}" alt={{c.name}} class="image-grid-recipe">
+                        <img src="{{c.imageUrl}}" alt="{{c.name}} recipe" class="image-grid-recipe">
                         <h3 class="image-title"> {{c.name}} </h3>
                         </a>
                 </article>
