@@ -55,7 +55,7 @@ p{
 
     #primary-image{
         max-width: 100%;
-        margin: 1em 0em;
+        margin: 0em 0em 1em 0em;
     }
     .full-width-background{
         margin-bottom: 0.5em;
