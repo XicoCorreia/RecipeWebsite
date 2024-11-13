@@ -57,24 +57,24 @@
             <div class="more-recipes-container">
                 <h2>More {{main_category}} Recipes</h2>
                 <div class="grid-container">
-                    <div *ngFor="let s of categoryRecipes | slice:0:4">
-                        <article >
+                    <div *ngFor="let s of categoryRecipes | slice:0:4" class="grid-item">
+                        <article class = "grid-article">
                             <a [routerLink]="'/recipes/' + s.id"> 
                                 <img src="{{s.imageUrl}}" alt={{s.name}} class="image-grid-category">
                                 <h3 class="image-title"> {{s.name}} </h3>
-                                </a>
+                            </a>
                         </article>
                     </div>
                 </div>
             </div>
             <div class="recipe-card-container" #target>
                 <div class="recipe-card-header">
-                    <div class="recipe-card-description">
-                        <h2>{{recipe.name}}</h2>
-                        <p class="recipe-text" [innerHTML]="recipe.introduction"></p>
-                    </div>
-                    <div class="image-card">
+                    <div class="main">
                         <img src="{{recipe.imageUrl}}" alt="{{recipe.name}}" id="recipe-card-image">
+                        <div class="recipe-card-description">
+                            <h2>{{recipe.name}}</h2>
+                            <p class="recipe-text" [innerHTML]="recipe.introduction.description"></p>
+                        </div>
                     </div>
                 </div>
                 <div class="recipe-card">
@@ -137,7 +137,7 @@
                     <div *ngFor="let rr of recent_recipes  | slice:0:4">
                         <article class="grid-article">
                             <a [routerLink]="'/recipes/' + rr.id"> 
-                            <img src="{{rr.imageUrl}}" alt= {{rr.name}} class="image-grid-category">
+                            <img src="{{rr.imageUrl}}" alt= {{rr.name}} class="image-grid-category" id="image-latest">
                             <h4 class="latest-title"> {{rr.name}} </h4>
                             </a>
                         </article>

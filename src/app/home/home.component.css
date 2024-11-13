@@ -141,7 +141,7 @@
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 290px) {
     .title-button-container{
         font-size: 0.5em;
         margin-bottom: 0.2em;
