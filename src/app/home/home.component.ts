@@ -50,7 +50,7 @@ export class HomeComponent {
     this.metaService.updateTag({ name: 'description', content: 'Explore Nela\'s delicious recipes, from breakfast to dinner, including air fryer recipes and more!' });
 
     this.metaService.updateTag({ property: 'og:title', content: 'Nela\'s Recipes' });
-    this.metaService.updateTag({ property: 'og:description', content: 'Explore Nela\'s delicious recipes, from breakfast to dinner, including air fryer recipes and more!' });
+    this.metaService.updateTag({ property: 'og:description', content: 'Explore a wide range of delicious recipes including air fryer recipes, recent recipes, and more.' });
     this.metaService.updateTag({ property: 'og:image', content: 'https://nelasrecipes.com/assets/images/icons/favicon.png' }); 
     this.metaService.updateTag({ property: 'og:url', content: 'https://www.nelasrecipes.com' });
 
