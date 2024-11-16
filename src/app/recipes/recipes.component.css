@@ -1,12 +1,12 @@
 .container {
     position: relative;
-    margin: 1em auto 3em auto;
+    margin: 1rem auto 3rem auto;
     max-width: 1200px;
 }
 
 @media screen and (max-width: 1200px) {
     .container{
-        margin-left: 1em;
-        margin-right: 1em;
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
 }

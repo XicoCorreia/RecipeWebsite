@@ -7,62 +7,53 @@
 
 .full-width-background{
     margin-bottom: 1em;
-    padding-bottom: 3em;
+    padding-bottom: 2em;
+}
 
+#title{
+    font-family: Apple Chancery, cursive;
+    font-size: 3rem;
+    color: #972d21;
 }
 
 .route{
-    padding-top: 1em;
-}
-
-p{
-    margin-top: 0.5em;
+    padding-top: 1rem;
 }
 
 .main{
     max-width: 1200px;
-    min-height: 520px;  
+    min-height: 450px;  
     margin: 0 auto;
-}
-
-.section{
-    margin-bottom: 2em;
 }
 
 #primary-image{
     float: left;
-    max-width: 520px;
-    margin-right: 2em;
+    max-height: 450px;
+    margin-right: 6rem;
     padding-top: 0;
 }
 
 @media screen and (max-width: 1200px) {
     .full-width-background{
-        padding: 1em 1em 2em 1em;
+        padding: 1rem 1rem 2rem 1rem;
     }
     .section{
-        margin-top: 1.5em;
-        margin-bottom: 1.5em;
-        padding-left: 1em;
-        padding-right: 1em;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 }
 
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 768px) {
     .container {
         margin: 0 auto;
     }
 
     #primary-image{
         max-width: 100%;
-        margin: 0em 0em 1em 0em;
+        max-height: none;
+        margin: 0rem 0rem 1rem 0rem;
     }
     .full-width-background{
-        margin-bottom: 0.5em;
-        padding-bottom: 1em;
-    }
-    .section{
-        margin-top: 1em;
-        margin-bottom: 1em;
+        padding-bottom: 0.5rem;
     }
 }

@@ -6,10 +6,13 @@
     box-sizing: border-box;
 }
 
-body{
+body, p{
     margin: 0;
     font-family: "Segoe UI", Arial, sans-serif;
-    font-size: 20px; 
+}
+
+p{
+    margin-top: 0.5rem;
 }
 
 a{
@@ -17,12 +20,7 @@ a{
     color:#a62031;
 }
 
-h1, h2{
-    font-family: 'Montserrat';
-    margin: 0 
-}
-
-h3,h4,h6{
+h1, h2, h3, h4, h5, h6{
     font-family: 'Montserrat';
     margin: 0 
 }
@@ -54,7 +52,7 @@ h3,h4,h6{
 .grid-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr); 
-    gap: 1em; 
+    gap: 2rem; 
     margin: 1em auto 0 auto;
 }
 
@@ -90,7 +88,7 @@ h3,h4,h6{
 }
 
 .section{
-    margin: 2em auto 3em auto;
+    margin: 1rem auto 2rem auto;
 }
 
 /*For tablets (768px and below)*/ 
@@ -107,6 +105,7 @@ h3,h4,h6{
         grid-template-columns: repeat(2, 1fr); 
         font-size: 0.65em;
     }
+    
 }
 
 /*For tablets (768px and below)*/ 
