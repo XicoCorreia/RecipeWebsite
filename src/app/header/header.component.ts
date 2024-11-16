@@ -19,9 +19,10 @@ export class HeaderComponent {
 
   // Toggle the dropdown visibility on click
   toggleDropdown(event: Event): void {
-    event.preventDefault();  // Prevent default behavior of the link
-    this.isDropdownOpen = !this.isDropdownOpen;  // Toggle the dropdown visibility
+    event.preventDefault(); // Prevent default behavior of the link
+    this.isDropdownOpen = !this.isDropdownOpen; // Toggle the dropdown visibility
   }
+  
 
   // Close the dropdown when an option is selected
   closeDropdown(): void {

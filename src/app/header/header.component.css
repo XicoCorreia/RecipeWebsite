@@ -12,8 +12,8 @@ header{
 
 .icon-image{
   display: block;
-  height: 5em;
-  padding: 1em 0;
+  height: 5rem;
+  padding: 1rem 0;
 }
 
 .header-menu{
@@ -35,10 +35,10 @@ header{
     display: flex; 
     align-items: center; 
     height: 100%;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
     color:#a62031;
-    font-size: 1.3em;
+    font-size: 1.5rem;
 }
 
 .header-menu-route:hover{
@@ -63,7 +63,7 @@ header{
 
 .sub-list{
   color: rgb(255,240,219);
-  padding: 12px 16px;
+  padding: 0.75rem 1rem;
   text-decoration: none;
   display: block;
 }
@@ -101,13 +101,36 @@ header{
   display: block;
 }
 
+#menu path {
+  stroke: #a62031; /* Red color */
+}
+
+#mobile-dropdown-toggle:hover #menu path {
+  stroke: rgb(255, 240, 219); /* White color when hovered */
+}
+
+#mobile-dropdown-toggle:hover {
+  background-color: #a62031; /* Red background when hovered */
+}
+
+
+.dropdown-mobile.active {
+  background-color: #a62031; /* Red background */
+}
+
+
+.dropdown-mobile.active #menu path,
+.dropdown-mobile.active #menu-close path {
+  stroke: rgb(255, 240, 219); /* White stroke for visibility */
+}
+
 @media (max-width: 1200px) {
   .container {
-    margin-left: 1em;
+    margin-left: 1rem;
   }
 }
 
-@media (max-width: 1070px) {
+@media (max-width: 900px) {
   .header-list {
     display: none;
   }
@@ -118,7 +141,7 @@ header{
 
   .dropdown-content-mobile a {
     color: rgb(255, 240, 219);
-    padding: 14px 18px;
+    padding: 0.75rem 1rem;
     text-decoration: none;
     display: block;
   }
@@ -131,69 +154,63 @@ header{
 
 @media (max-width: 565px) {
   .icon-image {
-    height: 4em;
-    padding: 0.75em 0;
+    height: 4rem;
+    padding: 0.75rem 0;
   }
 
   .header-menu {
-    height: 4em; /* Adjust the height to match the icon size */
+    height: 4rem; /* Adjust the height to match the icon size */
   }
   .dropdown-content-mobile a {
-    padding: 10px 12px;  /* Reduced padding */
-    font-size: 0.9em;  /* Slightly smaller font size */
+    padding: 0.6rem 0.75rem;  /* Reduced padding */
+    font-size: 0.9rem;  /* Slightly smaller font size */
+  }
+
+  #menu, #menu-close {
+    height: 40px;
+    width: 40px;
   }
 }
 
 @media (max-width: 425px) {
   .icon-image {
-    height: 3em;
-    padding: 0.5em 0;
+    height: 3rem;
+    padding: 0.5rem 0;
   }
 
   .header-menu {
-    height: 3em; /* Adjust header size */
+    height: 3rem; /* Adjust header size */
   }
 
-  #menu {
+  #menu, #menu-close {
     height: 32px;
     width: 32px;
   }
   .dropdown-content-mobile a {
-    padding: 8px 10px;  /* Reduced padding */
-    font-size: 0.8em;  /* Slightly smaller font size */
+    font-size: 0.8rem;  /* Slightly smaller font size */
   }
 }
 
 @media (max-width: 350px) {
   .icon-image {
-    height: 2.5em;
+    height: 2.5rem;
   }
 
   .header-menu {
-    height: 2.5em;
+    height: 2.5rem;
   }
   .dropdown-content-mobile a {
-    padding: 6px 8px;  /* Reduced padding */
-    font-size: 0.7em;  /* Slightly smaller font size */
+    font-size: 0.7rem;  /* Slightly smaller font size */
   }
 }
 
 @media (max-width: 275px) {
-  .icon-image {
-    height: 2em;
-  }
-
-  .header-menu {
-    height: 2em;
-  }
-
   #menu {
-    height: 16px;
-    width: 16px;
+    height: 24px;
+    width: 24px;
   }
 
   .dropdown-content-mobile a {
-    padding: 4px 6px;  /* Reduced padding */
-    font-size: 0.6em;  /* Slightly smaller font size */
+    font-size: 0.6rem;  /* Slightly smaller font size */
   }
 }
