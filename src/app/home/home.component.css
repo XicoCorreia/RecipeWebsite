@@ -35,7 +35,7 @@
 }
 
 #main-text{
-    margin-bottom: 1rem;
+    margin-bottom: 1.25rem;
     font-size: 2rem;  
 }
 
@@ -91,7 +91,7 @@
 
     #main-text{
         font-size: 1.5rem; 
-        margin-bottom: 0.75rem; 
+        margin-bottom: 1rem; 
     }
 
     #main-button{
@@ -108,7 +108,7 @@
 @media (max-width: 545px) {
     #main-text{
         font-size: 1.25rem; 
-        margin-bottom: 0.5rem;
+        margin-bottom: 0.75rem;
     }
 
     #main-button{
@@ -119,7 +119,7 @@
         height: 350px; 
     }
     .title-button-container{
-        font-size: 0.75rem;
+        font-size: 0.5rem;
     }
 }
 
@@ -129,7 +129,7 @@
     }
     #main-text{
         font-size: 1rem;  
-        margin-bottom: 0.1rem;
+        margin-bottom: 0.25rem;
     }
     #main-button{
         font-size: 0.5rem;
