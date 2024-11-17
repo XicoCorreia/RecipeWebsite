@@ -5,13 +5,8 @@
     text-align: justify;
 }
 
-.full-width-background{
-    margin-bottom: 1em;
-    padding-bottom: 2em;
-}
-
 #title{
-    font-family: Apple Chancery, cursive;
+    font-family: 'Apple Chancery', 'Segoe Script', 'Comic Sans MS', cursive;
     font-size: 3rem;
     color: #972d21;
 }
@@ -34,9 +29,6 @@
 }
 
 @media screen and (max-width: 1200px) {
-    .full-width-background{
-        padding: 1rem 1rem 2rem 1rem;
-    }
     .section{
         padding-left: 1rem;
         padding-right: 1rem;

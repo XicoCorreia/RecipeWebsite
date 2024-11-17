@@ -30,7 +30,6 @@
 @media (max-width: 545px) {
     .grid-container {
         grid-template-columns: repeat(2, 1fr); 
-        font-size: 0.65rem;
     }
     
 }
@@ -39,6 +38,5 @@
 @media (max-width: 290px) {
     .grid-container {
         grid-template-columns: 1fr; 
-        font-size: 0.55rem;
     }
 }

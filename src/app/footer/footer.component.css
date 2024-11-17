@@ -32,3 +32,24 @@ li{
     font-size: 0.75rem;
     text-align: center;
 }
+
+@media (max-width: 768px) {
+    .copyright{
+        font-size: 0.65rem;
+    }
+
+}
+
+@media (max-width: 545px) {
+    .copyright{
+        font-size: 0.55rem;
+    }
+
+}
+
+@media (max-width: 290px) {
+    .copyright{
+        padding-top: 0.2rem;
+        font-size: 0.4rem;
+    }
+}
