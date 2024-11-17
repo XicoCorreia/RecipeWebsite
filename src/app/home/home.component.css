@@ -1,19 +1,19 @@
 .container {
     position: relative;
-    margin: 1em auto 3em auto;
+    margin: 1rem auto 3rem auto;
     max-width: 1200px;   
 }
 
 .main-image-container {
     position: relative;
-    height: 70vh; 
+    max-width: 1200px;  
+    height: 650px; 
 }
 
 .main-image {
-    width: 100%;
-    max-height: 100%; 
+    width: 100%; 
+    height: 100%;
     object-fit: cover;
-    object-position: 0; 
 }
 
 .main-text-button-container {
@@ -29,27 +29,27 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    padding-left: 3em;
+    padding-left: 3rem;
     color:white;
+    max-width: 90%;
 }
 
 #main-text{
-    margin-bottom: 0.5em;
-    font-size: 2em;  
+    margin-bottom: 1rem;
+    font-size: 2rem;  
 }
 
 #main-button{
     color: white;
     background-color: #a62031;
-    padding: 1em;
-    font-size: 0.75em;
-    border-radius: 0.25em;
+    padding: 0.75rem;
+    border-radius: 0.25rem;
     box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
 }
 
 .categories{
-    margin-top: 3em;
-    padding: 1em;
+    margin-top: 3rem;
+    padding: 1rem;
     background-color: rgb(255,240,219,0.6);
     box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
 }
@@ -65,95 +65,96 @@
 }
 
 @media screen and (max-width: 1200px) {
-    .section{
-        margin: 1.5em 1em;
+    .section, .main-image-container{
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
-    .container {
-        margin: 0 auto;
-    }
+
     .main-image-container {
-        height: 60vh; 
+        height: 550px; 
     }
 }
 
 @media screen and (max-width: 768px) {
-    .section{
-        margin-top: 1em;
-        margin-bottom: 1em;
+    .main-image-container{
+        margin-left: 0rem;
+        margin-right: 0rem;
     }
+
+    .container {
+        margin: 0 auto;
+    }
+
     .main-text-button {
-        padding-left: 2em;
+        padding-left: 2rem;
     }
 
     #main-text{
-        font-size: 1.5em; 
-        margin-bottom: 0.4em; 
+        font-size: 1.5rem; 
+        margin-bottom: 0.75rem; 
     }
 
     #main-button{
-        padding: 1em;
-        font-size: 0.6em;
+        font-size: 0.8rem;
     }
 
     .main-image-container {
-        height: 50vh; 
+        height: 450px; 
     }
 
 }
 
 
 @media (max-width: 545px) {
+    #main-text{
+        font-size: 1.25rem; 
+        margin-bottom: 0.5rem;
+    }
+
+    #main-button{
+        font-size: 0.7rem;
+        padding: 0.5rem;
+    }
     .main-image-container {
-        height: 43vh; 
+        height: 350px; 
     }
     .title-button-container{
-        font-size: 0.85em;
+        font-size: 0.75rem;
     }
 }
 
 @media screen and (max-width: 450px) {
-    .title-button-container{
-        font-size: 0.75em;
-    }
     .main-text-button {
-        padding-left: 1em;
+        padding-left: 1.5rem;
     }
     #main-text{
-        font-size: 1em;  
-        margin-bottom: 0.3em;
+        font-size: 1rem;  
+        margin-bottom: 0.1rem;
     }
     #main-button{
-        padding: 1em;
-        font-size: 0.5em;
+        font-size: 0.5rem;
+        padding: 0.4rem;
     }
     .main-image-container {
-        height: 35vh; 
-    }
-}
-
-/*For tablets (768px and below)*/ 
-@media (max-width: 390px) {
-    .main-image-container {
-        height: 30vh; 
+        height: 275px; 
     }
     .title-button-container{
-        font-size: 0.6em;
+        font-size: 0.6rem;
     }
 }
 
 @media screen and (max-width: 290px) {
+    .main-text-button {
+        padding-left: 1rem;
+    }
     .title-button-container{
-        font-size: 0.5em;
-        margin-bottom: 0.2em;
+        font-size: 0.55rem;
+        margin-bottom: 0.2rem;
     }
     #main-button{
-        font-size: 0.4em;
+        font-size: 0.4rem;
     }
     .main-image-container {
-        height: 25vh; 
+        height: 225px; 
     }
 }
-
-
-
-
