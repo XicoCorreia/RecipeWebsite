@@ -11,10 +11,6 @@
     color: #972d21;
 }
 
-.route{
-    padding-top: 1rem;
-}
-
 .main{
     max-width: 1200px;
     min-height: 450px;  
@@ -29,10 +25,11 @@
 }
 
 @media screen and (max-width: 1200px) {
-    .section{
+    .section, .full-width-background{
         padding-left: 1rem;
         padding-right: 1rem;
     }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -46,6 +43,14 @@
         margin: 0rem 0rem 1rem 0rem;
     }
     .full-width-background{
-        padding-bottom: 0.5rem;
+        padding-bottom: 1rem;
+        padding-top: 0.75rem;
+    }
+}
+
+@media screen and (max-width: 545px) {
+    .full-width-background{
+        padding-top: 0.5rem;
+        padding-bottom: 0.75rem;
     }
 }

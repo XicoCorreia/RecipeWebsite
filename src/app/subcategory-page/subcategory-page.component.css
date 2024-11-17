@@ -41,13 +41,14 @@
 }
 
 @media (max-width: 1200px) {
-    .section, #main-text  {
+    .section, .full-width-background  {
         padding-left: 1rem;
         padding-right: 1rem; 
     }
 }
 
 @media (max-width: 768px) {
+
     #title {
         font-size: 2rem;
     }
@@ -60,6 +61,9 @@
     #main-text{ 
         margin-top: 1.5rem;
     }
+    .full-width-background{
+        padding-top: 0.75rem;
+    }
 }
 
 @media (max-width: 545px){
@@ -68,6 +72,9 @@
         margin-top: 1rem;
     }
 
+    .full-width-background{
+        padding-top: 0.5rem;
+    }
 }
 
 @media (max-width: 290px) {
@@ -80,5 +87,4 @@
     .main-container{
         height: 125px;
     }
-    
 }

@@ -28,7 +28,7 @@ h1, h2, h3, h4, h5, h6{
     font-family:'Ruda', sans-serif;
     color: #a62031;
     font-weight: bold;
-    padding-bottom: 0.75em;
+    padding-bottom: 0.75rem;
     max-width: 1200px;
     margin: auto;
 }
@@ -96,12 +96,18 @@ h1, h2, h3, h4, h5, h6{
         gap: 1rem; 
         font-size: 0.8em;
     }
+    .route{
+        font-size: 0.8rem;
+    }
 
 }
 
 @media (max-width: 545px) {
     .grid-container {
         grid-template-columns: repeat(2, 1fr); 
+    }
+    .route{
+        font-size: 0.6rem;
     }
     
 }

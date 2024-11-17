@@ -18,6 +18,7 @@
 .route{
     max-width: 1200px;
     margin: auto;
+    font-size: 1rem;
 }
 
 
@@ -256,6 +257,10 @@
     .header{
         margin-bottom: 1.5rem;
     }
+    .route{
+        padding-bottom: 0.5rem;
+        font-size: 0.6rem;
+    }
     .full-width-background{
         font-size: 0.6rem;
         padding-left: 1rem;
@@ -289,7 +294,12 @@
 
 @media screen and (max-width: 545px) { 
 
-    .full-width-background{
+    .full-width-backgroun{
+        font-size: 0.55rem;
+    }
+
+    .route{
+        padding-bottom: 0.25rem;
         font-size: 0.55rem;
     }
 
@@ -312,13 +322,5 @@
     #header-image{
         width: 35px;
         height: 35px;
-    }
-}
-
-
-
-@media (max-width: 290px) {
-    .full-width-background{
-        font-size: 0.55rem;
     }
 }

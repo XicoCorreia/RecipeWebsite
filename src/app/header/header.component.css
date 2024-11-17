@@ -150,17 +150,18 @@ header{
     background-color: #a62031;
     color: rgb(255, 240, 219);
   }
+  .header-menu {
+    height: 4rem; /* Adjust the height to match the icon size */
+  }
 }
 
-@media (max-width: 565px) {
+@media (max-width: 450px) {
   .icon-image {
     height: 4rem;
     padding: 0.75rem 0;
   }
 
-  .header-menu {
-    height: 4rem; /* Adjust the height to match the icon size */
-  }
+
   .dropdown-content-mobile a {
     padding: 0.6rem 0.75rem;  /* Reduced padding */
     font-size: 0.9rem;  /* Slightly smaller font size */
@@ -172,14 +173,14 @@ header{
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 320px) {
   .icon-image {
     height: 3rem;
     padding: 0.5rem 0;
   }
 
   .header-menu {
-    height: 3rem; /* Adjust header size */
+    height: 3.5rem; /* Adjust header size */
   }
 
   #menu, #menu-close {
@@ -191,7 +192,8 @@ header{
   }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 250px) {
+
   .icon-image {
     height: 2.5rem;
   }
@@ -199,17 +201,7 @@ header{
   .header-menu {
     height: 2.5rem;
   }
-  .dropdown-content-mobile a {
-    font-size: 0.7rem;  /* Slightly smaller font size */
-  }
-}
-
-@media (max-width: 275px) {
-  #menu {
-    height: 24px;
-    width: 24px;
-  }
-
+  
   .dropdown-content-mobile a {
     font-size: 0.6rem;  /* Slightly smaller font size */
   }
