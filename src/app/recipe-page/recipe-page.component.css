@@ -1,6 +1,6 @@
 .container {
     position: relative;
-    margin: 0 auto 3em auto;
+    margin: 0 auto 3rem auto;
     max-width: 1200px;
 }
 
@@ -10,9 +10,9 @@
     left: 50%;
     transform: translateX(-50%);
     background-color: rgb(255,240,219,0.3);
-    padding-top: 1em;
-    padding-bottom: 2em ;
-    margin-bottom: 2em;
+    padding-top: 1rem;
+    padding-bottom: 2rem ;
+    margin-bottom: 2rem;
 }
 
 .route{
@@ -24,11 +24,12 @@
 .header{
     max-width: 1200px;
     margin: 0 auto;
+    margin-bottom: 2rem;
 }
 
 #title{
-    font-size: 3em;
-    margin-bottom: 0.25em;
+    font-size: 3rem;
+    margin-bottom: 0.25rem;
 }
 
 .header-by {
@@ -37,31 +38,30 @@
 }
 
 #header-image{
-    aspect-ratio : 1 / 1;
-    width: 3.5em;
+    width: 55px;
+    height: 55px;
     border-radius: 50%;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 #header-about{
-    margin: 0 0 0 1em ;
+    margin: 0 0 0 1rem ;
 }
 
 #date{
-    font-size: 0.75em;
+    font-size: 0.75rem;
     color: #A9A9A9;
 }
 
 #jump-container{
     max-width: 1200px;
-    margin: 2em auto 0 auto;
-    
+    margin: 0rem auto; 
 }
 
 .btn{
     color: white;
     background-color: #a62031;
-    padding: 1em;
+    padding: 1rem;
 }
 
 .btn:hover{
@@ -71,7 +71,7 @@
 .container-recipe{
     display: grid;
     grid-template-columns: 2fr 1fr;
-    gap:2em
+    gap:2rem
 }
 
 .container-left p {
@@ -80,7 +80,7 @@
 
 #introduction-text{
     margin-top: 0;
-    margin-bottom: 1em;
+    margin-bottom: 1rem;
 }
 
 #first-image{
@@ -91,38 +91,34 @@
     margin-bottom: 0;
 }
 
-.recipe-text{
-    margin:0;
-    margin-top: 1em;
-    margin-bottom: 1em;
-}
 
 #subtitle{
-    margin-top: 40px;
+    margin-top: 2rem;
+}
+
+
+#ingredients-image{
+    width: 100%;
+    margin-top: 1rem;
 }
 
 #steps-image{
     width: 100%;
-    margin-top: 1em;
-    margin-bottom: 2em;
-}
-
-#ingredients-image{
-    width: 100%;
-    margin-top: 1em;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
 }
 
 .more-recipes-container, .ingredients-container{
-    margin-bottom: 2em;
+    margin-bottom: 2rem;
 }
 
 .listing{
-    margin: 0.5em 0;
+    margin: 0.5rem 0;
 }
 
 .nutritional{
     list-style-type: none;
-    padding-left: 1em ;
+    padding-left: 1rem ;
 }
 
 .recipe-card-container{
@@ -134,7 +130,7 @@
 
 .recipe-card-header{
     background-color: rgb(255,240,219,0.5);
-    padding: 2em;
+    padding: 2rem;
     border-bottom: 2px solid #a62031;
 }
 
@@ -150,18 +146,18 @@
     object-position: 0%;
     float: right;
     max-width: 250px;
-    margin-left: 2em;
-    padding-top: auto;
+    margin-left: 2rem;
+
 }
 
 .recipe-card{
-    margin: 2em;
+    margin: 2rem;
 }
 
 .nutritional-card{
     border: 2px solid #a62031;
-    margin-bottom: 2em;
-    padding: 1em;
+    margin-bottom: 2rem;
+    padding: 1rem;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
@@ -172,10 +168,10 @@
 .about_me_card{
     border: 2px solid #a62031;
     text-align: center;
-    padding: 1em;
-    padding-bottom: 2em;
+    padding: 1rem;
+    padding-bottom: 2rem;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    margin-bottom: 2em;
+    margin-bottom: 2rem;
 }
 
 #about-image{
@@ -188,14 +184,14 @@
 
 #p-btn{
     text-align: center;
-    margin-top: 2em;
+    margin-top: 2rem;
 }
 
 .grid-container-latest {
     display: grid;
     grid-template-columns: repeat(1, 1fr); 
-    gap: 1em; 
-    margin-top: 1em;
+    gap: 1rem; 
+    margin-top: 1rem;
 }
 
 .latest a{
@@ -203,8 +199,8 @@
 }
 
 .latest-title{
-    padding-top: 0.5em;
-    padding-left: 1em;
+    padding-top: 0.5rem;
+    padding-left: 1rem;
 }
 
 #image-latest{
@@ -213,20 +209,25 @@
 
 @media screen and (max-width: 1200px) {
     .container {
-        margin: 0 1em 2em 1em;
+        margin: 0 1rem 2rem 1rem;
     }
 
     .full-width-background{
-        padding-left: 1em;
-        padding-right: 1em;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 }
 
 @media screen and (max-width: 995px) { 
+    .full-width-background{
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-bottom: 2rem;
+    }
     .container {
-        margin: 0 auto 2em auto;              
-        padding-left: 1em;          
-        padding-right: 1em;         
+        margin: 0 auto 3rem auto;              
+        padding-left: 1rem;          
+        padding-right: 1rem;         
         max-width: 664px;            
     }
     .container-right{
@@ -239,49 +240,85 @@
     .container-left {
         width: 100%; 
     }
-    .full-width-background{
-        font-size: 0.75em;
-    }
     .recipe-card-container{
-        font-size: 0.75em;
+        font-size: 0.75rem;
     }
     #primary-image{
         max-width: 175px;
     }
+    #recipe-card-image{
+        max-width: 175px;
+    }
+
 }
 
-@media screen and (max-width: 664px) { 
-
+@media screen and (max-width: 664px) {
+    .header{
+        margin-bottom: 1.5rem;
+    }
     .full-width-background{
-        font-size: 0.6em;
+        font-size: 0.6rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 1.5rem;
     }
     .more-recipes-container, .ingredients-container, .introduction-description-container{
-        margin-bottom: 1em;
+        margin-bottom: 1rem;
     }
     #subtitle{
-        margin-top: 1em;
+        margin-top: 1rem;
     }
-
+    .btn{
+        padding: 0.75rem;
+    }
+    #title{
+        font-size: 2.5rem;
+    }
+    .full-width-background{
+        font-size: 0.75rem;
+    }
+    #header-image{
+        width: 45px;
+        height: 45px;
+    }
+    #header-about {
+        margin-left: 0.75rem 
+    }
 }
 
 
-@media screen and (max-width: 550px) { 
+@media screen and (max-width: 545px) { 
 
     .full-width-background{
-        font-size: 0.55em;
+        font-size: 0.55rem;
     }
 
     .introduction-description-container, .ingredients-container, .recipe-container {
-        font-size: 0.8em;
-        margin-bottom: 0.5em;
+        font-size: 0.8rem;
+        margin-bottom: 0.5rem;
     }
     #subtitle{
-        margin-top: 0.5em;
-        margin-bottom: 0.5em;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
     }
     #recipe-card-image{
         max-width: 100%;
-        margin: 0em 0em 1em 0em;
+        margin: 0rem 0rem 1rem 0rem;
         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+    #title{
+        font-size: 2rem;
+    }
+    #header-image{
+        width: 35px;
+        height: 35px;
+    }
+}
+
+
+
+@media (max-width: 290px) {
+    .full-width-background{
+        font-size: 0.55rem;
     }
 }
