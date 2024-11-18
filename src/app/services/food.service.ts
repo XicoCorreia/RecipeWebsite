@@ -43,7 +43,7 @@ export class FoodService {
   }
 
   getAbout(): string {
-    return 'assets/images/about.jpg';
+    return 'assets/images/icons/francisco.jpg';
   }
 
   getCourseCategories():Category[] {
