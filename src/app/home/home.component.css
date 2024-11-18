@@ -7,7 +7,7 @@
 .main-image-container {
     position: relative;
     max-width: 1200px;  
-    aspect-ratio: 1/0.5;
+    aspect-ratio: 1/0.55;
     overflow: hidden;
 }
 
@@ -123,6 +123,10 @@
 
     .categories{
         margin-top: 1.5rem;
+    }
+
+    .main-image-container {
+        aspect-ratio: 1/0.75;
     }
 }
 
