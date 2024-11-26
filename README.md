@@ -1,27 +1,33 @@
-# RecipeWebsite
+# Nela's Recipes
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.6.
+Welcome to **Nela's Recipes**—a website designed to inspire your culinary creativity. From simple everyday dishes to gourmet meals, Nela's Recipes provides an extensive collection of recipes that cater to all skill levels. You can explore, save, and even share your favorite recipes, all in one user-friendly platform. Visit [nelasrecipes.com](http://nelasrecipes.com) to start cooking today!
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Features
 
-## Code scaffolding
+- **Extensive Recipe Library:** Browse recipes ranging from appetizers to desserts.
+- **User-Friendly Design:** Easily navigate categories and find your next favorite meal.
+- **Interactive Search:** Filter recipes based on ingredients, cuisine, meals, and more.
+- **Mobile-Responsive:** Enjoy the experience seamlessly across all your devices.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+---
 
-## Build
+## Development
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+This project was built using [Angular CLI](https://github.com/angular/angular-cli) version 15.2.6. The codebase follows modern web development standards, ensuring performance and maintainability.
 
-## Running unit tests
+---
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Contribution
 
-## Running end-to-end tests
+Contributions are welcome! If you'd like to report bugs, suggest features, or contribute code, feel free to open an issue or create a pull request in this repository.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+---
 
-## Further help
+## Copyright & License
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+**© 2024 Nela's Recipes.**  
+All rights reserved. Unauthorized reproduction or redistribution of this website's content is strictly prohibited. For inquiries about licensing or content usage, please contact support at [info@nelasrecipes.com](mailto:info@nelasrecipes.com).
+
+Enjoy exploring and cooking with **Nela's Recipes**!
