@@ -1,19 +1,25 @@
-- Choco Overnight oats
-- Vanilla Overnight oats
+Dessert
 - Vanilla ice cream
 - Oreo ice cream
 - Choco ice cream
+Sides
 - Beans rice
-- frango à bras
 - Airfryer fries
-- Salad
-- Strawberrie&Banana Smoothie
+- Air-fryer Brussel sprouts
+Main-Courses
+- frango à bras
+- Crispy chicken wings
 - Traditional Carbonara
-- Apple Turnovers
+Breakfast
+- Choco Overnight oats
+- Vanilla Overnight oats
 -------------------------------
 - BBQ Chicken
-- Crispy chicken wings
 - Chicken legs
+- Goulash
+- Strawberrie&Banana Smoothie
+- Apple Turnovers
+- Salad
 - Airfryer Carrot Fries
 - Airfryer brocolli
 - Chicken Burrito
@@ -21,7 +27,6 @@
 - Brigadeiros
 - Semifrio gelatina
 - Baba de camelo
--------------------------------
 - Cookies
 - Garlic Honey Crispy Chicken 
 - Chicken cornflakes burger
