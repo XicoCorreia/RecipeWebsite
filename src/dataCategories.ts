@@ -232,7 +232,7 @@ export const sub_categories: Category[] = [
     },
     {id: '81', 
     name: EnumCategories.Salads, 
-    path:"/sides-appetizers-recipes/salad",
+    path:"sides-appetizers-recipes/salad",
     imageUrl:'assets/images/categories/salad.jpg',
     description: "Brighten your meals with our vibrant salad recipes. From crisp greens to hearty grains, these dishes are packed with "+
     "nutrients and bursting with flavor. Perfect for a light lunch or a refreshing side, each recipe offers simple instructions and fresh "+
