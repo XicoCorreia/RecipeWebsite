@@ -2,7 +2,6 @@ TODO
 - Add Recipes
 - Understand SEO - (focus keyphrases/keyword)
 - Change links recipes
-- Fix broken link
 
 Future
 - Privacy Policy page
