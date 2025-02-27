@@ -161,9 +161,10 @@
               "/portuguese-recipes",
               "/main-recipes/burritos",
               "/breakfast-recipes/smoothies",
-              "/breakfast-recipes/sandwhiches",
+              "/breakfast-recipes/sandwiches",
               "/dessert-recipes/cake",
-              "/sides-recipes/salad"
+              "/sides-appetizers-recipes/salad",
+              "/sides-appetizers-recipes/"
             ]
           },
           "configurations": {
