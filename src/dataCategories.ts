@@ -33,7 +33,7 @@ export const course_categories: Category[] = [
     },
     {id: '4', 
     name: EnumCategories.SidesAppetizers, 
-    path:"sides-recipes",
+    path:"sides-appetizers-recipes",
     imageUrl:'assets/images/categories/appetizers.jpg',
     description: "Enhance every dining experience with our tantalizing selection of sides and appetizers! From crisp, garden-fresh salads to crispy, "+
     "golden fries and beyond, our menu of accompaniments elevates every dish. Delve into a world of flavors and textures with our diverse range of "+

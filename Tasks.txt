@@ -3,7 +3,7 @@ TODO
 - Understand SEO - (focus keyphrases/keyword)
 - Google search console
 - Change links recipes
-- XML SiteMap (https://www.xml-sitemaps.com/)
+- Fix broken link
 
 Future
 - Privacy Policy page
