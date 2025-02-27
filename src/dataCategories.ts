@@ -213,8 +213,8 @@ export const sub_categories: Category[] = [
     parent_category: "Breakfast",
     },
     {id: '53', 
-    name:EnumCategories.Sandwhiches,
-    path:"breakfast-recipes/sandwhiches",
+    name:EnumCategories.Sandwiches,
+    path:"breakfast-recipes/sandwiches",
     imageUrl:'assets/images/categories/sandwich.jpg',
     description: "Kickstart your morning with our collection of hearty breakfast sandwiches. Each recipe is packed with flavorful ingredients "+
     "like eggs, cheese, and meats, all nestled between slices of freshly toasted bread or bagels. Whether you're craving something classic or "+

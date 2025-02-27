@@ -29,7 +29,7 @@ export enum EnumCategories {
     // Subcategories
     Burritos = "Burritos",
     Smoothies = "Smoothies",
-    Sandwhiches = "Sandwiches",
+    Sandwiches = "Sandwiches",
     Cake = "Cake",
     Salads = "Salads"
 }

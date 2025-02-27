@@ -1,7 +1,6 @@
 TODO
 - Add Recipes
 - Understand SEO - (focus keyphrases/keyword)
-- Google search console
 - Change links recipes
 - Fix broken link
 
