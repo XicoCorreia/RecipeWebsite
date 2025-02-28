@@ -1,16 +1,8 @@
-01/02 - 09/02
+Test
 - Vanilla ice cream
 - Oreo ice cream
-- Beans rice
-- Crispy chicken wings
-- Apple Overnight oats
--------------------------------
-Dessert
 - Choco ice cream
-- Airfryer fries
-- Air-fryer Brussel sprouts
-- frango à bras
-- Traditional Carbonara
+- Apple Overnight oats
 - Choco Overnight oats
 - Vanilla Overnight oats
 -------------------------------
@@ -48,7 +40,7 @@ Dessert
 - chicken teiraki
 - korean popcorn chicken 
 - Muffins
-- Cheesecake
+- Protein Cheesecake
 - Pannacota
 - Queijadinhas
 - Mousse de morango
