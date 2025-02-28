@@ -62,6 +62,7 @@ export class CategoryPageComponent implements OnInit, OnDestroy {
       property: 'og:url',
       content: `https://www.nelasrecipes.com/${this.category.path}`
     });
+    this.metaService.updateTag({ property: 'og:type', content: 'website' });
 
     // Structured data for the main category page
     const structuredData = {

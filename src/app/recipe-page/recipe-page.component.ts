@@ -67,6 +67,7 @@ export class RecipePageComponent implements OnInit, OnDestroy {
       property: 'og:url',
       content: `https://www.nelasrecipes.com/recipes/${this.recipe.id}`
     });
+    this.metaService.updateTag({ property: 'og:type', content: 'article' });
 
     // Structured data (JSON-LD) for the recipe page
     const structuredData = {

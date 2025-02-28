@@ -54,6 +54,7 @@ export class SubcategoryPageComponent implements OnInit, OnDestroy {
     this.metaService.updateTag({ property: 'og:description', content: `Browse through delicious ${this.category.name.toLowerCase()} recipes in the ${this.parent_name} category. Perfect for food lovers looking for inspiration.` });
     this.metaService.updateTag({ property: 'og:image', content: `https://www.nelasrecipes.com/${this.category.imageUrl}` });
     this.metaService.updateTag({ property: 'og:url', content: `https://www.nelasrecipes.com/${this.category.path}` });
+    this.metaService.updateTag({ property: 'og:type', content: 'website' });
 
     // Structured Data (JSON-LD)
     const structuredData = {

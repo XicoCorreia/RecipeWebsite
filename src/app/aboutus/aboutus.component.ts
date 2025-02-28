@@ -27,6 +27,7 @@ export class AboutusComponent {
     this.metaService.updateTag({ property: 'og:description', content: 'Meet Francisco, the creator of Nela\'s Recipes, and learn about his passion for cooking and his journey from Portugal to Denmark.' });
     this.metaService.updateTag({ property: 'og:image', content: 'https://nelasrecipes.com/assets/images/about.jpg' });
     this.metaService.updateTag({ property: 'og:url', content: 'https://nelasrecipes.com/about-me' });
+    this.metaService.updateTag({ property: 'og:type', content: 'profile' });
 
     // Structured data for the About Me page
     const structuredData = {

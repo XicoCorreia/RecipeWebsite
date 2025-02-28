@@ -53,6 +53,7 @@ export class HomeComponent {
     this.metaService.updateTag({ property: 'og:description', content: 'Explore a wide range of delicious recipes including air fryer recipes, recent recipes, and more.' });
     this.metaService.updateTag({ property: 'og:image', content: 'https://nelasrecipes.com/assets/images/icons/favicon.png' }); 
     this.metaService.updateTag({ property: 'og:url', content: 'https://www.nelasrecipes.com' });
+    this.metaService.updateTag({ property: 'og:type', content: 'website' });
 
     const structuredData = {
       "@context": "https://schema.org",

@@ -3,20 +3,17 @@ TODO
 -----------------------------------
 - Understand SEO 
   <link rel="canonical" href="https://www.example.com" />
-  <meta name="parsely-section" content="Recipes" />
-  <meta name="parsely-tags" content="Apple Dessert Recipes,Apples,Desserts,Fall,Fruit   Desserts,Seasonal,Frozen Food,Fruits and Vegetables,Puff Pastry" />
-  <meta property="og:type" content="article" />
-  <meta property="og:site_name" content="Allrecipes" />
-  <meta property="article:opinion" content="false" />
-  <meta property="article:author" content="https://www.facebook.com/allrecipes" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="robots" content="max-image-preview:large, NOODP, NOYDIR" />
- No Apple touch icon is specified.
- The amount of tags is very high (22). We recommend using a maximum of 13 tags for this page.
- The following tag is repeated too often: apples:
+
+
  Some headings occur twice on the page.
+
  The structure of headings is missing one or more levels. Do not skip heading levels.
-Baselink: /
+
+  Baselink: /
+
+Content 
+ The amount of bold tags
+
 ------------------------------------------
 - Change links recipes
 Future
