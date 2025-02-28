@@ -5,12 +5,13 @@ Test
 - Apple Overnight oats
 - Choco Overnight oats
 - Vanilla Overnight oats
+- Chicken legs
+- Massinha à la xico
+- Apple Turnovers
 -------------------------------
 - BBQ Chicken
-- Chicken legs
 - Goulash
 - Strawberrie&Banana Smoothie
-- Apple Turnovers
 - Salad
 - Airfryer Carrot Fries
 - Airfryer brocolli
@@ -44,3 +45,4 @@ Test
 - Pannacota
 - Queijadinhas
 - Mousse de morango
+- Panquecas
