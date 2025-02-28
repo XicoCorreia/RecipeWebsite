@@ -1,9 +1,15 @@
 TODO
 - Add Recipes
   * Change The amount of bold tags
-  * Some headings occur twice on the page.
-  * The structure of headings is missing one or more levels. Do not skip heading levels.
+  * Some headings occur twice on the page, the structure of headings is missing one or more levels.
   * Change links recipes
+  * Duplicate text recipe page & content
+  * Url redirects no / to /
+  * Canonical tag
+  * H1 short as well as title tag
+  * Max 1000 char meta descritption
+  * Backlinks
+
 
 !Future
 - Privacy Policy page
