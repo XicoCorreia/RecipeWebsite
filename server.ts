@@ -1,30 +1,20 @@
-import 'zone.js/dist/zone-node';
-    
+import 'zone.js/node';
+
+import { APP_BASE_HREF } from '@angular/common';
 import { ngExpressEngine } from '@nguniversal/express-engine';
 import * as express from 'express';
+import { existsSync } from 'fs';
 import { join } from 'path';
-import { existsSync, readFileSync } from 'fs';
-
-import 'localstorage-polyfill';
-const domino = require('domino');
-let distFolder = join(process.cwd(), '../spa/browser');
-const template = readFileSync(join(distFolder, 'index.html')).toString();
-const win = domino.createWindow(template);
-win.Object = Object;
-win.Math = Math;
-global['window'] = win;
-global['document'] = win.document;
-global['HTMLElement'] = win.HTMLElement;
-global['navigator'] = win.navigator;
-global['localStorage'] = localStorage;
 
 import { AppServerModule } from './src/main.server';
-import { APP_BASE_HREF } from '@angular/common';
 
+// The Express app is exported so that it can be used by serverless Functions.
 export function app(): express.Express {
   const server = express();
-  const indexHtml = existsSync(join(distFolder, 'index.original.html')) ? 'index.original.html' : 'index.html';
+  const distFolder = join(process.cwd(), 'dist/recipe-website/browser');
+  const indexHtml = existsSync(join(distFolder, 'index.original.html')) ? 'index.original.html' : 'index';
 
+  // Our Universal express-engine (found @ https://github.com/angular/universal/tree/main/modules/express-engine)
   server.engine('html', ngExpressEngine({
     bootstrap: AppServerModule,
   }));
@@ -32,13 +22,15 @@ export function app(): express.Express {
   server.set('view engine', 'html');
   server.set('views', distFolder);
 
+  // Example Express Rest API endpoints
+  // server.get('/api/**', (req, res) => { });
+  // Serve static files from /browser
   server.get('*.*', express.static(distFolder, {
     maxAge: '1y'
   }));
 
-  server.get(
-    '*',
-    (req, res) => {
+  // All regular routes use the Universal engine
+  server.get('*', (req, res) => {
     res.render(indexHtml, { req, providers: [{ provide: APP_BASE_HREF, useValue: req.baseUrl }] });
   });
 
@@ -48,12 +40,16 @@ export function app(): express.Express {
 function run(): void {
   const port = process.env['PORT'] || 4000;
 
+  // Start up the Node server
   const server = app();
   server.listen(port, () => {
     console.log(`Node Express server listening on http://localhost:${port}`);
   });
 }
 
+// Webpack will replace 'require' with '__webpack_require__'
+// '__non_webpack_require__' is a proxy to Node 'require'
+// The below code is to ensure that the server is run only when not requiring the bundle.
 declare const __non_webpack_require__: NodeRequire;
 const mainModule = __non_webpack_require__.main;
 const moduleFilename = mainModule && mainModule.filename || '';
