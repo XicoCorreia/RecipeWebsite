@@ -24,8 +24,7 @@
               "src/favicon.ico",
               "src/assets",
               "src/robots.txt",
-              "src/sitemap.xml",
-              "src/web.config"
+              "src/sitemap.xml"
             ],
             "styles": [
               "src/styles.css"
@@ -87,8 +86,7 @@
             "tsConfig": "tsconfig.spec.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets",
-              "src/web.config"
+              "src/assets"
             ],
             "styles": [
               "src/styles.css"
@@ -138,35 +136,9 @@
           "options": {
             "routes": [
               "/",
-              "/recipes/",
-              "/about-me/",
-              "/recipe-index/",
-              "/recipes/1/",
-              "/recipes/2/",
-              "/main-recipes/",
-              "/main-recipes/beef/",
-              "/main-recipes/chicken/",
-              "/main-recipes/pasta/",
-              "/main-recipes/pork/",
-              "/dessert-recipes/",
-              "/dessert-recipes/chocolate/",
-              "/breakfast-recipes/",
-              "/breakfast-recipes/oats/",
-              "/lowcalorie-recipes/",
-              "/airfryer-recipes/",
-              "/skillet-recipes/",
-              "/30min-recipes/",
-              "/asian-recipes/",
-              "/italian-recipes/",
-              "/indian-recipes/",
-              "/mexican-recipes/",
-              "/portuguese-recipes/",
-              "/main-recipes/burritos/",
-              "/breakfast-recipes/smoothies/",
-              "/breakfast-recipes/sandwiches/",
-              "/dessert-recipes/cake/",
-              "/sides-appetizers-recipes/salad/",
-              "/sides-appetizers-recipes/"
+              "/recipes",
+              "/about-me",
+              "/recipe-index"
             ]
           },
           "configurations": {
