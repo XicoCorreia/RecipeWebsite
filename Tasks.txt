@@ -1,17 +1,5 @@
-TODO
-- Add Recipes
-  * Change The amount of bold tags
-  * Some headings occur twice on the page, the structure of headings is missing one or more levels.
-  * Change links recipes
-  * Duplicate text recipe page & content
-  * Url redirects no / to /
-  * Canonical tag
-  * H1 short as well as title tag
-  * Max 1000 char meta descritption
-  * Backlinks
-
-
 !Future
 - Privacy Policy page
 - How to monetize(affiliate marketing - https://www.youtube.com/watch?v=sTNOQT7Mdgg&list=WL&index=1&t=12577s)
-- Add new features
+- Backlinks
+- Make it prettier (Tags system)
