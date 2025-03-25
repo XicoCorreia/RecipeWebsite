@@ -37,7 +37,7 @@ export class AboutusComponent {
       head.appendChild(element);
     }
     element.setAttribute('rel','canonical')
-    element.setAttribute('href', 'https://nelasrecipes.com/about-me');
+    element.setAttribute('href', 'https://nelasrecipes.com/about-me/');
      
 
     // Structured data for the About Me page
