@@ -1,10 +1,11 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit, OnDestroy, Inject } from '@angular/core';
 import { Category } from '../shared/models/Category';
 import { ActivatedRoute } from '@angular/router';
 import { FoodService } from '../services/food.service';
 import { Recipe } from '../shared/models/Recipe';
 import { Meta, Title } from '@angular/platform-browser';
 import { Subscription } from 'rxjs';
+import { DOCUMENT } from '@angular/common';
 
 @Component({
   selector: 'app-category-page',
@@ -22,7 +23,8 @@ export class CategoryPageComponent implements OnInit, OnDestroy {
     private activatedRoute: ActivatedRoute,
     private foodService: FoodService,
     private metaService: Meta,
-    private titleService: Title
+    private titleService: Title,
+    @Inject(DOCUMENT) private dom: any
   ) {}
 
   ngOnInit(): void {
@@ -65,15 +67,14 @@ export class CategoryPageComponent implements OnInit, OnDestroy {
     });
     this.metaService.updateTag({ property: 'og:type', content: 'website' });
 
-    let link: HTMLLinkElement | null = document.querySelector('link[rel="canonical"]');
-
-    if (!link) {
-        link = document.createElement('link');
-        link.setAttribute('rel', 'canonical');
-        document.head.appendChild(link);
+    const head = this.dom.getElementsByTagName('head')[0];
+    var element: HTMLLinkElement= this.dom.querySelector(`link[rel='canonical']`) || null
+    if (element==null) {
+      element= this.dom.createElement('link') as HTMLLinkElement;
+      head.appendChild(element);
     }
-    
-    link.setAttribute('href', `https://www.nelasrecipes.com/${this.category.path}`);
+    element.setAttribute('rel','canonical')
+    element.setAttribute('href', `https://www.nelasrecipes.com/${this.category.path}`);
 
     // Structured data for the main category page
     const structuredData = {
