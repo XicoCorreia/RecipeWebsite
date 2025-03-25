@@ -30,8 +30,6 @@ export class AboutusComponent {
     this.metaService.updateTag({ property: 'og:url', content: 'https://nelasrecipes.com/about-me' });
     this.metaService.updateTag({ property: 'og:type', content: 'profile' });
 
-    let link: HTMLLinkElement | null = document.querySelector('link[rel="canonical"]');
-
     const head = this.dom.getElementsByTagName('head')[0];
     var element: HTMLLinkElement= this.dom.querySelector(`link[rel='canonical']`) || null
     if (element==null) {
