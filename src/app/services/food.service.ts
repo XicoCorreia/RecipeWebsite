@@ -71,13 +71,11 @@ export class FoodService {
   }
 
 
-  getCategoryByPath(cpath:string):Category{
-    const categoryPath = cpath + "/"; 
+  getCategoryByPath(categoryPath:string):Category{ 
     return this.getAllCategories().find(c => c.path == categoryPath) ?? new Category();
   }
 
-  getNameByPath(cpath:string):string{
-    const categoryPath = cpath + "/"; 
+  getNameByPath(categoryPath:string):string{
     return this.getAllCategories().find(c => c.path == categoryPath)?.name ?? "";
   }
 

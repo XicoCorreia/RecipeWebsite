@@ -36,7 +36,7 @@ export class CategoriesComponent {
      this.metaService.updateTag({ property: 'og:title', content: 'Recipe Index | Nela\'s Recipes' });
      this.metaService.updateTag({ property: 'og:description', content: 'Discover a variety of recipes from appetizers to desserts, categorized by cuisine, ingredient, and more!' });
      this.metaService.updateTag({ property: 'og:image', content: 'https://nelasrecipes.com/assets/images/icons/favicon.png' }); 
-     this.metaService.updateTag({ property: 'og:url', content: 'https://www.nelasrecipes.com/recipe-index/' });
+     this.metaService.updateTag({ property: 'og:url', content: 'https://www.nelasrecipes.com/recipe-index' });
      this.metaService.updateTag({ property: 'og:type', content: 'website' });
 
      let link: HTMLLinkElement | null = document.querySelector('link[rel="canonical"]');
@@ -47,7 +47,7 @@ export class CategoriesComponent {
          document.head.appendChild(link);
      }
      
-     link.setAttribute('href', 'https://nelasrecipes.com/recipe-index/');
+     link.setAttribute('href', 'https://nelasrecipes.com/recipe-index');
 
      // Structured data for the Recipe Index page
      const structuredData = {
@@ -56,7 +56,7 @@ export class CategoriesComponent {
        "name": "Recipe Index | Nela's Recipes",
        "description": "Browse a curated collection of recipes by course, ingredient, and cuisine. Perfect for food lovers seeking new meals to try.",
        "image": "https://nelasrecipes.com/assets/images/icons/favicon.png", 
-       "url": "https://www.nelasrecipes.com/recipe-index/",
+       "url": "https://www.nelasrecipes.com/recipe-index",
        "hasPart": Object.values(EnumCategories).map(category => ({
         "@type": "CreativeWork",
         "name": category

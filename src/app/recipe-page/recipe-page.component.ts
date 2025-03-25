@@ -65,7 +65,7 @@ export class RecipePageComponent implements OnInit, OnDestroy {
     });
     this.metaService.updateTag({
       property: 'og:url',
-      content: `https://www.nelasrecipes.com/recipes/${this.recipe.id}/`
+      content: `https://www.nelasrecipes.com/recipes/${this.recipe.id}`
     });
     this.metaService.updateTag({ property: 'og:type', content: 'article' });
 
@@ -77,18 +77,18 @@ export class RecipePageComponent implements OnInit, OnDestroy {
         document.head.appendChild(link);
     }
     
-    link.setAttribute('href', `https://www.nelasrecipes.com/recipes/${this.recipe.id}/`);
+    link.setAttribute('href', `https://www.nelasrecipes.com/recipes/${this.recipe.id}`);
 
     // Structured data (JSON-LD) for the recipe page
     const structuredData = {
       "@context": "https://schema.org",
       "@type": "Recipe",
       "name": this.recipe.name,
-      "image": `https://www.nelasrecipes.com/${this.recipe.imageUrl}/`,
+      "image": `https://www.nelasrecipes.com/${this.recipe.imageUrl}`,
       "author": {
         "@type": "Person",
         "name": "Francisco Correia",
-        "url": "https://www.nelasrecipes.com/about-me/",
+        "url": "https://www.nelasrecipes.com/about-me",
         "image": `https://nelasrecipes.com/assets/images/about.jpg`
       },
       "datePublished": this.recipe.date,
