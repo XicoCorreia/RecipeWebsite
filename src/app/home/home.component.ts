@@ -1,9 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, Inject } from '@angular/core';
 import { FoodService } from '../services/food.service';
 import { Recipe } from '../shared/models/Recipe';
 import { Category } from '../shared/models/Category';
 import { EnumCategories } from '../shared/models/EnumCategories';
 import { Title, Meta } from '@angular/platform-browser';
+import { DOCUMENT } from '@angular/common';
 
 @Component({
   selector: 'app-home',
@@ -38,7 +39,7 @@ export class HomeComponent {
   recent_recipes:Recipe[] = [];
   airfryer_recipes:Recipe[] = [];
 
-  constructor(private foodService:FoodService, private titleService: Title, private metaService: Meta) {}
+  constructor(private foodService:FoodService, private titleService: Title, private metaService: Meta, @Inject(DOCUMENT) private dom: any) {}
 
   ngOnInit(): void {
     this.first = this.foodService.getFirstImage();
@@ -57,13 +58,14 @@ export class HomeComponent {
 
     let link: HTMLLinkElement | null = document.querySelector('link[rel="canonical"]');
 
-    if (!link) {
-        link = document.createElement('link');
-        link.setAttribute('rel', 'canonical');
-        document.head.appendChild(link);
+    const head = this.dom.getElementsByTagName('head')[0];
+    var element: HTMLLinkElement= this.dom.querySelector(`link[rel='canonical']`) || null
+    if (element==null) {
+      element= this.dom.createElement('link') as HTMLLinkElement;
+      head.appendChild(element);
     }
-    
-    link.setAttribute('href', 'https://nelasrecipes.com');
+    element.setAttribute('rel','canonical')
+    element.setAttribute('href', 'https://nelasrecipes.com');
 
     const structuredData = {
       "@context": "https://schema.org",

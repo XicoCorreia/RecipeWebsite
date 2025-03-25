@@ -1,9 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, Inject } from '@angular/core';
 import { FoodService } from '../services/food.service';
 import { Recipe } from '../shared/models/Recipe';
 import { Category } from '../shared/models/Category';
 import { Meta, Title } from '@angular/platform-browser';
 import { EnumCategories } from '../shared/models/EnumCategories';
+import { DOCUMENT } from '@angular/common';
 
 @Component({
   selector: 'app-categories',
@@ -17,7 +18,7 @@ export class CategoriesComponent {
   special:Category[] = [];
   cuisine:Category[] = [];
 
-  constructor(private foodService:FoodService, private titleService:Title, private metaService: Meta) {
+  constructor(private foodService:FoodService, private titleService:Title, private metaService: Meta, @Inject(DOCUMENT) private dom: any) {
 
   }
 
@@ -39,15 +40,14 @@ export class CategoriesComponent {
      this.metaService.updateTag({ property: 'og:url', content: 'https://www.nelasrecipes.com/recipe-index' });
      this.metaService.updateTag({ property: 'og:type', content: 'website' });
 
-     let link: HTMLLinkElement | null = document.querySelector('link[rel="canonical"]');
-
-     if (!link) {
-         link = document.createElement('link');
-         link.setAttribute('rel', 'canonical');
-         document.head.appendChild(link);
+     const head = this.dom.getElementsByTagName('head')[0];
+     var element: HTMLLinkElement= this.dom.querySelector(`link[rel='canonical']`) || null
+     if (element==null) {
+       element= this.dom.createElement('link') as HTMLLinkElement;
+       head.appendChild(element);
      }
-     
-     link.setAttribute('href', 'https://nelasrecipes.com/recipe-index');
+     element.setAttribute('rel','canonical')
+     element.setAttribute('href', 'https://nelasrecipes.com/recipe-index');
 
      // Structured data for the Recipe Index page
      const structuredData = {

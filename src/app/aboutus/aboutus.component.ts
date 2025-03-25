@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, Inject } from '@angular/core';
 import { FoodService } from '../services/food.service';
 import { Title, Meta} from '@angular/platform-browser';
+import { DOCUMENT } from '@angular/common';
 
 @Component({
   selector: 'app-aboutus',
@@ -11,7 +12,7 @@ export class AboutusComponent {
 
   image:String = '';
 
-  constructor(private foodService:FoodService, private titleService:Title, private metaService: Meta) {
+  constructor(private foodService:FoodService, private titleService:Title, private metaService: Meta, @Inject(DOCUMENT) private dom: any ) {
     
 
   }
@@ -31,13 +32,14 @@ export class AboutusComponent {
 
     let link: HTMLLinkElement | null = document.querySelector('link[rel="canonical"]');
 
-    if (!link) {
-        link = document.createElement('link');
-        link.setAttribute('rel', 'canonical');
-        document.head.appendChild(link);
+    const head = this.dom.getElementsByTagName('head')[0];
+    var element: HTMLLinkElement= this.dom.querySelector(`link[rel='canonical']`) || null
+    if (element==null) {
+      element= this.dom.createElement('link') as HTMLLinkElement;
+      head.appendChild(element);
     }
-    
-    link.setAttribute('href', 'https://nelasrecipes.com/about-me');
+    element.setAttribute('rel','canonical')
+    element.setAttribute('href', 'https://nelasrecipes.com/about-me');
      
 
     // Structured data for the About Me page
