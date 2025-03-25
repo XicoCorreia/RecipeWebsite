@@ -56,6 +56,16 @@ export class SubcategoryPageComponent implements OnInit, OnDestroy {
     this.metaService.updateTag({ property: 'og:url', content: `https://www.nelasrecipes.com/${this.category.path}` });
     this.metaService.updateTag({ property: 'og:type', content: 'website' });
 
+    let link: HTMLLinkElement | null = document.querySelector('link[rel="canonical"]');
+
+    if (!link) {
+        link = document.createElement('link');
+        link.setAttribute('rel', 'canonical');
+        document.head.appendChild(link);
+    }
+    
+    link.setAttribute('href', `https://www.nelasrecipes.com/${this.category.path}`);
+
     // Structured Data (JSON-LD)
     const structuredData = {
       "@context": "https://schema.org",

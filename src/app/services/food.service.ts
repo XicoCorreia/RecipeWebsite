@@ -71,18 +71,19 @@ export class FoodService {
   }
 
 
-  getCategoryByPath(categoryPath:string):Category{
+  getCategoryByPath(cpath:string):Category{
+    const categoryPath = cpath + "/"; 
     return this.getAllCategories().find(c => c.path == categoryPath) ?? new Category();
   }
 
-  getNameByPath(categoryPath:string):string{
+  getNameByPath(cpath:string):string{
+    const categoryPath = cpath + "/"; 
     return this.getAllCategories().find(c => c.path == categoryPath)?.name ?? "";
   }
 
   getPathByName(categoryName: string): string {
     return this.getAllCategories().find(c => c.name == categoryName)?.path ?? "";
   }
-
 
   getsubCategories(name: string): Category[] {
     return sample_categories.filter(c => c.parent_category?.toLowerCase() === name.toLowerCase())

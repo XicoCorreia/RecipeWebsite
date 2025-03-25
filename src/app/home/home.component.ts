@@ -52,8 +52,18 @@ export class HomeComponent {
     this.metaService.updateTag({ property: 'og:title', content: 'Nela\'s Recipes' });
     this.metaService.updateTag({ property: 'og:description', content: 'Explore a wide range of delicious recipes including air fryer recipes, recent recipes, and more.' });
     this.metaService.updateTag({ property: 'og:image', content: 'https://nelasrecipes.com/assets/images/icons/favicon.png' }); 
-    this.metaService.updateTag({ property: 'og:url', content: 'https://www.nelasrecipes.com' });
+    this.metaService.updateTag({ property: 'og:url', content: 'https://www.nelasrecipes.com/' });
     this.metaService.updateTag({ property: 'og:type', content: 'website' });
+
+    let link: HTMLLinkElement | null = document.querySelector('link[rel="canonical"]');
+
+    if (!link) {
+        link = document.createElement('link');
+        link.setAttribute('rel', 'canonical');
+        document.head.appendChild(link);
+    }
+    
+    link.setAttribute('href', 'https://nelasrecipes.com/');
 
     const structuredData = {
       "@context": "https://schema.org",
@@ -61,13 +71,13 @@ export class HomeComponent {
       "name": "Nela's Recipes - Home",
       "description": "Explore a wide range of delicious recipes including air fryer recipes, recent recipes, and more.",
       "image": 'https://nelasrecipes.com/assets/images/icons/favicon.png', 
-      "url": "https://www.nelasrecipes.com",
-      "mainEntityOfPage": "https://www.nelasrecipes.com",
+      "url": "https://www.nelasrecipes.com/",
+      "mainEntityOfPage": "https://www.nelasrecipes.com/",
       "mainEntity": {
         "@type": "Recipe",
         "name": this.first.name,
         "image": `https://www.nelasrecipes.com/${this.first.imageUrl}`,
-        "url": `https://www.nelasrecipes.com/recipes/${this.first.id}`,
+        "url": `https://www.nelasrecipes.com/recipes/${this.first.id}/`,
         "description": this.first.introduction.description || "A delicious recipe featured on the home page."
       },
       "hasPart": [
@@ -79,14 +89,14 @@ export class HomeComponent {
         ...this.airfryer_recipes.map(recipe => ({
           "@type": "Recipe",
           "name": recipe.name,
-          "url": `https://www.nelasrecipes.com/recipes/${recipe.id}`,
+          "url": `https://www.nelasrecipes.com/recipes/${recipe.id}/`,
           "image": recipe.imageUrl,
           "description": recipe.introduction.description || "Delicious air fryer recipe."
         })),
         ...this.recent_recipes.map(recipe => ({
           "@type": "Recipe",
           "name": recipe.name,
-          "url": `https://www.nelasrecipes.com/recipes/${recipe.id}`,
+          "url": `https://www.nelasrecipes.com/recipes/${recipe.id}/`,
           "image": recipe.imageUrl,
           "description": recipe.introduction.description || "A recent delicious recipe."
         }))

@@ -13,7 +13,7 @@ const routes: Routes = [
   {path: 'recipes/:id', component:RecipePageComponent},
   {path: 'about-me', component:AboutusComponent},
   {path: 'recipes', component:RecipesComponent},
-  {path: 'recipes-index', component:CategoriesComponent},
+  {path: 'recipe-index', component:CategoriesComponent},
   {path: ':name', component:CategoryPageComponent},
   {path: ':parent_category/:name', component:SubcategoryPageComponent},
 ];

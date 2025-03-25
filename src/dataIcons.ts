@@ -9,7 +9,7 @@ export const sample_icons: Icon[] = [
     {id: '2', 
     name:"Twitter", 
     imageUrl:'assets/images/icons/twitter.ico',
-    router: 'https://twitter.com/XicoCorreia17'
+    router: 'https://x.com/XicoCorreia17'
     },
     {id: '3', 
     name:"Facebook", 

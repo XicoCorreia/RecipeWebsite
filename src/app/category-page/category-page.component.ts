@@ -29,6 +29,7 @@ export class CategoryPageComponent implements OnInit, OnDestroy {
     // Subscribe to route changes to update meta tags dynamically
     this.routeSubscription = this.activatedRoute.params.subscribe((params) => {
       if (params['name']) {
+        console.log(params)
         this.category = this.foodService.getCategoryByPath(params['name']);
         this.subCategories = this.foodService.getsubCategories(this.category.name);
         this.subCatRecipes = this.foodService.getsubCategoriesRecipes(this.subCategories);
@@ -63,6 +64,16 @@ export class CategoryPageComponent implements OnInit, OnDestroy {
       content: `https://www.nelasrecipes.com/${this.category.path}`
     });
     this.metaService.updateTag({ property: 'og:type', content: 'website' });
+
+    let link: HTMLLinkElement | null = document.querySelector('link[rel="canonical"]');
+
+    if (!link) {
+        link = document.createElement('link');
+        link.setAttribute('rel', 'canonical');
+        document.head.appendChild(link);
+    }
+    
+    link.setAttribute('href', `https://www.nelasrecipes.com/${this.category.path}`);
 
     // Structured data for the main category page
     const structuredData = {
