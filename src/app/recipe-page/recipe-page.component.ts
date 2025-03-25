@@ -67,7 +67,7 @@ export class RecipePageComponent implements OnInit, OnDestroy {
     });
     this.metaService.updateTag({
       property: 'og:url',
-      content: `https://www.nelasrecipes.com/recipes/${this.recipe.id}`
+      content: `https://www.nelasrecipes.com/recipes/${this.recipe.id}/`
     });
     this.metaService.updateTag({ property: 'og:type', content: 'article' });
 
@@ -78,7 +78,7 @@ export class RecipePageComponent implements OnInit, OnDestroy {
       head.appendChild(element);
     }
     element.setAttribute('rel','canonical')
-    element.setAttribute('href', `https://www.nelasrecipes.com/recipes/${this.recipe.id}`);
+    element.setAttribute('href', `https://www.nelasrecipes.com/recipes/${this.recipe.id}/`);
 
     // Structured data (JSON-LD) for the recipe page
     const structuredData = {
