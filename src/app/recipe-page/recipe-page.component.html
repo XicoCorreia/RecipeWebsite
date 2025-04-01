@@ -14,7 +14,7 @@
                     <img src={{image}} alt="Portrait of Francisco Correia, author of Nela's Recipes" id="header-image">
                 </a>
                 <p id="header-about"> 
-                    <em>by</em><b><a href="#" routerLink="/about-me" > Francisco Correia </a></b> <span id="date">on {{recipe.date}} </span>
+                    <em>by</em><strong><a href="#" routerLink="/about-me" > Francisco Correia </a></strong> <span id="date">on {{recipe.date}} </span>
                 </p>
             </div>
         </div>
@@ -37,7 +37,7 @@
                     {{recipe.ingredients.introduction}}
                     <ul class="listing">
                         <li *ngFor="let ingredient of recipe.ingredients.content">
-                            <b *ngIf="ingredient.title" >{{ingredient.title}}:</b>  {{ingredient.description}}
+                            <strong *ngIf="ingredient.title" >{{ingredient.title}}:</strong>  {{ingredient.description}}
                         </li>
                     </ul>
                 </div>  
@@ -48,7 +48,7 @@
                     {{recipe.steps.introduction}}
                     <ol class="listing">
                         <li *ngFor="let step of recipe.steps.content">
-                            <b *ngIf="step.title" >{{step.title}}:</b>  {{step.description}}
+                            <strong *ngIf="step.title" >{{step.title}}:</strong>  {{step.description}}
                         </li>
                     </ol>
                 </div>
@@ -83,7 +83,7 @@
                         <div class="recipe-text">
                             <ul class="listing">
                                 <li *ngFor="let ingredient of recipe.ingredients.content">
-                                    <b *ngIf="ingredient.title">{{ingredient.title}}:</b> {{ingredient.description}}
+                                    <strong *ngIf="ingredient.title">{{ingredient.title}}:</strong> {{ingredient.description}}
                                 </li>
                             </ul>
                         </div>
@@ -92,22 +92,22 @@
                         <h2>Instructions</h2>
                         <ol id="listing">
                             <li *ngFor="let step of recipe.steps.content">
-                                <b *ngIf="step.title" >{{step.title}}:</b> {{step.description}}
+                                <strong *ngIf="step.title" >{{step.title}}:</strong> {{step.description}}
                             </li>
                         </ol>
                     </div>
                     <div >
-                        <h3>Nutrition</h3>
-                        <h6>per serving</h6>
+                        <h2>Nutrition</h2>
+                        <span>per serving</span>
                         <ul class="listing nutritional">
                             <li *ngFor="let n of recipe.nutritional_values">
-                                <b *ngIf="n.title" >{{n.title}}:</b> {{n.description}}
+                                <strong *ngIf="n.title" >{{n.title}}:</strong> {{n.description}}
                             </li>
                         </ul>
                     </div>
                     <div>
                         <h2>Additional Info</h2>
-                        <p class="recipe-text"><b>Categories:</b> {{recipe.categories}}</p>
+                        <p class="recipe-text"><strong>Categories:</strong> {{recipe.categories.join(", ")}}</p>
                     </div>
                 </div>
             </div>
@@ -116,10 +116,10 @@
         <div class="container-right">
             <div class="nutritional-card">
                 <h3>Nutrition</h3>
-                <h6>per serving</h6>
+                <span>per serving</span>
                 <ul class="listing nutritional">
                     <li *ngFor="let n of recipe.nutritional_values">
-                        <b *ngIf="n.title" >{{n.title}}:</b> {{n.description}}
+                        <strong *ngIf="n.title" >{{n.title}}:</strong> {{n.description}}
                     </li>
                 </ul>
             </div>

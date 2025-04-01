@@ -10,8 +10,12 @@ body, p{
     margin: 0;
 }
 
-p{
+p, span{
     margin-top: 0.5rem;
+}
+
+span {
+    font-family: 'Montserrat';
 }
 
 a{
