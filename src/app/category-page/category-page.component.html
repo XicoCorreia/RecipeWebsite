@@ -14,7 +14,7 @@
         <div class="grid-container-subcategories">
             <div *ngFor="let c of subCategories">
                 <article class="grid-article">
-                    <a [routerLink]="'/' + c.path"> 
+                    <a [routerLink]="'/' + c.path + '/'"> 
                         <img src="{{c.imageUrl}}" alt="{{c.name}} subcategory image" class="image-grid-subcategory">
                         <span id="subcategory_name"> {{c.name}} </span>
                         </a>
@@ -25,12 +25,12 @@
     <div class="section" *ngFor="let c of subCategories | slice:0:4; let i = index;">
         <div class="title-button-container">
             <h2>{{c.name}} Recipes</h2>
-            <a href="#" [routerLink]="'/' + c.path"  id="secondary-button"> View more </a> 
+            <a href="#" [routerLink]="'/' + c.path + '/'"  id="secondary-button"> View more </a> 
         </div>
         <div class="grid-container">
             <div *ngFor="let s of subCatRecipes[i]">
                 <article class="grid-article">
-                    <a [routerLink]="'/recipes/' + s.id"> 
+                    <a [routerLink]="'/recipes/' + s.id  + '/'"> 
                         <img src="{{s.imageUrl}}" alt="{{s.name}} recipe" class="image-grid-recipe">
                         <h3 class="image-title"> {{s.name}} </h3>
                         </a>
@@ -43,7 +43,7 @@
         <div class="grid-container">
             <div *ngFor="let c of categoryRecipes">
                 <article class="grid-article">
-                    <a [routerLink]="'/recipes/' + c.id"> 
+                    <a [routerLink]="'/recipes/' + c.id  + '/'"> 
                         <img src="{{c.imageUrl}}" alt="{{c.name}} recipe" class="image-grid-recipe">
                         <h3 class="image-title"> {{c.name}} </h3>
                         </a>

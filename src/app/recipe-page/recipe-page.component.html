@@ -3,18 +3,18 @@
         <div class="route"> 
             <a href="#" routerLink="/" class="r-home">Home</a> >
             <ng-container *ngFor="let category of recipe.categories;">
-                <a href="#" [routerLink]="'/'+ getPath(category)" class="r-home">{{ category }}</a> >
+                <a href="#" [routerLink]="'/'+ getPath(category) + '/'" class="r-home">{{ category }}</a> >
             </ng-container>
             {{recipe.name}}
         </div>
         <div class="header">        
             <h1 id="title">{{recipe.name}}</h1>
             <div class="header-by">
-                <a href="#" routerLink="/about-me">
+                <a href="#" routerLink="/about-me/">
                     <img src={{image}} alt="Portrait of Francisco Correia, author of Nela's Recipes" id="header-image">
                 </a>
                 <p id="header-about"> 
-                    <em>by</em><strong><a href="#" routerLink="/about-me" > Francisco Correia </a></strong> <span id="date">on {{recipe.date}} </span>
+                    <em>by</em><strong><a href="#" routerLink="/about-me/" > Francisco Correia </a></strong> <span id="date">on {{recipe.date}} </span>
                 </p>
             </div>
         </div>
@@ -59,7 +59,7 @@
                 <div class="grid-container">
                     <div *ngFor="let s of categoryRecipes | slice:0:4" class="grid-item">
                         <article class = "grid-article">
-                            <a [routerLink]="'/recipes/' + s.id"> 
+                            <a [routerLink]="'/recipes/' + s.id + '/'"> 
                                 <img src="{{s.imageUrl}}" alt="Image of recipe {{s.name}} in the {{main_category}} category" class="image-grid-category">
                                 <h3 class="image-title"> {{s.name}} </h3>
                             </a>
@@ -129,7 +129,7 @@
                 <p class="recipe-text">I'm Francisco, and I'm passionate about preparing nutritious and flavorful meals. Additionally, I'm pursuing studies in computer science, 
                     and I have a keen interest in sports and a deep love for traveling.
                 </p>
-                <p id="p-btn" ><a class="btn" routerLink="/about-me">More About Me</a></p>
+                <p id="p-btn" ><a class="btn" routerLink="/about-me/">More About Me</a></p>
             </div>
             <div class="latest">
                 <h3>Latest Recipes</h3>
