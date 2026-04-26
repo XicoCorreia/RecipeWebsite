@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://nelasrecipes.com/sitemap.xml
+Sitemap: https://www.nelasrecipes.com/sitemap.xml
