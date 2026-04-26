@@ -12,6 +12,10 @@ import { sample_icons } from 'src/dataIcons';
 })
 export class FoodService {
 
+  // Cache reversed arrays to avoid mutating original on every call
+  private _cachedRecipes?: Recipe[];
+  private _cachedCategories?: Category[];
+
   constructor() {}
 
   getIcon():string {
@@ -19,15 +23,24 @@ export class FoodService {
   }
 
   getFirstImage():Recipe {
-    return sample_recipes.reverse()[0];
+    // Get latest recipe (first in reversed array)
+    return this.getAllRecipes()[0];
   }
 
   getAllCategories():Category[] {
-    return sample_categories
+    // Cache the categories array
+    if (!this._cachedCategories) {
+      this._cachedCategories = [...sample_categories];
+    }
+    return this._cachedCategories;
   }
 
   getAllRecipes():Recipe[] {
-    return sample_recipes.reverse();
+    // Cache the reversed array - only compute once
+    if (!this._cachedRecipes) {
+      this._cachedRecipes = [...sample_recipes].reverse();
+    }
+    return this._cachedRecipes;
   }
 
   getRecipeById(recipeId:string):Recipe{
