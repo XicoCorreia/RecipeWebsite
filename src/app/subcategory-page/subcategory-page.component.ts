@@ -54,18 +54,18 @@ export class SubcategoryPageComponent implements OnInit, OnDestroy {
 
     this.metaService.updateTag({ property: 'og:title', content: `${this.category.name} Recipes - ${this.parent_name} | Nela's Recipes` });
     this.metaService.updateTag({ property: 'og:description', content: `Browse through delicious ${this.category.name.toLowerCase()} recipes in the ${this.parent_name} category. Perfect for food lovers looking for inspiration.` });
-    this.metaService.updateTag({ property: 'og:image', content: `https://www.nelasrecipes.com/${this.category.imageUrl}` });
-    this.metaService.updateTag({ property: 'og:url', content: `https://www.nelasrecipes.com/${this.category.path}/` });
+    this.metaService.updateTag({ property: 'og:image', content: `https://nelasrecipes.com/${this.category.imageUrl}` });
+    this.metaService.updateTag({ property: 'og:url', content: `https://nelasrecipes.com/${this.category.path}/` });
     this.metaService.updateTag({ property: 'og:type', content: 'website' });
 
     const head = this.dom.getElementsByTagName('head')[0];
-    var element: HTMLLinkElement= this.dom.querySelector(`link[rel='canonical']`) || null
+    let element: HTMLLinkElement= this.dom.querySelector(`link[rel='canonical']`) || null
     if (element==null) {
       element= this.dom.createElement('link') as HTMLLinkElement;
       head.appendChild(element);
     }
     element.setAttribute('rel','canonical')
-    element.setAttribute('href', `https://www.nelasrecipes.com/${this.category.path}/`);
+    element.setAttribute('href', `https://nelasrecipes.com/${this.category.path}/`);
 
     // Structured Data (JSON-LD)
     const structuredData = {
@@ -73,8 +73,8 @@ export class SubcategoryPageComponent implements OnInit, OnDestroy {
       "@type": "CollectionPage",
       "name": `${this.category.name} Recipes - ${this.parent_name} | Nela's Recipes`,
       "description": `Explore a variety of ${this.category.name.toLowerCase()} recipes in the ${this.parent_name} category.`,
-      "image": `https://www.nelasrecipes.com/${this.category.imageUrl}`, 
-      "url": `https://www.nelasrecipes.com/${this.category.path}/`,
+      "image": `https://nelasrecipes.com/${this.category.imageUrl}`, 
+      "url": `https://nelasrecipes.com/${this.category.path}/`,
       "hasPart": this.subCategories.map(subCategory => ({
         "@type": "CreativeWork",
         "name": subCategory.name

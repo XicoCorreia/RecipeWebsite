@@ -63,28 +63,28 @@ export class RecipePageComponent implements OnInit, OnDestroy {
     });
     this.metaService.updateTag({
       property: 'og:image',
-      content: `https://www.nelasrecipes.com/${this.recipe.imageUrl}`
+      content: `https://nelasrecipes.com/${this.recipe.imageUrl}`
     });
     this.metaService.updateTag({
       property: 'og:url',
-      content: `https://www.nelasrecipes.com/recipes/${this.recipe.id}/`
+      content: `https://nelasrecipes.com/recipes/${this.recipe.id}/`
     });
     this.metaService.updateTag({ property: 'og:type', content: 'article' });
 
     const head = this.dom.getElementsByTagName('head')[0];
-    var element: HTMLLinkElement= this.dom.querySelector(`link[rel='canonical']`) || null
+    let element: HTMLLinkElement= this.dom.querySelector(`link[rel='canonical']`) || null
     if (element==null) {
       element= this.dom.createElement('link') as HTMLLinkElement;
       head.appendChild(element);
     }
     element.setAttribute('rel','canonical')
-    element.setAttribute('href', `https://www.nelasrecipes.com/recipes/${this.recipe.id}/`);
+    element.setAttribute('href', `https://nelasrecipes.com/recipes/${this.recipe.id}/`);
 
     // Twitter Card meta tags
     this.metaService.updateTag({ name: 'twitter:card', content: 'summary_large_image' });
     this.metaService.updateTag({ name: 'twitter:title', content: `${this.recipe.name} | Nela's Recipes` });
     this.metaService.updateTag({ name: 'twitter:description', content: `${this.recipe.name} recipe: ${this.recipe.introduction.description}` });
-    this.metaService.updateTag({ name: 'twitter:image', content: `https://www.nelasrecipes.com/${this.recipe.imageUrl}` });
+    this.metaService.updateTag({ name: 'twitter:image', content: `https://nelasrecipes.com/${this.recipe.imageUrl}` });
     this.metaService.updateTag({ name: 'twitter:site', content: '@nelasrecipes' });
     this.metaService.updateTag({ name: 'twitter:creator', content: '@xicocorreia17' });
 
@@ -94,12 +94,12 @@ export class RecipePageComponent implements OnInit, OnDestroy {
       "@type": "Recipe",
       "name": this.recipe.name,
       "image": [
-        `https://www.nelasrecipes.com/${this.recipe.imageUrl}`
+        `https://nelasrecipes.com/${this.recipe.imageUrl}`
       ],
       "author": {
         "@type": "Person",
         "name": "Francisco Correia",
-        "url": "https://www.nelasrecipes.com/about-me/"
+        "url": "https://nelasrecipes.com/about-me/"
       },
       "datePublished": this.recipe.date,
       "description": this.recipe.introduction.description,
@@ -128,7 +128,7 @@ export class RecipePageComponent implements OnInit, OnDestroy {
         "name": "Nela's Recipes",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://www.nelasrecipes.com/assets/images/icons/favicon.png"
+          "url": "https://nelasrecipes.com/assets/images/icons/favicon.png"
         }
       }
     };

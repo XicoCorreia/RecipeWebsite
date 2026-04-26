@@ -59,22 +59,22 @@ export class CategoryPageComponent implements OnInit, OnDestroy {
     });
     this.metaService.updateTag({
       property: 'og:image',
-      content: `https://www.nelasrecipes.com/${this.category.imageUrl}`
+      content: `https://nelasrecipes.com/${this.category.imageUrl}`
     });
     this.metaService.updateTag({
       property: 'og:url',
-      content: `https://www.nelasrecipes.com/${this.category.path}/`
+      content: `https://nelasrecipes.com/${this.category.path}/`
     });
     this.metaService.updateTag({ property: 'og:type', content: 'website' });
 
     const head = this.dom.getElementsByTagName('head')[0];
-    var element: HTMLLinkElement= this.dom.querySelector(`link[rel='canonical']`) || null
+    let element: HTMLLinkElement= this.dom.querySelector(`link[rel='canonical']`) || null
     if (element==null) {
       element= this.dom.createElement('link') as HTMLLinkElement;
       head.appendChild(element);
     }
     element.setAttribute('rel','canonical')
-    element.setAttribute('href', `https://www.nelasrecipes.com/${this.category.path}/`);
+    element.setAttribute('href', `https://nelasrecipes.com/${this.category.path}/`);
 
     // Structured data for the main category page
     const structuredData = {
@@ -82,8 +82,8 @@ export class CategoryPageComponent implements OnInit, OnDestroy {
       "@type": "CollectionPage",
       "name": `${this.category.name} Recipes | Nela's Recipes`,
       "description": `Find a curated selection of ${this.category.name.toLowerCase()} recipes on Nela's Recipes.`,
-      "image": `https://www.nelasrecipes.com/${this.category.imageUrl}`,
-      "url": `https://www.nelasrecipes.com/${this.category.path}/`,
+      "image": `https://nelasrecipes.com/${this.category.imageUrl}`,
+      "url": `https://nelasrecipes.com/${this.category.path}/`,
       "hasPart": this.subCategories.map((subCategory) => ({
         "@type": "CreativeWork",
         "name": subCategory.name

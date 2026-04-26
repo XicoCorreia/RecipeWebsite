@@ -27,31 +27,31 @@ export class RecipesComponent {
     // Open Graph tags (for social media sharing)
     this.metaService.updateTag({ property: 'og:title', content: 'All Recipes - Nela\'s Recipes' });
     this.metaService.updateTag({ property: 'og:description', content: 'Explore all of Nela\'s delicious recipes! From breakfast to dinner, we have something for everyone.' });
-    this.metaService.updateTag({ property: 'og:image', content: 'https://www.nelasrecipes.com/assets/images/icons/favicon.png' });
-    this.metaService.updateTag({ property: 'og:url', content: 'https://www.nelasrecipes.com/recipes/' });
+    this.metaService.updateTag({ property: 'og:image', content: 'https://nelasrecipes.com/assets/images/icons/favicon.png' });
+    this.metaService.updateTag({ property: 'og:url', content: 'https://nelasrecipes.com/recipes/' });
     this.metaService.updateTag({ property: 'og:type', content: 'website' });
 
     const head = this.dom.getElementsByTagName('head')[0];
-    var element: HTMLLinkElement= this.dom.querySelector(`link[rel='canonical']`) || null
+    let element: HTMLLinkElement= this.dom.querySelector(`link[rel='canonical']`) || null
     if (element==null) {
       element= this.dom.createElement('link') as HTMLLinkElement;
       head.appendChild(element);
     }
     element.setAttribute('rel','canonical')
-    element.setAttribute('href', 'https://www.nelasrecipes.com/recipes/');
+    element.setAttribute('href', 'https://nelasrecipes.com/recipes/');
 
     const structuredData = {
       "@context": "https://schema.org",
       "@type": "CollectionPage",
       "name": "All Recipes - Nela's Recipes",
       "description": "Explore a variety of recipes across different categories including breakfast, appetizers, desserts, and more.",
-      "image": 'https://www.nelasrecipes.com/assets/images/icons/favicon.png', 
-      "url": "https://www.nelasrecipes.com/recipes/",
+      "image": 'https://nelasrecipes.com/assets/images/icons/favicon.png', 
+      "url": "https://nelasrecipes.com/recipes/",
       "hasPart": this.recipes.map(recipe => ({
         "@type": "Recipe",
         "name": recipe.name,
         "image": recipe.imageUrl,
-        "url": `https://www.nelasrecipes.com/recipes/${recipe.id}/`,
+        "url": `https://nelasrecipes.com/recipes/${recipe.id}/`,
         "description": recipe.introduction.description || "A delicious recipe."
       }))
     };
