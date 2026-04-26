@@ -90,7 +90,7 @@ export class RecipePageComponent implements OnInit, OnDestroy {
         "@type": "Person",
         "name": "Francisco Correia",
         "url": "https://www.nelasrecipes.com/about-me",
-        "image": `https://nelasrecipes.com/assets/images/about.jpg`
+        "image": `https://www.nelasrecipes.com/assets/images/about.jpg`
       },
       "datePublished": this.recipe.date,
       "description": this.recipe.introduction.description,

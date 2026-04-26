@@ -52,7 +52,7 @@ export class HomeComponent {
 
     this.metaService.updateTag({ property: 'og:title', content: 'Nela\'s Recipes' });
     this.metaService.updateTag({ property: 'og:description', content: 'Explore a wide range of delicious recipes including air fryer recipes, recent recipes, and more.' });
-    this.metaService.updateTag({ property: 'og:image', content: 'https://nelasrecipes.com/assets/images/icons/favicon.png' }); 
+    this.metaService.updateTag({ property: 'og:image', content: 'https://www.nelasrecipes.com/assets/images/icons/favicon.png' }); 
     this.metaService.updateTag({ property: 'og:url', content: 'https://www.nelasrecipes.com/' });
     this.metaService.updateTag({ property: 'og:type', content: 'website' });
 
@@ -65,14 +65,14 @@ export class HomeComponent {
       head.appendChild(element);
     }
     element.setAttribute('rel','canonical')
-    element.setAttribute('href', 'https://nelasrecipes.com/');
+    element.setAttribute('href', 'https://www.nelasrecipes.com/');
 
     const structuredData = {
       "@context": "https://schema.org",
       "@type": "WebPage",
       "name": "Nela's Recipes - Home",
       "description": "Explore a wide range of delicious recipes including air fryer recipes, recent recipes, and more.",
-      "image": 'https://nelasrecipes.com/assets/images/icons/favicon.png', 
+      "image": 'https://www.nelasrecipes.com/assets/images/icons/favicon.png', 
       "url": "https://www.nelasrecipes.com/",
       "mainEntityOfPage": "https://www.nelasrecipes.com/",
       "mainEntity": {
