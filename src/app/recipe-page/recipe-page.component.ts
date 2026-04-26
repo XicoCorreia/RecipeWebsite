@@ -80,30 +80,57 @@ export class RecipePageComponent implements OnInit, OnDestroy {
     element.setAttribute('rel','canonical')
     element.setAttribute('href', `https://www.nelasrecipes.com/recipes/${this.recipe.id}/`);
 
-    // Structured data (JSON-LD) for the recipe page
-    const structuredData = {
-      "@context": "https://schema.org",
+    // Twitter Card meta tags
+    this.metaService.updateTag({ name: 'twitter:card', content: 'summary_large_image' });
+    this.metaService.updateTag({ name: 'twitter:title', content: `${this.recipe.name} | Nela's Recipes` });
+    this.metaService.updateTag({ name: 'twitter:description', content: `${this.recipe.name} recipe: ${this.recipe.introduction.description}` });
+    this.metaService.updateTag({ name: 'twitter:image', content: `https://www.nelasrecipes.com/${this.recipe.imageUrl}` });
+    this.metaService.updateTag({ name: 'twitter:site', content: '@nelasrecipes' });
+    this.metaService.updateTag({ name: 'twitter:creator', content: '@xicocorreia17' });
+
+    // Build complete schema.org/Recipe structured data
+    const structuredData: any = {
+      "@context": "https://schema.org/",
       "@type": "Recipe",
       "name": this.recipe.name,
-      "image": `https://www.nelasrecipes.com/${this.recipe.imageUrl}`,
+      "image": [
+        `https://www.nelasrecipes.com/${this.recipe.imageUrl}`
+      ],
       "author": {
         "@type": "Person",
         "name": "Francisco Correia",
-        "url": "https://www.nelasrecipes.com/about-me",
-        "image": `https://www.nelasrecipes.com/assets/images/about.jpg`
+        "url": "https://www.nelasrecipes.com/about-me/"
       },
       "datePublished": this.recipe.date,
       "description": this.recipe.introduction.description,
+      "prepTime": this.recipe.prepTime || "PT0M",
+      "cookTime": this.recipe.cookTime || "PT0M",
+      "totalTime": this.recipe.totalTime || this.recipe.cookTime || "PT0M",
+      "recipeYield": this.recipe.yield || "4 servings",
       "recipeCategory": this.recipe.categories.join(", "),
+      "keywords": this.recipe.keywords || this.recipe.categories.join(", "),
+      "recipeCuisine": this.recipe.cuisine || "International",
       "nutrition": {
         "@type": "NutritionInformation",
-        "calories": this.recipe.nutritional_values.find(n => n.title === 'Calories')?.description
+        "calories": this.recipe.nutritional_values.find(n => n.title === 'Calories')?.description || "N/A"
       },
-      "recipeIngredient": this.recipe.ingredients.content.map(ingredient => ingredient.description),
-      "recipeInstructions": this.recipe.steps.content.map(step => ({
+      "recipeIngredient": this.recipe.ingredients.content.map(ingredient => {
+        const title = ingredient.title ? `${ingredient.title}: ` : '';
+        return `${title}${ingredient.description}`;
+      }),
+      "recipeInstructions": this.recipe.steps.content.map((step, index) => ({
         "@type": "HowToStep",
+        "name": `Step ${index + 1}`,
         "text": step.description
-      }))
+      })),
+      "publisher": {
+        "@type": "Organization",
+        "name": "Nela's Recipes",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.nelasrecipes.com/assets/images/icons/favicon.png"
+        }
+      }
     };
 
     this.metaService.updateTag({

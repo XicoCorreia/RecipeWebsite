@@ -8,6 +8,15 @@ export const sample_recipes: Recipe[] = [
         date: "02 May 2024",
         imageUrl: 'assets/images/recipes/mince_meat.jpg',
         categories: [EnumCategories.Main, EnumCategories.Beef],
+        
+        // SEO Enhancement fields
+        prepTime: "PT10M",      // 10 minutes prep
+        cookTime: "PT30M",     // 30 minutes cook
+        totalTime: "PT40M",    // 40 minutes total
+        yield: "4 servings",   // Serves 4
+        cuisine: "Portuguese", // Portuguese cuisine
+        keywords: "ground beef, beef and veggies, one-pan meal, quick dinner, healthy dinner, weeknight dinner",
+        
         introduction: {
             introduction: "During the 20 years I lived with my mom, this was one of my favorite dishes that she cooked, "+
             "not only because I kept asking when the food was ready and it took roughly 30 minutes, but also because it "+
@@ -52,6 +61,15 @@ export const sample_recipes: Recipe[] = [
         imageUrl: 'assets/images/recipes/apple_turnovers.jpg',
         date: "05 May 2024",
         categories: [EnumCategories.Dessert, EnumCategories.AirFryer],
+        
+        // SEO Enhancement fields
+        prepTime: "PT15M",      // 15 minutes prep
+        cookTime: "PT10M",     // 10 minutes cook
+        totalTime: "PT25M",    // 25 minutes total
+        yield: "4 turnovers",  // Makes 4 turnovers
+        cuisine: "American",   // American pastry
+        keywords: "apple turnovers, cinnamon apples, puff pastry, air fryer recipe, easy dessert, autumn recipe",
+        
         introduction: {
             introduction: "I always loved apples, and as everybody knows, apple and cinnamon belong together. So, I decided to combine these timeless "+
             "flavors into a delightful pastry that captures the essence of autumn in every bite.",
