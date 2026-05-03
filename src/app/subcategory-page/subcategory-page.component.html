@@ -19,7 +19,7 @@
         <div class="grid-container">
             <div *ngFor="let c of categoryRecipes">
                 <article class="grid-article">
-                    <a [routerLink]="'/recipes/' + c.id + '/'"> 
+                    <a [routerLink]="'/recipes/' + c.url + '/'"> 
                         <img src="{{c.imageUrl}}" alt="{{c.name}} recipe" class="image-grid-recipe">
                         <h3 class="image-title"> {{c.name}} </h3>
                         </a>

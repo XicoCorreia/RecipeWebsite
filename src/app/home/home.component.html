@@ -4,7 +4,7 @@
         <div class="main-text-button-container">
             <div class="main-text-button"> 
                 <h1 id="main-text">{{first.name}}</h1> 
-                <a routerLink="/recipes/{{first.id}}/" id="main-button">See the Recipe</a> 
+                <a routerLink="/recipes/{{first.url}}/" id="main-button">See the Recipe</a> 
             </div>
         </div>
     </div>
@@ -32,7 +32,7 @@
         <div class="grid-container">
             <div *ngFor="let ar of airfryer_recipes | slice:0:4">
                 <article class="grid-article">
-                    <a [routerLink]="'/recipes/' + ar.id + '/'"> 
+                    <a [routerLink]="'/recipes/' + ar.url + '/'"> 
                     <img src="{{ar.imageUrl}}" alt= "Air fryer recipe: {{ar.name}}"  class="image-grid-recipe">
                     <h3> {{ar.name}} </h3>
                     </a>
@@ -48,7 +48,7 @@
         <div class="grid-container">
             <div *ngFor="let rr of recent_recipes  | slice:0:8">
                 <article class="grid-article">
-                    <a [routerLink]="'/recipes/' + rr.id + '/'"> 
+                    <a [routerLink]="'/recipes/' + rr.url + '/'"> 
                     <img src="{{rr.imageUrl}}" alt= "Recent recipe: {{rr.name}}" class="image-grid-recipe">
                     <h3> {{rr.name}} </h3>
                     </a>

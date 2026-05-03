@@ -51,7 +51,7 @@ export class RecipesComponent {
         "@type": "Recipe",
         "name": recipe.name,
         "image": recipe.imageUrl,
-        "url": `https://nelasrecipes.com/recipes/${recipe.id}/`,
+        "url": `https://nelasrecipes.com/recipes/${recipe.url}/`,
         "description": recipe.introduction.description || "A delicious recipe."
       }))
     };

@@ -6,6 +6,7 @@ export class Recipe{
     date!: string;
     categories!: EnumCategories[];
     imageUrl!:string;
+    url!:string;
 
     // SEO Enhancement fields
     prepTime?: string;      // ISO 8601 format (e.g., "PT20M" for 20 minutes)

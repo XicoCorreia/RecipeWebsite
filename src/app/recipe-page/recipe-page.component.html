@@ -59,7 +59,7 @@
                 <div class="grid-container">
                     <div *ngFor="let s of categoryRecipes | slice:0:4" class="grid-item">
                         <article class = "grid-article">
-                            <a [routerLink]="'/recipes/' + s.id + '/'"> 
+                            <a [routerLink]="'/recipes/' + s.url + '/'"> 
                                 <img src="{{s.imageUrl}}" alt="Image of recipe {{s.name}} in the {{main_category}} category" class="image-grid-category">
                                 <h3 class="image-title"> {{s.name}} </h3>
                             </a>
@@ -136,7 +136,7 @@
                 <div class="grid-container-latest">
                     <div *ngFor="let rr of recent_recipes  | slice:0:4">
                         <article class="grid-article">
-                            <a [routerLink]="'/recipes/' + rr.id"> 
+                            <a [routerLink]="'/recipes/' + rr.url"> 
                             <img src="{{rr.imageUrl}}" alt= "Latest recipe: {{rr.name}}" class="image-grid-category" id="image-latest">
                             <h4 class="latest-title"> {{rr.name}} </h4>
                             </a>

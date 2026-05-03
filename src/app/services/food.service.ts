@@ -43,8 +43,8 @@ export class FoodService {
     return this._cachedRecipes;
   }
 
-  getRecipeById(recipeId:string):Recipe{
-    return this.getAllRecipes().find(recipe => recipe.id == recipeId) ?? new Recipe();
+  getRecipeByUrl(recipeUrl:string):Recipe{
+    return this.getAllRecipes().find(recipe => recipe.url == recipeUrl) ?? new Recipe();
   }
 
   getRecipeByCategory(category:EnumCategories):Recipe[]{

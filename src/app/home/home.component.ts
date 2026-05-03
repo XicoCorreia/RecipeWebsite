@@ -16,6 +16,7 @@ export class HomeComponent {
     id: '',
     name: '',
     imageUrl: '',
+    url: '',
     steps:  {
       content: [],
       image: '',
@@ -79,7 +80,7 @@ export class HomeComponent {
         "@type": "Recipe",
         "name": this.first.name,
         "image": `https://nelasrecipes.com/${this.first.imageUrl}`,
-        "url": `https://nelasrecipes.com/recipes/${this.first.id}/`,
+        "url": `https://nelasrecipes.com/recipes/${this.first.url}/`,
         "description": this.first.introduction.description || "A delicious recipe featured on the home page."
       },
       "hasPart": [
@@ -91,14 +92,14 @@ export class HomeComponent {
         ...this.airfryer_recipes.map(recipe => ({
           "@type": "Recipe",
           "name": recipe.name,
-          "url": `https://nelasrecipes.com/recipes/${recipe.id}/`,
+          "url": `https://nelasrecipes.com/recipes/${recipe.url}/`,
           "image": recipe.imageUrl,
           "description": recipe.introduction.description || "Delicious air fryer recipe."
         })),
         ...this.recent_recipes.map(recipe => ({
           "@type": "Recipe",
           "name": recipe.name,
-          "url": `https://nelasrecipes.com/recipes/${recipe.id}/`,
+          "url": `https://nelasrecipes.com/recipes/${recipe.url}/`,
           "image": recipe.imageUrl,
           "description": recipe.introduction.description || "A recent delicious recipe."
         }))

@@ -33,8 +33,8 @@ export class RecipePageComponent implements OnInit, OnDestroy {
 
     // Subscribe to route changes to load new recipe data and update meta tags
     this.routeSubscription = this.activatedRoute.params.subscribe((params) => {
-      if (params['id']) {
-        this.recipe = this.foodService.getRecipeById(params['id']);
+      if (params['label']) {
+        this.recipe = this.foodService.getRecipeByUrl(params['label']);
         const list_length = this.recipe.categories.length;
         this.main_category = this.recipe.categories[list_length - 1];
         this.categoryRecipes = this.foodService.getRecipeByCategory(this.main_category);
@@ -67,7 +67,7 @@ export class RecipePageComponent implements OnInit, OnDestroy {
     });
     this.metaService.updateTag({
       property: 'og:url',
-      content: `https://nelasrecipes.com/recipes/${this.recipe.id}/`
+      content: `https://nelasrecipes.com/recipes/${this.recipe.url}/`
     });
     this.metaService.updateTag({ property: 'og:type', content: 'article' });
 
@@ -78,7 +78,7 @@ export class RecipePageComponent implements OnInit, OnDestroy {
       head.appendChild(element);
     }
     element.setAttribute('rel','canonical')
-    element.setAttribute('href', `https://nelasrecipes.com/recipes/${this.recipe.id}/`);
+    element.setAttribute('href', `https://nelasrecipes.com/recipes/${this.recipe.url}/`);
 
     // Twitter Card meta tags
     this.metaService.updateTag({ name: 'twitter:card', content: 'summary_large_image' });

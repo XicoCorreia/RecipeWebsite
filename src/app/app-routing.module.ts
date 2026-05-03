@@ -10,7 +10,7 @@ import { SubcategoryPageComponent } from './subcategory-page/subcategory-page.co
 
 const routes: Routes = [
   {path: '', component:HomeComponent},
-  {path: 'recipes/:id', component:RecipePageComponent},
+  {path: 'recipes/:label', component:RecipePageComponent},
   {path: 'about-me', component:AboutusComponent},
   {path: 'recipes', component:RecipesComponent},
   {path: 'recipe-index', component:CategoriesComponent},

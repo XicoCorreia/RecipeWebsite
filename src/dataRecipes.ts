@@ -5,6 +5,7 @@ export const sample_recipes: Recipe[] = [
     {
         name: 'Ground Beef with Veggies',
         id: '1',
+        url: 'ground-beef-veggies',
         date: "02 May 2024",
         imageUrl: 'assets/images/recipes/mince_meat.jpg',
         categories: [EnumCategories.Main, EnumCategories.Beef],
@@ -59,6 +60,7 @@ export const sample_recipes: Recipe[] = [
         name: 'Apple Turnovers',
         id: '2',
         imageUrl: 'assets/images/recipes/apple_turnovers.jpg',
+        url: 'apple-turnovers',
         date: "05 May 2024",
         categories: [EnumCategories.Dessert, EnumCategories.AirFryer],
         
