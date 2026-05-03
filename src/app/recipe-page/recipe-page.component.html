@@ -2,7 +2,7 @@
     <div class="full-width-background">
         <div class="route"> 
             <a href="#" routerLink="/" class="r-home">Home</a> >
-            <ng-container *ngFor="let category of recipe.categories;">
+            <ng-container *ngFor="let category of recipe.mainCategories;">
                 <a href="#" [routerLink]="'/'+ getPath(category) + '/'" class="r-home">{{ category }}</a> >
             </ng-container>
             {{recipe.name}}
@@ -107,7 +107,7 @@
                     </div>
                     <div>
                         <h2>Additional Info</h2>
-                        <p class="recipe-text"><strong>Categories:</strong> {{recipe.categories.join(", ")}}</p>
+                        <p class="recipe-text"><strong>Categories:</strong> {{recipe.mainCategories.concat(recipe.extraCategories).join(", ")}}</p>
                     </div>
                 </div>
             </div>

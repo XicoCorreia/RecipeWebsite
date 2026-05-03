@@ -48,7 +48,7 @@ export class FoodService {
   }
 
   getRecipeByCategory(category:EnumCategories):Recipe[]{
-    return this.getAllRecipes().filter(r => r.categories?.includes(category));
+    return this.getAllRecipes().filter(r => r.mainCategories?.includes(category) || r.extraCategories?.includes(category));
   }
 
   getSocialIcons(): Icon[] {
@@ -104,7 +104,7 @@ export class FoodService {
     const subCatRecipes: Recipe[][] = [];
     subCategories.forEach(subCat => {
       const recipesForSubCat: Recipe[] = sample_recipes.filter(recipe =>
-          recipe.categories?.some(cat => cat === subCat.name)
+          recipe.mainCategories?.some(cat => cat === subCat.name)
       );
       subCatRecipes.push(recipesForSubCat);
   });

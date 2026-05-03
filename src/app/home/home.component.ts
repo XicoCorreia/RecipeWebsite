@@ -22,7 +22,8 @@ export class HomeComponent {
       image: '',
       subtitle: ''
     },
-    categories: [],
+    mainCategories: [],
+    extraCategories: [],
     date: '',
     introduction:{
       introduction: '',

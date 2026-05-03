@@ -4,7 +4,8 @@ export class Recipe{
     id!:string;
     name!:string;
     date!: string;
-    categories!: EnumCategories[];
+    mainCategories!: EnumCategories[];
+    extraCategories!: EnumCategories[];
     imageUrl!:string;
     url!:string;
 

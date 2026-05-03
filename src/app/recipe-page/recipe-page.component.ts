@@ -16,6 +16,7 @@ export class RecipePageComponent implements OnInit, OnDestroy {
   recipe!: Recipe;
   image!: string;
   main_category!: EnumCategories;
+  extra_categories!: EnumCategories;
   categoryRecipes!: Recipe[];
   recent_recipes!: Recipe[];
   private routeSubscription!: Subscription;
@@ -35,8 +36,10 @@ export class RecipePageComponent implements OnInit, OnDestroy {
     this.routeSubscription = this.activatedRoute.params.subscribe((params) => {
       if (params['label']) {
         this.recipe = this.foodService.getRecipeByUrl(params['label']);
-        const list_length = this.recipe.categories.length;
-        this.main_category = this.recipe.categories[list_length - 1];
+        const list_length = this.recipe.mainCategories.length;
+        this.main_category = this.recipe.mainCategories[list_length - 1];
+        const list_length2 = this.recipe.extraCategories.length;
+        this.extra_categories = this.recipe.extraCategories[list_length2 - 1];
         this.categoryRecipes = this.foodService.getRecipeByCategory(this.main_category);
         this.recent_recipes = this.foodService.getAllRecipes();
 
@@ -107,8 +110,8 @@ export class RecipePageComponent implements OnInit, OnDestroy {
       "cookTime": this.recipe.cookTime || "PT0M",
       "totalTime": this.recipe.totalTime || this.recipe.cookTime || "PT0M",
       "recipeYield": this.recipe.yield || "4 servings",
-      "recipeCategory": this.recipe.categories.join(", "),
-      "keywords": this.recipe.keywords || this.recipe.categories.join(", "),
+      "recipeCategory": this.recipe.mainCategories.concat(this.recipe.extraCategories).join(", "),
+      "keywords": this.recipe.keywords || this.recipe.mainCategories.concat(this.recipe.extraCategories).join(", "),
       "recipeCuisine": this.recipe.cuisine || "International",
       "nutrition": {
         "@type": "NutritionInformation",

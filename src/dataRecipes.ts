@@ -6,7 +6,8 @@ export const sample_recipes: Recipe[] = [
     id: "1",
     name: "Baba de Camelo",
     date: "03 May 2026",
-    categories: [EnumCategories.Dessert, EnumCategories.Portuguese, EnumCategories.Min15Recipes],
+    mainCategories: [EnumCategories.Dessert],
+    extraCategories: [EnumCategories.Min15Recipes, EnumCategories.Portuguese],
     imageUrl: "assets/images/recipes/defaultR.jpg",
     url: "baba-de-camelo",
 
@@ -62,7 +63,8 @@ export const sample_recipes: Recipe[] = [
     id: "2",
     name: "Dulce de Leche Petit Gâteau",
     date: "03 May 2026",
-    categories: [EnumCategories.Dessert, EnumCategories.AirFryer, EnumCategories.Cake],
+    mainCategories: [EnumCategories.Dessert, EnumCategories.Cake],
+    extraCategories: [ EnumCategories.AirFryer],
     imageUrl: "assets/images/recipes/defaultR.jpg",
     url: "dulce-de-leche-petit-gateau",
 
@@ -119,7 +121,8 @@ export const sample_recipes: Recipe[] = [
     id: "3",
     name: "Tuna Mousse",
     date: "03 May 2026",
-    categories: [EnumCategories.SidesAppetizers, EnumCategories.Min15Recipes],
+    mainCategories: [EnumCategories.SidesAppetizers],
+    extraCategories: [EnumCategories.Min15Recipes],
     imageUrl: "assets/images/recipes/defaultR.jpg",
     url: "tuna-mousse",
 
@@ -182,7 +185,8 @@ export const sample_recipes: Recipe[] = [
     id: "4",
     name: "Air Fryer Brussels Sprouts",
     date: "03 May 2026",
-    categories: [EnumCategories.SidesAppetizers, EnumCategories.AirFryer],
+    mainCategories: [EnumCategories.SidesAppetizers],
+    extraCategories: [EnumCategories.AirFryer],
     imageUrl: "assets/images/recipes/defaultR.jpg",
     url: "airfryer-brussels-sprouts",
 
