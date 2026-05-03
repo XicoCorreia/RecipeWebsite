@@ -133,12 +133,12 @@ export const categories_special: Category[] = [
     "new flavors and techniques, our skillet recipes offer something for every taste and occasion. ",
     },
     {id: '34', 
-    name: EnumCategories.Min30Recipes,
-    path:"30min-recipes",
-    imageUrl:'assets/images/categories/30min.jpg',
-    description: "Embrace the joy of quick and delicious cooking with our 30-minute recipes! Perfect for busy weeknights or anytime you need a satisfying meal "+
+    name: EnumCategories.Min15Recipes,
+    path:"15min-recipes",
+    imageUrl:'assets/images/categories/15min.jpg',
+    description: "Embrace the joy of quick and delicious cooking with our 15-minute recipes! Perfect for busy weeknights or anytime you need a satisfying meal "+
     "in a hurry, our collection showcases the beauty of efficiency without sacrificing flavor. Dive into a world of mouthwatering dishes that can be prepared "+
-    "from start to finish in just 30 minutes or less. Whether you're craving hearty pastas, flavorful stir-fries, or comforting soups, our recipes are designed "+
+    "from start to finish in just 15 minutes or less. Whether you're craving hearty pastas, flavorful stir-fries, or comforting soups, our recipes are designed "+
     "to streamline your time in the kitchen while maximizing taste and enjoyment. Say goodbye to long hours spent cooking and hello to quick, delicious meals that "+
     "will leave you feeling satisfied and ready to conquer the day!"
     }, 

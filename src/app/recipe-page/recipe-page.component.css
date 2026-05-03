@@ -122,6 +122,10 @@
     padding-left: 1rem ;
 }
 
+.nutritional-indented {
+    margin-left: 1em;
+}
+
 .recipe-card-container{
     border: #a62031;
     border-style: solid;

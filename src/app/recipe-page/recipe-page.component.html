@@ -100,8 +100,8 @@
                         <h2>Nutrition</h2>
                         <span>per serving</span>
                         <ul class="listing nutritional">
-                            <li *ngFor="let n of recipe.nutritional_values">
-                                <strong *ngIf="n.title" >{{n.title}}:</strong> {{n.description}}
+                            <li *ngFor="let n of recipe.nutritional_values" [class.nutritional-indented]="n.title !== 'Calories'">
+                                <strong *ngIf="n.title === 'Calories'">{{n.title}}:</strong><span *ngIf="n.title !== 'Calories'">{{n.title}}:</span> <span>{{n.description}}</span>
                             </li>
                         </ul>
                     </div>
@@ -118,8 +118,8 @@
                 <h3>Nutrition</h3>
                 <span>per serving</span>
                 <ul class="listing nutritional">
-                    <li *ngFor="let n of recipe.nutritional_values">
-                        <strong *ngIf="n.title" >{{n.title}}:</strong> {{n.description}}
+                    <li *ngFor="let n of recipe.nutritional_values" [class.nutritional-indented]="n.title !== 'Calories'">
+                        <strong *ngIf="n.title === 'Calories'">{{n.title}}:</strong><span *ngIf="n.title !== 'Calories'">{{n.title}}:</span> <span>{{n.description}}</span>
                     </li>
                 </ul>
             </div>

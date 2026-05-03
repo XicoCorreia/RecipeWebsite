@@ -3,117 +3,245 @@ import { EnumCategories } from './app/shared/models/EnumCategories'
 
 export const sample_recipes: Recipe[] = [
     {
-        name: 'Ground Beef with Veggies',
-        id: '1',
-        url: 'ground-beef-veggies',
-        date: "02 May 2024",
-        imageUrl: 'assets/images/recipes/mince_meat.jpg',
-        categories: [EnumCategories.Main, EnumCategories.Beef],
-        
-        // SEO Enhancement fields
-        prepTime: "PT10M",      // 10 minutes prep
-        cookTime: "PT30M",     // 30 minutes cook
-        totalTime: "PT40M",    // 40 minutes total
-        yield: "4 servings",   // Serves 4
-        cuisine: "Portuguese", // Portuguese cuisine
-        keywords: "ground beef, beef and veggies, one-pan meal, quick dinner, healthy dinner, weeknight dinner",
-        
-        introduction: {
-            introduction: "During the 20 years I lived with my mom, this was one of my favorite dishes that she cooked, "+
-            "not only because I kept asking when the food was ready and it took roughly 30 minutes, but also because it "+
-            "tasted amazing. So when I moved out, of course, I needed to try to cook it myself.",
-            description: "Whip up a speedy, nutritious dinner with our one-pan Ground Beef Veggie Skillet. With minimal ingredients but maximum flavor, "+
-            "it's perfect for busy weeknights. Customize your meat and veggies to suit your taste - it's a versatile recipe that's easy to tweak.<br> <br> Got some "+
-            "ground beef and assorted veggies in your fridge that need using up? Look no further than this Ground Beef Veggie Skillet! It's the ultimate "+
-            "clean-out-the-fridge meal, packed with satisfying flavors and requiring just a handful of ingredients."
-        },
-        ingredients: {
-            introduction: "Here is everything you will need:",
-            content: [
-                { title: "Ground beef", description: "I use 96% for a more low calorie recipe but you can use whichever one you prefer." },
-                { title: "Seasonings", description: "For seasoning I use paprika, onion powder, garlic powder, salt and pepper." },
-                { title: "Tomato Sauce", description: "Essential to give moisture and prevent it from drying out." },
-                { title: "Veggies", description: "Here, just grab whatever veggies you have in your fridge. I prefer to use broccoli, carrots, cauliflower, corn, and peas." }
-            ],
-            image: 'assets/images/recipes/ingredients.jpg',
-            subtitle: 'What you need'
-        },
-        steps: {
-            introduction: "Here is how to make this amazing recipe:",
-            content: [
-                { description: "Add the meat to a pan and cook it on medium heat." },
-                { description: "Reduce the heat, add the tomato sauce, spices, and veggies. If you are cooking pasta, add about 100ml of pasta water, otherwise just add water." },
-                { description: "Keep stirring for 5 minutes, then let it cook on low heat for 20 minutes and done!" }
-            ],
-            image: 'assets/images/recipes/steps.jpg',
-            subtitle: 'Recipe'
-        },
-        nutritional_values: [
-            {title: "Calories", description: "NDF"},
-            {title: "Carbohydrates", description: "NDF"},
-            {title: "Protein", description: "NDF"},
-            {title: "Fat", description: "NDF"},
-            {title: "Fiber", description: "NDF"}
+    id: "1",
+    name: "Baba de Camelo",
+    date: "03 May 2026",
+    categories: [EnumCategories.Dessert, EnumCategories.Portuguese, EnumCategories.Min15Recipes],
+    imageUrl: "assets/images/recipes/defaultR.jpg",
+    url: "baba-de-camelo",
+
+    // SEO Enhancement fields
+    prepTime: "PT15M",
+    cookTime: "PT0M",
+    totalTime: "PT15M",
+    yield: "8 servings",
+    cuisine: "Portuguese",
+    keywords: "baba de camelo, portuguese dessert, dulce de leche dessert, easy mousse",
+    videoUrl: "",
+
+    introduction: {
+        introduction: "A super simple Portuguese classic that never fails.",
+        subtitle: "Creamy, sweet, and dangerously easy to make",
+        description: "Baba de Camelo is one of those desserts that feels fancy but is actually incredibly easy. With just a few ingredients, " + 
+        "you get a rich, airy mousse packed with caramel flavor from the dulce de leche. Perfect for impressing guests—or just treating yourself."
+    },
+
+    ingredients: {
+        image: "assets/images/recipes/defaultI.jpg",
+        subtitle: "What you'll need",
+        introduction: "Only 3 main ingredients—can't get easier than this:",
+        content: [
+            { title: "Eggs", description: "5 eggs (separate yolks and whites)" },
+            { title: "Maria biscuits", description: "20 grams, crushed for topping" },
+            { title: "Dulce de leche", description: "1 container" }
+        ]
+    },
+
+    steps: {
+        image: "assets/images/recipes/defaultS.jpg",
+        subtitle: "How to make it",
+        introduction: "Take it slow when mixing to keep that fluffy texture:",
+        content: [
+            { description: "Start by separating the egg yolks from the whites." },
+            { description: "Whisk the egg whites until they form stiff peaks." },
+            { description: "In another bowl, mix the egg yolks with the Dulce de leche until smooth and creamy." },
+            { description: "Gently fold this mixture into the whipped egg whites. Go slowly so you don’t lose that airy texture." },
+            { description: "Pour into a serving dish or individual cups and finish with crushed Maria biscuits on top." },
+            { description: "Chill in the fridge for a bit before serving—it’s even better cold." }
+        ]
+    },
+    
+    nutritional_values: [
+        { title: "Calories", description: "165 kcal" },
+        { title: "Fat", description: "6g" },
+        { title: "Carbohydrates", description: "17g" },
+        { title: "Protein", description: "9g" },
         ]
     },
     {
-        name: 'Apple Turnovers',
-        id: '2',
-        imageUrl: 'assets/images/recipes/apple_turnovers.jpg',
-        url: 'apple-turnovers',
-        date: "05 May 2024",
-        categories: [EnumCategories.Dessert, EnumCategories.AirFryer],
-        
-        // SEO Enhancement fields
-        prepTime: "PT15M",      // 15 minutes prep
-        cookTime: "PT10M",     // 10 minutes cook
-        totalTime: "PT25M",    // 25 minutes total
-        yield: "4 turnovers",  // Makes 4 turnovers
-        cuisine: "American",   // American pastry
-        keywords: "apple turnovers, cinnamon apples, puff pastry, air fryer recipe, easy dessert, autumn recipe",
-        
-        introduction: {
-            introduction: "I always loved apples, and as everybody knows, apple and cinnamon belong together. So, I decided to combine these timeless "+
-            "flavors into a delightful pastry that captures the essence of autumn in every bite.",
-            description: "Indulge in the comforting embrace of our apple turnover, where buttery layers of pastry envelop a generous filling of cinnamon-kissed "+
-            "apples. Each bite offers a symphony of flavors – the tartness of the apples harmonizing with the warmth of cinnamon, all encased in a crisp, golden "+
-            "crust. Baked to perfection, our turnovers boast a tantalizing aroma that beckons with promises of sweet satisfaction. Whether enjoyed as a morning "+
-            "treat or an afternoon delight, our apple turnovers are sure to evoke nostalgic memories and leave taste buds craving more. Experience the epitome of "+
-            "autumnal bliss with every delectable bite."
-        },
-        ingredients: {
-            introduction: "Here is everything you will need:",
-            content: [
-                { title: "Apples", description: "Our main character in the pastry." },
-                { title: "Cinnamon and sugar/stevia", description: "I used stevia to make it less caloric, but you can use whatever you have at home." },
-                { title: "Store-bought puff pastry", description: "I bought mine at Lidl but choose your favorite brand." },
-                { title: "Lemon", description: "The secret ingredient to make the sauce juicy and not too sweet." },
-                { title: "Milk", description: "Used to give that golden and crispy color to the pastry. You can use either milk or eggs." }
-            ],
-            image: '/assets/images/recipes/ingredients.jpg',
-            subtitle: 'What you will need to make Apple Turnovers'
-        },
-        steps: {
-            introduction: "As you can see below, it is easy, fast, and delicious:",
-            content: [
-                { description: "Cut half of an apple into cubes." },
-                { description: "Add both cinnamon and sugar in a pot, mix them together, and add the apple to coat them." },
-                { description: "Add some lemon juice to the apples." },
-                { description: "Cut the pastry into a rectangle and put the coated apples in the middle." },
-                { description: "Close the pastry by bringing the corners to the middle and twisting. Brush milk onto the puff pastry." },
-                { description: "Place it in the air fryer at 180ºC for 10 minutes and enjoy!" }
-            ],
-            image: 'assets/images/recipes/steps.jpg',
-            subtitle: 'Recipe Apple Turnovers'
-        },
-        nutritional_values: [
-            {title: "Calories", description: "NDF"},
-            {title: "Carbohydrates", description: "NDF"},
-            {title: "Protein", description: "NDF"},
-            {title: "Fat", description: "NDF"},
-            {title: "Fiber", description: "NDF"}
+    id: "2",
+    name: "Dulce de Leche Petit Gâteau",
+    date: "03 May 2026",
+    categories: [EnumCategories.Dessert, EnumCategories.AirFryer, EnumCategories.Cake],
+    imageUrl: "assets/images/recipes/defaultR.jpg",
+    url: "dulce-de-leche-petit-gateau",
+
+    // SEO Enhancement fields
+    prepTime: "PT10M",
+    cookTime: "PT12M",
+    totalTime: "PT22M",
+    yield: "2 servings",
+    cuisine: "French",
+    keywords: "dulce de leche petit gateau, lava cake, portuguese dessert, airfryer dessert, caramel lava cake",
+    videoUrl: "",
+
+    introduction: {
+        introduction: "A gooey, caramel-filled dessert ready in minutes.",
+        subtitle: "Soft on the outside, molten in the middle",
+        description: "This dulce de leche petit gâteau is the perfect quick dessert. It bakes up soft and cakey on the outside, while staying rich and molten in the center. " +
+        "Best part? You can make it in the air fryer with just 4 ingredients."
+    },
+
+    ingredients: {
+        image: "assets/images/recipes/defaultI.jpg",
+        subtitle: "What you'll need",
+        introduction: "Just a handful of ingredients:",
+        content: [
+            { title: "Egg", description: "1 whole egg" },
+            { title: "Egg yolk", description: "1 extra yolk for richness" },
+            { title: "All-purpose flour", description: "25 g" },
+            { title: "Dulce de leche", description: "160 g" }
         ]
     },
+
+    steps: {
+        image: "assets/images/recipes/defaultS.jpg",
+        subtitle: "How to make it",
+        introduction: "Quick and easy—don't overmix:",
+        content: [
+            { description: "In a bowl, mix the egg, egg yolk, and dulce de leche until smooth and creamy." },
+            { description: "Add the flour and gently mix until just combined." },
+            { description: "Pour the batter into a small greased, air fryer-safe ramekin." },
+            { description: "Cook at 190ºC for 10-12 minutes. The outside should be set, but the center still soft." },
+            { description: "Let it rest for a minute, then serve warm—ideally with the center still gooey." }
+        ]
+    },
+    
+    nutritional_values: [
+        { title: "Calories", description: "397 kcal" },
+        { title: "Fat", description: "10g" },
+        { title: "Carbohydrates", description: "62g " },
+        { title: "Protein", description: "14g" }
+    ]
+    },
+
+    {
+    id: "3",
+    name: "Tuna Mousse",
+    date: "03 May 2026",
+    categories: [EnumCategories.SidesAppetizers, EnumCategories.Min15Recipes],
+    imageUrl: "assets/images/recipes/defaultR.jpg",
+    url: "tuna-mousse",
+
+    // SEO Enhancement fields
+    prepTime: "PT10M",
+    cookTime: "PT0M",
+    totalTime: "PT10M",
+    yield: "4 servings",
+    cuisine: "International",
+    keywords: "tuna mousse, tuna spread, quick appetizer, tuna dip, easy snack",
+    videoUrl: "",
+
+    introduction: {
+        introduction: "A quick, creamy tuna spread you can make in minutes.",
+        subtitle: "Simple, tasty, and super versatile",
+        description: "This tuna mousse is perfect when you need something fast and satisfying. Creamy from the mayo and crème fraîche, " +
+        "with a bit of tang from mustard and lemon, it’s great on toast, crackers, or even as a sandwich filling."
+    },
+
+    ingredients: {
+        image: "assets/images/recipes/defaultI.jpg",
+        subtitle: "What you'll need",
+        introduction: "Everything comes together in one bowl:",
+        content: [
+            { title: "Canned tuna", description: "2 cans, drained well" },
+            { title: "Mayonnaise", description: "3 tablespoons" },
+            { title: "Crème fraîche", description: "2 tablespoons" },
+            { title: "Mustard", description: "2 teaspoons" },
+            { title: "Pickles", description: "4 small, finely chopped" },
+            { title: "Lemon juice", description: "¼ lemon" },
+            { title: "Salt", description: "¼ teaspoon (adjust to taste)" },
+            { title: "Black pepper", description: "1 teaspoon, ground (adjust to taste)" }
+        ]
+    },
+
+    steps: {
+        image: "assets/images/recipes/defaultS.jpg",
+        subtitle: "How to make it",
+        introduction: "Quick mix and you're done:",
+        content: [
+            { description: "Start by squeezing and draining the tuna well to remove excess water." },
+            { description: "Place the tuna in a bowl and break it apart with a fork." },
+            { description: "Add the mayonnaise, crème fraîche, and mustard, then mix until creamy." },
+            { description: "If the texture feels too thick, add a bit more mayo or crème fraîche." },
+            { description: "Season with salt, black pepper, and lemon juice to taste." },
+            { description: "Finely chop the pickles and fold them into the mixture." },
+            { description: "Serve immediately or chill for a bit—it gets even better cold." }
+        ]
+    },
+    
+    nutritional_values: [
+        { title: "Calories", description: "186 kcal" },
+        { title: "Fat", description: "13g" },
+        { title: "Carbohydrates", description: "1g" },
+        { title: "Fiber", description: "1g" },
+        { title: "Protein", description: "16g" }
+    ]
+    },
+    {
+    id: "4",
+    name: "Air Fryer Brussels Sprouts",
+    date: "03 May 2026",
+    categories: [EnumCategories.SidesAppetizers, EnumCategories.AirFryer],
+    imageUrl: "assets/images/recipes/defaultR.jpg",
+    url: "airfryer-brussels-sprouts",
+
+    // SEO Enhancement fields
+    prepTime: "PT5M",
+    cookTime: "PT15M",
+    totalTime: "PT20M",
+    yield: "2 servings",
+    cuisine: "International",
+    keywords: "brussels sprouts air fryer, healthy side dish, crispy brussels sprouts, balsamic brussels sprouts",
+    videoUrl: "",
+
+    introduction: {
+        introduction: "Crispy Brussels sprouts with a tangy balsamic finish.",
+        subtitle: "Simple, healthy, and packed with flavor",
+        description: "These air fryer Brussels sprouts come out crispy on the outside and tender inside. " +
+        "Finished with a touch of balsamic vinegar, they get that perfect balance of savory and slightly sweet. " +
+        "An easy side dish that goes with pretty much anything."
+    },
+
+    ingredients: {
+        image: "assets/images/recipes/defaultI.jpg",
+        subtitle: "What you'll need",
+        introduction: "Simple ingredients, big flavor:",
+        content: [
+            { title: "Brussels sprouts", description: "200 g, trimmed and halved" },
+            { title: "Olive oil", description: "½ tablespoon" },
+            { title: "Paprika", description: "1 teaspoon" },
+            { title: "Salt", description: "½ teaspoon" },
+            { title: "Black pepper", description: "½ teaspoon, ground" },
+            { title: "Balsamic vinegar", description: "1-2 teaspoons, for finishing" }
+        ]
+    },
+
+    steps: {
+        image: "assets/images/recipes/defaultS.jpg",
+        subtitle: "How to make it",
+        introduction: "Crispy first, then finish with flavor:",
+        content: [
+            { description: "Start by washing and trimming the Brussels sprouts, then cut them in half." },
+            { description: "Place them in a bowl and add olive oil, paprika, salt, and black pepper." },
+            { description: "Mix well so everything is evenly coated." },
+            { description: "Transfer to the air fryer basket in a single layer." },
+            { description: "Cook at 180ºC for 12-15 minutes, shaking halfway through." },
+            { description: "For extra crispiness, optionally cook 2 more minutes at 190ºC." },
+            { description: "Remove from the air fryer and immediately drizzle with balsamic vinegar." },
+            { description: "Toss quickly and serve while hot." }
+        ]
+    },
+    
+    nutritional_values: [
+        { title: "Calories", description: "124 kcal" },
+        { title: "Total Fat", description: "4g" },
+        { title: "Carbohydrates", description: "10g" },
+        { title: "Fiber", description: "6g " },
+        { title: "Protein", description: "6g" },
+    ]
+    },
+
 ];
 
 
