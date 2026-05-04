@@ -66,7 +66,7 @@ export const sample_recipes: Recipe[] = [
     mainCategories: [EnumCategories.Dessert, EnumCategories.Cake],
     extraCategories: [ EnumCategories.AirFryer],
     imageUrl: "assets/images/recipes/defaultR.jpg",
-    url: "dulce-de-leche-petit-gateau",
+    url: "dulce-de-leche-petit-gateaux",
 
     // SEO Enhancement fields
     prepTime: "PT10M",
@@ -74,7 +74,7 @@ export const sample_recipes: Recipe[] = [
     totalTime: "PT22M",
     yield: "2 servings",
     cuisine: "French",
-    keywords: "dulce de leche petit gateau, lava cake, portuguese dessert, airfryer dessert, caramel lava cake",
+    keywords: "dulce de leche petit gateaux, lava cake, portuguese dessert, airfryer dessert, caramel lava cake",
     videoUrl: "",
 
     introduction: {
