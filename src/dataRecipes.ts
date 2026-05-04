@@ -310,6 +310,70 @@ export const sample_recipes: Recipe[] = [
         { title: "Protein", description: "39g" },
         ]
     },
+
+    {
+    id: "6",
+    name: "Strawberry Protein Gelatine Mousse",
+    date: "03 May 2026",
+    mainCategories: [EnumCategories.Dessert],
+    extraCategories: [EnumCategories.LowCalorie],
+    imageUrl: "assets/images/recipes/defaultR.jpg",
+    url: "strawberry-protein-gelatine-mousse",
+
+    // SEO Enhancement fields
+    prepTime: "PT10M",
+    cookTime: "PT0M",
+    totalTime: "PT10M",
+    yield: "3 servings",
+    cuisine: "International",
+    keywords: "protein mousse, strawberry gelatine mousse, healthy dessert, high protein dessert, low calorie dessert",
+    videoUrl: "",
+
+    introduction: {
+        introduction: "Light, high-protein mousse with a fresh strawberry twist.",
+        subtitle: "Easy, refreshing, and surprisingly filling",
+        description: "This strawberry protein gelatine mousse is a super easy dessert that's light but still satisfying. " +
+        "It combines creamy Greek yogurt with protein powder and fruity gelatine for a smooth, airy texture. " +
+        "Great as a low-calorie treat or post-workout snack."
+    },
+
+    ingredients: {
+        image: "assets/images/recipes/defaultI.jpg",
+        subtitle: "What you'll need",
+        introduction: "Simple and protein-packed:",
+        content: [
+            { title: "Whey protein (vanilla)", description: "1 scoop, about 30g" },
+            { title: "Greek yogurt", description: "200 g" },
+            { title: "Strawberry gelatine", description: "1 pack" },
+            { title: "Water", description: "700 ml (500 ml hot + 200 ml cold)" },
+            { title: "Strawberries (optional)", description: "Fresh, for extra flavor and texture" }
+        ]
+    },
+
+    steps: {
+        image: "assets/images/recipes/defaultS.jpg",
+        subtitle: "How to make it",
+        introduction: "Mix, chill, and you're done:",
+        content: [
+            { description: "Start by mixing the whey protein with the Greek yogurt until smooth." },
+            { description: "In a separate bowl, dissolve the strawberry gelatine in 500 ml of hot water, stirring well." },
+            { description: "Add 200 ml of cold water to the gelatine mixture and stir." },
+            { description: "Combine the gelatine mixture with the yogurt and protein mix, stirring until fully smooth." },
+            { description: "Optionally, add chopped strawberries for extra texture and freshness." },
+            { description: "Pour into a bowl or individual cups." },
+            { description: "Place in the fridge for a few hours until fully set." },
+            { description: "For a firmer texture, reduce the amount of cold water slightly." }
+        ]
+    },
+    
+    nutritional_values: [
+        { title: "Calories", description: "79 kcal" },
+        { title: "Total Fat", description: "0g" },
+        { title: "Carbohydrates", description: "4g" },
+        { title: "Fiber", description: "0g" },
+        { title: "Protein", description: "15g" },
+    ]
+    },
 ];
 
 
