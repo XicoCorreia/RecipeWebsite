@@ -246,6 +246,70 @@ export const sample_recipes: Recipe[] = [
     ]
     },
 
+    {
+    id: "5",
+    name: "Crispy Air Fryer Chicken Wings",
+    date: "05 May 2026",
+    mainCategories: [EnumCategories.Main],
+    extraCategories: [EnumCategories.Chicken],
+    imageUrl: "assets/images/recipes/defaultR.jpg",
+    url: "crispy-airfryer-chicken-wings",
+
+    // SEO Enhancement fields
+    prepTime: "PT10M",
+    cookTime: "PT22M",
+    totalTime: "PT32M",
+    yield: "3 servings",
+    cuisine: "International",
+    keywords: "air fryer chicken wings, crispy wings, easy chicken wings, homemade wings",
+    videoUrl: "",
+
+    introduction: {
+        introduction: "Crispy on the outside, juicy on the inside—these air fryer wings deliver big flavor with barely any effort.",
+        subtitle: "Big flavor, minimal effort",
+        description: "These air fryer chicken wings come out crispy on the outside and juicy on the inside with barely any oil. " +
+        "A simple spice mix and a light flour coating give them that perfect texture—great for a quick meal or game night."
+    },
+
+    ingredients: {
+        image: "assets/images/recipes/defaultI.jpg",
+        subtitle: "What you'll need",
+        introduction: "Simple seasoning, great results:",
+        content: [
+            { title: "Chicken wings", description: "650 g, raw" },
+            { title: "All-purpose flour", description: "30 g" },
+            { title: "Smoked paprika", description: "1 teaspoon" },
+            { title: "Garlic powder", description: "1 teaspoon" },
+            { title: "Black pepper", description: "1 teaspoon, ground" },
+            { title: "Salt", description: "½ teaspoon" },
+            { title: "Olive oil spray", description: "Light coating" }
+        ]
+    },
+
+    steps: {
+        image: "assets/images/recipes/defaultS.jpg",
+        subtitle: "How to make it",
+        introduction: "Crispy wings, no deep fryer needed:",
+        content: [
+            { description: "Start by patting the chicken wings dry with paper towels—this helps them get crispy." },
+            { description: "Lightly spray the wings with olive oil. Don't overdo it, just enough to help the coating stick." },
+            { description: "In a bag or bowl, mix the flour, paprika, garlic powder, black pepper, and salt." },
+            { description: "Add the wings and shake (or toss) until they're evenly coated." },
+            { description: "Place the wings in the air fryer in a single layer." },
+            { description: "Cook at 180ºC for 15-17 minutes." },
+            { description: "Increase the temperature to 200ºC and cook for another 5 minutes for extra crispiness." },
+            { description: "Serve hot—perfect on their own or with your favorite sauce. My choice is a smoky bbq!" }
+        ]
+    },
+    
+    nutritional_values: [
+        { title: "Calories", description: "458 kcal" },
+        { title: "Fat", description: "28g" },
+        { title: "Carbohydrates", description: "8g" },
+        { title: "Fiber", description: "1g" },
+        { title: "Protein", description: "39g" },
+        ]
+    },
 ];
 
 
