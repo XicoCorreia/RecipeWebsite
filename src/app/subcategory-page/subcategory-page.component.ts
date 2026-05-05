@@ -45,14 +45,14 @@ export class SubcategoryPageComponent implements OnInit, OnDestroy {
   }
 
   updateMetaTags(): void {
-    this.titleService.setTitle(`${this.category.name} Recipes - ${this.parent_name} | Nela's Recipes`);
+    this.titleService.setTitle(`${this.category.name} - ${this.parent_name} Recipes | Nela's Recipes`);
     
     this.metaService.updateTag({
       name: 'description',
       content: `Explore our selection of ${this.category.name.toLowerCase()} recipes in the ${this.parent_name} category. Discover new dishes for every occasion.`
     });
 
-    this.metaService.updateTag({ property: 'og:title', content: `${this.category.name} Recipes - ${this.parent_name} | Nela's Recipes` });
+    this.metaService.updateTag({ property: 'og:title', content: `${this.category.name} - ${this.parent_name} Recipes | Nela's Recipes` });
     this.metaService.updateTag({ property: 'og:description', content: `Browse through delicious ${this.category.name.toLowerCase()} recipes in the ${this.parent_name} category. Perfect for food lovers looking for inspiration.` });
     this.metaService.updateTag({ property: 'og:image', content: `https://nelasrecipes.com/${this.category.imageUrl}` });
     this.metaService.updateTag({ property: 'og:url', content: `https://nelasrecipes.com/${this.category.path}/` });
@@ -71,7 +71,7 @@ export class SubcategoryPageComponent implements OnInit, OnDestroy {
     const structuredData = {
       "@context": "https://schema.org",
       "@type": "CollectionPage",
-      "name": `${this.category.name} Recipes - ${this.parent_name} | Nela's Recipes`,
+      "name": `${this.category.name} - ${this.parent_name} Recipes | Nela's Recipes`,
       "description": `Explore a variety of ${this.category.name.toLowerCase()} recipes in the ${this.parent_name} category.`,
       "image": `https://nelasrecipes.com/${this.category.imageUrl}`, 
       "url": `https://nelasrecipes.com/${this.category.path}/`,

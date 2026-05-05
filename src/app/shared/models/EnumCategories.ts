@@ -17,7 +17,7 @@ export enum EnumCategories {
     LowCalorie = "Low Calorie",
     AirFryer = "Air Fryer",
     Skillet = "Skillet",
-    Min15Recipes = "15min Recipes",
+    Max15Recipes = "Ready in 15 Minutes",
 
     // Cuisine categories
     Asian = "Asian",

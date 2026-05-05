@@ -19,13 +19,13 @@ export class RecipesComponent {
   ngOnInit(): void {
     this.recipes = this.foodService.getAllRecipes();
 
-    this.titleService.setTitle('All Recipes - Nela\'s Recipes');
+    this.titleService.setTitle('All Recipes | Nela\'s Recipes');
 
     // Set meta description
     this.metaService.updateTag({ name: 'description', content: 'Explore all of Nela\'s delicious recipes! From breakfast to dinner, we have something for everyone.' });
 
     // Open Graph tags (for social media sharing)
-    this.metaService.updateTag({ property: 'og:title', content: 'All Recipes - Nela\'s Recipes' });
+    this.metaService.updateTag({ property: 'og:title', content: 'All Recipes | Nela\'s Recipes' });
     this.metaService.updateTag({ property: 'og:description', content: 'Explore all of Nela\'s delicious recipes! From breakfast to dinner, we have something for everyone.' });
     this.metaService.updateTag({ property: 'og:image', content: 'https://nelasrecipes.com/assets/images/icons/favicon.png' });
     this.metaService.updateTag({ property: 'og:url', content: 'https://nelasrecipes.com/recipes/' });
@@ -43,7 +43,7 @@ export class RecipesComponent {
     const structuredData = {
       "@context": "https://schema.org",
       "@type": "CollectionPage",
-      "name": "All Recipes - Nela's Recipes",
+      "name": "All Recipes | Nela's Recipes",
       "description": "Explore a variety of recipes across different categories including breakfast, appetizers, desserts, and more.",
       "image": 'https://nelasrecipes.com/assets/images/icons/favicon.png', 
       "url": "https://nelasrecipes.com/recipes/",
