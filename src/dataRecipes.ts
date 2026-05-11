@@ -7,7 +7,7 @@ export const sample_recipes: Recipe[] = [
     name: "Baba de Camelo",
     date: "03 May 2026",
     mainCategories: [EnumCategories.Dessert],
-    extraCategories: [EnumCategories.Min15Recipes, EnumCategories.Portuguese],
+    extraCategories: [EnumCategories.Max15Recipes, EnumCategories.Portuguese],
     imageUrl: "assets/images/recipes/defaultR.jpg",
     url: "baba-de-camelo",
 
@@ -122,7 +122,7 @@ export const sample_recipes: Recipe[] = [
     name: "Tuna Mousse",
     date: "03 May 2026",
     mainCategories: [EnumCategories.SidesAppetizers],
-    extraCategories: [EnumCategories.Min15Recipes],
+    extraCategories: [EnumCategories.Max15Recipes],
     imageUrl: "assets/images/recipes/defaultR.jpg",
     url: "tuna-mousse",
 
@@ -374,6 +374,136 @@ export const sample_recipes: Recipe[] = [
         { title: "Protein", description: "15g" },
     ]
     },
+    {
+    id: "7",
+    name: "Crispy Air Fryer Potatoes",
+    date: "03 May 2026",
+    mainCategories: [EnumCategories.SidesAppetizers],
+    extraCategories: [EnumCategories.AirFryer, EnumCategories.LowCalorie],
+    imageUrl: "assets/images/recipes/defaultR.jpg",
+    url: "crispy-airfryer-potatoes",
+
+    // SEO Enhancement fields
+    prepTime: "PT10M",
+    cookTime: "PT25M",
+    totalTime: "PT35M",
+    yield: "2 servings",
+    cuisine: "International",
+    keywords: "air fryer potatoes, crispy potatoes, roasted potatoes, easy side dish, healthy potatoes",
+    videoUrl: "",
+
+    introduction: {
+        introduction: "Golden and crispy potatoes made easily in the air fryer.",
+        subtitle: "Simple, crunchy, and impossible to stop eating",
+        description: "These air fryer potatoes are crispy on the outside, fluffy on the inside, and incredibly easy to make. " +
+        "A quick soak in cold water helps remove excess starch for better crispiness, while simple seasoning keeps them versatile enough " +
+        "to go with almost any meal."
+    },
+
+    ingredients: {
+        image: "assets/images/recipes/defaultI.jpg",
+        subtitle: "What you'll need",
+        introduction: "Simple ingredients, great results:",
+        content: [
+            { title: "Potatoes", description: "4 small potatoes" },
+            { title: "Olive oil", description: "½ tablespoon" },
+            { title: "Salt", description: "¼ teaspoon" },
+            { title: "Black pepper", description: "1 teaspoon, ground" },
+            { title: "Smoked paprika", description: "Optional, for extra flavor" },
+            { title: "Herbs", description: "Optional, such as oregano or thyme" }
+        ]
+    },
+
+    steps: {
+        image: "assets/images/recipes/defaultS.jpg",
+        subtitle: "How to make it",
+        introduction: "The secret is drying them well before cooking:",
+        content: [
+            { description: "Start by cutting the potatoes into evenly sized pieces." },
+            { description: "Wash them under cold water to remove excess starch." },
+            { description: "If you have time, leave the potatoes soaking in cold water in the fridge for a while for extra crispiness." },
+            { description: "Drain and dry the potatoes really well using paper towels or a clean kitchen towel." },
+            { description: "Place them in a bowl and add olive oil, salt, black pepper, smoked paprika, and any herbs you like." },
+            { description: "Mix until everything is evenly coated." },
+            { description: "Place the potatoes in the air fryer basket in a single layer." },
+            { description: "Cook at 180ºC for 20 minutes, shaking halfway through." },
+            { description: "Increase the temperature to 190ºC and cook for another 5 minutes for extra crispiness." },
+            { description: "Serve hot and enjoy." }
+        ]
+    },
+
+    nutritional_values: [
+        { title: "Calories", description: "296 kcal" },
+        { title: "Fat", description: "4g" },
+        { title: "Carbohydrates", description: "53g" },
+        { title: "Fiber", description: "7g" },
+        { title: "Protein", description: "7g" }
+    ]
+    },
+    {
+    id: "8",
+    name: "Traditional Spaghetti Carbonara",
+    date: "03 May 2026",
+    mainCategories: [EnumCategories.Main],
+    extraCategories: [EnumCategories.Pasta, EnumCategories.Italian],
+    imageUrl: "assets/images/recipes/defaultR.jpg",
+    url: "traditional-spaghetti-carbonara",
+
+    // SEO Enhancement fields
+    prepTime: "PT10M",
+    cookTime: "PT15M",
+    totalTime: "PT25M",
+    yield: "2 servings",
+    cuisine: "Italian",
+    keywords: "spaghetti carbonara, authentic carbonara, guanciale pasta, italian pasta recipe",
+    videoUrl: "",
+
+    introduction: {
+        introduction: "A creamy and authentic carbonara made the traditional way.",
+        subtitle: "Simple ingredients, incredible flavor",
+        description: "This classic spaghetti carbonara keeps things simple and authentic. " +
+        "Crispy guanciale, pecorino romano, eggs, and black pepper come together to create a rich and silky sauce without using any cream. " +
+        "It's one of those dishes that feels fancy but comes together surprisingly quickly."
+    },
+
+    ingredients: {
+        image: "assets/images/recipes/defaultI.jpg",
+        subtitle: "What you'll need",
+        introduction: "Only a few ingredients, so quality matters:",
+        content: [
+            { title: "Spaghetti", description: "140 g" },
+            { title: "Guanciale", description: "80 g" },
+            { title: "Eggs", description: "2 eggs" },
+            { title: "Pecorino Romano", description: "50 g, finely grated" },
+            { title: "Black pepper", description: "1 teaspoon, ground" }
+        ]
+    },
+
+    steps: {
+        image: "assets/images/recipes/defaultS.jpg",
+        subtitle: "How to make it",
+        introduction: "The key is using the pasta heat to create the sauce:",
+        content: [
+            { description: "Start by cooking the guanciale in a pan over medium heat. No oil is needed since it cooks in its own fat." },
+            { description: "Cook until crispy and golden, then set aside while keeping the rendered fat in the pan." },
+            { description: "Meanwhile, cook the spaghetti in salted boiling water until al dente." },
+            { description: "In a bowl, whisk together the eggs, grated pecorino romano, black pepper, and a small spoon of the guanciale fat." },
+            { description: "Once the pasta is ready, transfer it directly to the pan with the guanciale off the heat." },
+            { description: "Add a splash of pasta water and mix well." },
+            { description: "Pour in the egg and cheese mixture while tossing continuously so the residual heat creates a creamy sauce without scrambling the eggs." },
+            { description: "Add more pasta water if needed until the sauce becomes smooth and glossy." },
+            { description: "Serve immediately with extra pecorino and black pepper on top." }
+        ]
+    },
+
+    nutritional_values: [
+        { title: "Calories", description: "683 kcal" },
+        { title: "Total Fat", description: "40g" },
+        { title: "Carbohydrates", description: "51g" },
+        { title: "Fiber", description: "3g" },
+        { title: "Protein", description: "31g" }
+    ]
+    }
 ];
 
 

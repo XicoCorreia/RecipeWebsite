@@ -133,7 +133,7 @@ export const categories_special: Category[] = [
     "new flavors and techniques, our skillet recipes offer something for every taste and occasion. ",
     },
     {id: '34', 
-    name: EnumCategories.Min15Recipes,
+    name: EnumCategories.Max15Recipes,
     path:"15min-recipes",
     imageUrl:'assets/images/categories/15min.jpg',
     description: "Embrace the joy of quick and delicious cooking with our 15-minute recipes! Perfect for busy weeknights or anytime you need a satisfying meal "+
