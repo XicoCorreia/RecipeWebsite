@@ -774,6 +774,210 @@ export const sample_recipes: Recipe[] = [
         { title: "Fiber", description: "5g" },
         { title: "Protein", description: "10g" }
     ]
+    },
+    {
+    id: "13",
+    name: "Stegt flæsk - Danish Crispy Pork with Parsley Sauce",
+    date: "11 May 2026",
+    mainCategories: [EnumCategories.Main],
+    extraCategories: [EnumCategories.Pork],
+    imageUrl: "assets/images/recipes/defaultR.jpg",
+    url: "stegt-flæsk",
+
+    // SEO Enhancement fields
+    prepTime: "PT10M",
+    cookTime: "PT35M",
+    totalTime: "PT45M",
+    yield: "2 servings",
+    cuisine: "Danish",
+    keywords: "stegt flæsk, danish pork recipe, parsley sauce, crispy pork belly, traditional danish food",
+    videoUrl: "",
+
+    introduction: {
+        introduction: "A traditional Danish comfort food classic with crispy pork and creamy parsley sauce.",
+        subtitle: "Crispy, creamy, and deeply comforting",
+        description: "This traditional Danish dish combines crispy roasted pork with boiled potatoes and a rich parsley sauce. " +
+        "Known in Denmark as stegt flæsk, the crispy pork pairs perfectly with the creamy sauce flavored with fresh parsley and a touch of lemon. " +
+        "Simple ingredients come together to create one of Denmark's most beloved meals."
+    },
+
+    ingredients: {
+        image: "assets/images/recipes/defaultI.jpg",
+        subtitle: "What you'll need",
+        introduction: "Classic ingredients for a comforting Danish favorite:",
+        content: [
+            { title: "Potatoes", description: "400 g" },
+            { title: "Pork belly slices (stegt flæsk)", description: "300 g" },
+            { title: "Salt", description: "3 teaspoons" },
+            { title: "Black pepper", description: "1 teaspoon" },
+            { title: "Milk", description: "400 ml" },
+            { title: "Butter", description: "25 g" },
+            { title: "Flour", description: "25 g" },
+            { title: "Parsley", description: "1/2 cup, chopped" },
+            { title: "Lemon juice", description: "1/4 lemon" }
+        ]
+    },
+
+    steps: {
+        image: "assets/images/recipes/defaultS.jpg",
+        subtitle: "How to make it",
+        introduction: "The crispy pork and creamy parsley sauce are the stars of this dish:",
+        content: [
+            { description: "Place the potatoes in a pot with salted water and boil until tender." },
+            { description: "Season the pork slices with salt and black pepper." },
+            { description: "Place the pork on a baking tray and cook in the oven at 190°C for 25–30 minutes until crispy and golden." },
+            { description: "Meanwhile, prepare the parsley sauce." },
+            { description: "Melt the butter in a saucepan over low to medium heat." },
+            { description: "Add the flour and cook while stirring until a smooth paste forms." },
+            { description: "Gradually pour in the milk while whisking continuously until fully incorporated." },
+            { description: "Cook until the sauce thickens enough to coat the back of a spoon and starts gently bubbling." },
+            { description: "Reduce the heat and simmer briefly." },
+            { description: "Remove from the heat and stir in the parsley, lemon juice, salt, and black pepper." },
+            { description: "Serve the crispy pork with the boiled potatoes and warm parsley sauce." }
+        ]
+    },
+
+    nutritional_values: [
+        { title: "Calories", description: "850 kcal" },
+        { title: "Total Fat", description: "50g" },
+        { title: "Carbohydrates", description: "56g" },
+        { title: "Fiber", description: "4g" },
+        { title: "Protein", description: "45g" }
+    ]
+    },
+    {
+    id: "14",
+    name: "Ninja Creami Oreo Protein Ice Cream",
+    date: "11 May 2026",
+    mainCategories: [EnumCategories.Dessert],
+    extraCategories: [EnumCategories.LowCalorie],
+    imageUrl: "assets/images/recipes/defaultR.jpg",
+    url: "ninja-creami-oreo-protein-ice-cream",
+
+    // SEO Enhancement fields
+    prepTime: "PT10M",
+    cookTime: "PT0M",
+    totalTime: "PT24H10M",
+    yield: "1 pint",
+    cuisine: "International",
+    keywords: "ninja creami oreo ice cream, protein ice cream, oreo protein dessert, ninja creami recipe",
+    videoUrl: "",
+
+    introduction: {
+        introduction: "A creamy high-protein Oreo ice cream made in the Ninja Creami.",
+        subtitle: "Creamy texture with real Oreo pieces",
+        description: "This Ninja Creami Oreo protein ice cream delivers a rich and creamy dessert while staying high in protein and lower in calories than traditional ice cream. " +
+        "The combination of protein powder, vanilla, and crushed Oreos creates the perfect balance between indulgent and healthy. " +
+        "Perfect for a satisfying dessert or post-workout treat."
+    },
+
+    ingredients: {
+        image: "assets/images/recipes/defaultI.jpg",
+        subtitle: "What you'll need",
+        introduction: "Simple ingredients create a creamy protein-packed dessert:",
+        content: [
+            { title: "Milk", description: "200 ml" },
+            { title: "Almond milk", description: "200 ml" },
+            { title: "Xanthan gum", description: "1/4 teaspoon" },
+            { title: "Stevia", description: "20 g" },
+            { title: "Protein powder", description: "1 scoop" },
+            { title: "Vanilla extract", description: "4 ml" },
+            { title: "Salt", description: "1 pinch" },
+            { title: "Oreos", description: "3 cookies" }
+        ]
+    },
+
+    steps: {
+        image: "assets/images/recipes/defaultS.jpg",
+        subtitle: "How to make it",
+        introduction: "The Ninja Creami creates the perfect creamy texture:",
+        content: [
+            { description: "Add the milk, almond milk, xanthan gum, stevia, protein powder, vanilla extract, and salt to a Ninja Creami pint container." },
+            { description: "Blend everything using an immersion blender until completely smooth." },
+            { description: "Freeze for at least 12 hours, preferably 24 hours." },
+            { description: "Before spinning, run the outside of the container under water for 30 seconds to 1 minute." },
+            { description: "Place the pint into the Ninja Creami and run it on Lite Ice Cream mode." },
+            { description: "If the texture comes out crumbly, respin until smooth and creamy." },
+            { description: "Use a knife to scrape down the sides and create a hole in the center." },
+            { description: "Break up 2 Oreos and add them into the center." },
+            { description: "Run the Extras or Mix-In setting." },
+            { description: "Crumble the remaining Oreo on top before serving." }
+        ]
+    },
+
+    nutritional_values: [
+        { title: "Calories", description: "350 kcal" },
+        { title: "Total Fat", description: "10g" },
+        { title: "Carbohydrates", description: "30g" },
+        { title: "Fiber", description: "2g" },
+        { title: "Protein", description: "34g" }
+    ]
+    },
+    {
+    id: "15",
+    name: "Ninja Creami Vanilla Protein Ice Cream",
+    date: "11 May 2026",
+    mainCategories: [EnumCategories.Dessert],
+    extraCategories: [EnumCategories.LowCalorie],
+    imageUrl: "assets/images/recipes/defaultR.jpg",
+    url: "ninja-creami-vanilla-protein-ice-cream",
+
+    // SEO Enhancement fields
+    prepTime: "PT10M",
+    cookTime: "PT0M",
+    totalTime: "PT24H10M",
+    yield: "1 pint",
+    cuisine: "International",
+    keywords: "ninja creami vanilla ice cream, protein ice cream, healthy vanilla ice cream, ninja creami recipe",
+    videoUrl: "",
+
+    introduction: {
+        introduction: "A smooth and creamy high-protein vanilla ice cream made in the Ninja Creami.",
+        subtitle: "Simple, creamy, and customizable",
+        description: "This Ninja Creami vanilla protein ice cream is the perfect healthy base recipe for endless flavor combinations. " +
+        "Creamy, lightly sweet, and packed with protein, it works perfectly on its own or with your favorite mix-ins. " +
+        "A simple recipe that delivers classic vanilla ice cream texture with much lighter macros."
+    },
+
+    ingredients: {
+        image: "assets/images/recipes/defaultI.jpg",
+        subtitle: "What you'll need",
+        introduction: "A few simple ingredients create a creamy protein-packed dessert:",
+        content: [
+            { title: "Milk", description: "200 ml" },
+            { title: "Almond milk", description: "200 ml" },
+            { title: "Xanthan gum", description: "1/4 teaspoon" },
+            { title: "Stevia", description: "20 g" },
+            { title: "Protein powder", description: "1 scoop" },
+            { title: "Vanilla extract", description: "4 ml" },
+            { title: "Salt", description: "1 pinch" }
+        ]
+    },
+
+    steps: {
+        image: "assets/images/recipes/defaultS.jpg",
+        subtitle: "How to make it",
+        introduction: "The perfect creamy vanilla base for your Ninja Creami:",
+        content: [
+            { description: "Add the milk, almond milk, xanthan gum, stevia, protein powder, vanilla extract, and salt to a Ninja Creami pint container." },
+            { description: "Blend everything using an immersion blender until completely smooth." },
+            { description: "Freeze for at least 12 hours, preferably 24 hours." },
+            { description: "Before spinning, run the outside of the container under water for 30 seconds to 1 minute." },
+            { description: "Place the pint into the Ninja Creami and run it on Lite Ice Cream mode." },
+            { description: "Use a knife to scrape down the sides if needed." },
+            { description: "If the texture comes out crumbly, respin until smooth and creamy." },
+            { description: "If desired, create a hole in the center and add any mix-ins you like, then run the Extras or Mix-In setting." },
+            { description: "Otherwise, enjoy it as a creamy vanilla protein ice cream." }
+        ]
+    },
+
+    nutritional_values: [
+        { title: "Calories", description: "200 kcal" },
+        { title: "Total Fat", description: "2g" },
+        { title: "Carbohydrates", description: "14g" },
+        { title: "Fiber", description: "1g" },
+        { title: "Protein", description: "34g" }
+    ]
     }
 ];
 
