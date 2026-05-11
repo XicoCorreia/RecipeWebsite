@@ -978,6 +978,79 @@ export const sample_recipes: Recipe[] = [
         { title: "Fiber", description: "1g" },
         { title: "Protein", description: "34g" }
     ]
+    },
+    {
+    id: "16",
+    name: "Chicken Stroganoff",
+    date: "11 May 2026",
+    mainCategories: [EnumCategories.Main],
+    extraCategories: [EnumCategories.Chicken, EnumCategories.Skillet],
+    imageUrl: "assets/images/recipes/defaultR.jpg",
+    url: "chicken-stroganoff",
+
+    // SEO Enhancement fields
+    prepTime: "PT15M",
+    cookTime: "PT25M",
+    totalTime: "PT40M",
+    yield: "4 servings",
+    cuisine: "International",
+    keywords: "chicken stroganoff, creamy chicken mushrooms, chicken mushroom sauce, easy chicken dinner",
+    videoUrl: "",
+
+    introduction: {
+        introduction: "A creamy and comforting chicken stroganoff with mushrooms and mustard.",
+        subtitle: "Rich, creamy, and packed with flavor",
+        description: "This chicken stroganoff combines juicy golden chicken with mushrooms, onions, garlic, and a creamy mustard sauce. " +
+        "The sauce is rich and smooth while still feeling light enough for an easy weeknight meal. " +
+        "Perfect served with rice, pasta, or mashed potatoes."
+    },
+
+    ingredients: {
+        image: "assets/images/recipes/defaultI.jpg",
+        subtitle: "What you'll need",
+        introduction: "Simple ingredients create a rich and flavorful sauce:",
+        content: [
+            { title: "Chicken breast", description: "600 g, raw and skinless" },
+            { title: "Olive oil", description: "1 tablespoon" },
+            { title: "Onion", description: "1 medium, sliced" },
+            { title: "Garlic", description: "3 cloves, minced" },
+            { title: "Mushrooms", description: "250 g, sliced" },
+            { title: "Chicken stock", description: "Made with 1/2 stock cube and 150 ml water" },
+            { title: "Cream", description: "100 ml" },
+            { title: "Dijon mustard", description: "1 tablespoon" },
+            { title: "Butter", description: "1 teaspoon" },
+            { title: "Salt", description: "0.3 teaspoon" },
+            { title: "Black pepper", description: "1 teaspoon, ground" }
+        ]
+    },
+
+    steps: {
+        image: "assets/images/recipes/defaultS.jpg",
+        subtitle: "How to make it",
+        introduction: "The creamy sauce comes together quickly in one pan:",
+        content: [
+            { description: "Season the chicken with salt and black pepper." },
+            { description: "Heat a skillet over medium-high heat and cook the chicken until golden brown and fully cooked." },
+            { description: "Remove the chicken from the skillet and set aside." },
+            { description: "Add the olive oil to the same skillet." },
+            { description: "Sauté the onion until soft and translucent." },
+            { description: "Add the butter and mushrooms and cook until the mushrooms soften and release their moisture." },
+            { description: "Add the garlic and cook for about 1 minute until fragrant." },
+            { description: "Pour in the chicken stock and add the Dijon mustard to deglaze the pan." },
+            { description: "Bring the sauce to a boil, then reduce to a simmer." },
+            { description: "Add the cream and return the chicken to the skillet." },
+            { description: "Simmer gently until the sauce becomes smooth and creamy." },
+            { description: "Serve warm with your preferred side dish." }
+        ]
+    },
+
+    nutritional_values: [
+        { title: "Calories", description: "308 kcal" },
+        { title: "Total Fat", description: "14g" },
+        { title: "Carbohydrates", description: "7g" },
+        { title: "Fiber", description: "1g" },
+        { title: "Protein", description: "37g" }
+    ]
     }
 ];
 
