@@ -706,6 +706,74 @@ export const sample_recipes: Recipe[] = [
         { title: "Fiber", description: "7g" },
         { title: "Protein", description: "36g" }
     ]
+    },
+    {
+    id: "12",
+    name: "Tomato Rice with Kidney Beans",
+    date: "11 May 2026",
+    mainCategories: [EnumCategories.SidesAppetizers],
+    extraCategories: [EnumCategories.Portuguese],
+    imageUrl: "assets/images/recipes/defaultR.jpg",
+    url: "tomato-rice-kidney-beans",
+
+    // SEO Enhancement fields
+    prepTime: "PT10M",
+    cookTime: "PT15M",
+    totalTime: "PT25M",
+    yield: "4 servings",
+    cuisine: "International",
+    keywords: "tomato rice, kidney bean rice, vegan rice recipe, easy bean rice",
+    videoUrl: "",
+
+    introduction: {
+        introduction: "A simple and comforting rice dish packed with beans and flavor.",
+        subtitle: "Easy, filling, and budget-friendly",
+        description: "This tomato rice with kidney beans is a simple one-pot meal that's both hearty and nutritious. " +
+        "The rice absorbs the rich tomato flavor while the kidney beans add texture and protein. " +
+        "Perfect as a quick lunch, dinner, or meal prep option."
+    },
+
+    ingredients: {
+        image: "assets/images/recipes/defaultI.jpg",
+        subtitle: "What you'll need",
+        introduction: "Simple pantry ingredients make this dish easy anytime:",
+        content: [
+            { title: "Jasmine rice", description: "200 g" },
+            { title: "Kidney beans", description: "252 g, drained" },
+            { title: "Garlic", description: "2 cloves, chopped" },
+            { title: "Onion", description: "1 large, sliced into semi circles" },
+            { title: "Tomato puree", description: "30 g" },
+            { title: "Salt", description: "1 teaspoon" },
+            { title: "Olive oil", description: "1 tablespoon" },
+            { title: "Water", description: "400 ml" }
+        ]
+    },
+
+    steps: {
+        image: "assets/images/recipes/defaultS.jpg",
+        subtitle: "How to make it",
+        introduction: "Everything cooks together in one pot for maximum flavor:",
+        content: [
+            { description: "Slice the onion into semi circles and finely chop the garlic." },
+            { description: "Heat the olive oil in a pot over medium heat." },
+            { description: "Add the onion and sauté until softened." },
+            { description: "Add the chopped garlic and cook for about 1 minute until fragrant." },
+            { description: "Add the rice and tomato puree, stirring well so the rice gets lightly toasted and coated." },
+            { description: "Pour in 400 ml of water, or more if you prefer a slightly more runny texture." },
+            { description: "Bring everything to a boil." },
+            { description: "Cover the pot, reduce the heat, and simmer for 6 minutes." },
+            { description: "Add the kidney beans, cover again, and simmer for another 6 minutes." },
+            { description: "Serve warm." }
+        ]
+    },
+
+    nutritional_values: [
+        { title: "Calories", description: "272 kcal" },
+        { title: "Total Fat", description: "2g" },
+        { title: "Carbohydrates", description: "50g" },
+        { title: "Fiber", description: "5g" },
+        { title: "Protein", description: "10g" }
+    ]
     }
 ];
 
