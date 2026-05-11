@@ -314,7 +314,7 @@ export const sample_recipes: Recipe[] = [
     {
     id: "6",
     name: "Strawberry Protein Gelatine Mousse",
-    date: "03 May 2026",
+    date: "05 May 2026",
     mainCategories: [EnumCategories.Dessert],
     extraCategories: [EnumCategories.LowCalorie],
     imageUrl: "assets/images/recipes/defaultR.jpg",
@@ -377,7 +377,7 @@ export const sample_recipes: Recipe[] = [
     {
     id: "7",
     name: "Crispy Air Fryer Potatoes",
-    date: "03 May 2026",
+    date: "11 May 2026",
     mainCategories: [EnumCategories.SidesAppetizers],
     extraCategories: [EnumCategories.AirFryer, EnumCategories.LowCalorie],
     imageUrl: "assets/images/recipes/defaultR.jpg",
@@ -443,7 +443,7 @@ export const sample_recipes: Recipe[] = [
     {
     id: "8",
     name: "Traditional Spaghetti Carbonara",
-    date: "03 May 2026",
+    date: "11 May 2026",
     mainCategories: [EnumCategories.Main],
     extraCategories: [EnumCategories.Pasta, EnumCategories.Italian],
     imageUrl: "assets/images/recipes/defaultR.jpg",
@@ -502,6 +502,209 @@ export const sample_recipes: Recipe[] = [
         { title: "Carbohydrates", description: "51g" },
         { title: "Fiber", description: "3g" },
         { title: "Protein", description: "31g" }
+    ]
+    },
+    {
+    id: "9",
+    name: "Air Fryer Chicken Legs",
+    date: "11 May 2026",
+    mainCategories: [EnumCategories.Main],
+    extraCategories: [EnumCategories.Chicken, EnumCategories.AirFryer],
+    imageUrl: "assets/images/recipes/defaultR.jpg",
+    url: "air-fryer-chicken-legs",
+
+    // SEO Enhancement fields
+    prepTime: "PT10M",
+    cookTime: "PT25M",
+    totalTime: "PT35M",
+    yield: "2 servings",
+    cuisine: "American",
+    keywords: "air fryer chicken legs, crispy chicken drumsticks, smoked paprika chicken, easy chicken recipe",
+    videoUrl: "",
+
+    introduction: {
+        introduction: "Crispy, juicy chicken legs made easily in the air fryer.",
+        subtitle: "Simple seasoning, big flavor",
+        description: "These air fryer chicken legs are packed with smoky and savory flavors while staying juicy inside with perfectly crispy skin. " +
+        "A simple blend of smoked paprika, garlic, onion powder, salt, and black pepper creates a delicious coating that works perfectly in the air fryer. " +
+        "Perfect for a quick dinner with minimal cleanup."
+    },
+
+    ingredients: {
+        image: "assets/images/recipes/defaultI.jpg",
+        subtitle: "What you'll need",
+        introduction: "Simple pantry spices bring this recipe together:",
+        content: [
+            { title: "Chicken legs", description: "4 large" },
+            { title: "Smoked paprika", description: "1 teaspoon" },
+            { title: "Onion powder", description: "1 teaspoon" },
+            { title: "Black pepper", description: "1 teaspoon, ground" },
+            { title: "Garlic powder", description: "1 teaspoon" },
+            { title: "Salt", description: "1 teaspoon" },
+            { title: "Olive oil", description: "1 tablespoon" }
+        ]
+    },
+
+    steps: {
+        image: "assets/images/recipes/defaultS.jpg",
+        subtitle: "How to make it",
+        introduction: "The air fryer gives the chicken crispy skin while keeping it juicy inside:",
+        content: [
+            { description: "Pat the chicken legs dry using paper towels." },
+            { description: "In a small bowl, mix together the smoked paprika, onion powder, black pepper, garlic powder, and salt." },
+            { description: "Coat the chicken legs lightly with olive oil." },
+            { description: "Rub the spice mixture evenly over the chicken legs until fully coated." },
+            { description: "Preheat the air fryer to 195°C." },
+            { description: "Place the chicken legs in the air fryer basket in a single layer." },
+            { description: "Air fry for 22-25 minutes, flipping halfway through cooking, until the skin is crispy and the chicken is fully cooked." },
+            { description: "Serve immediately while hot and crispy." }
+        ]
+    },
+
+    nutritional_values: [
+        { title: "Calories", description: "392 kcal" },
+        { title: "Total Fat", description: "20g" },
+        { title: "Carbohydrates", description: "5g" },
+        { title: "Fiber", description: "2g" },
+        { title: "Protein", description: "45g" }
+    ]
+    },
+    {
+    id: "10",
+    name: "Frango à Brás",
+    date: "11 May 2026",
+    mainCategories: [EnumCategories.Main],
+    extraCategories: [EnumCategories.Chicken, EnumCategories.Portuguese],
+    imageUrl: "assets/images/recipes/defaultR.jpg",
+    url: "frango-a-bras",
+
+    // SEO Enhancement fields
+    prepTime: "PT20M",
+    cookTime: "PT30M",
+    totalTime: "PT50M",
+    yield: "4 servings",
+    cuisine: "Portuguese",
+    keywords: "frango à bras, portuguese chicken recipe, chicken and fries with eggs, portuguese comfort food",
+    videoUrl: "",
+
+    introduction: {
+        introduction: "A comforting Portuguese classic made with chicken, crispy fries, and creamy eggs.",
+        subtitle: "Creamy, savory, and incredibly satisfying",
+        description: "Frango à Brás is a Portuguese comfort food dish that combines shredded chicken, thin crispy fries, onions, garlic, and silky eggs into one flavorful meal. " +
+        "The secret is cooking the eggs gently so they stay creamy instead of turning into scrambled eggs. " +
+        "Finished with parsley and optional olives, this dish is simple, hearty, and full of traditional flavor."
+    },
+
+    ingredients: {
+        image: "assets/images/recipes/defaultI.jpg",
+        subtitle: "What you'll need",
+        introduction: "Simple ingredients create this traditional Portuguese favorite:",
+        content: [
+            { title: "Olive oil", description: "2 tablespoons" },
+            { title: "Bay leaf", description: "1 leaf" },
+            { title: "Potatoes", description: "600 g" },
+            { title: "Garlic", description: "3 cloves, minced" },
+            { title: "Eggs", description: "4" },
+            { title: "Chicken breast", description: "400 g, raw and skinless" },
+            { title: "Salt", description: "2 tablespoons" },
+            { title: "Black pepper", description: "1 dash" },
+            { title: "Onion", description: "1 large, sliced" },
+            { title: "Parsley", description: "For serving" },
+            { title: "Olives", description: "Optional, for serving" }
+        ]
+    },
+
+    steps: {
+        image: "assets/images/recipes/defaultS.jpg",
+        subtitle: "How to make it",
+        introduction: "The key is keeping the eggs creamy and silky:",
+        content: [
+            { description: "Place the chicken breast in a pot with water, the bay leaf, and salt. Bring to a boil and cook until the chicken is fully cooked through." },
+            { description: "Remove the chicken from the pot and shred it using two forks." },
+            { description: "Meanwhile, cut the potatoes into very thin strips and cook them using your air fryer fries method until golden and crispy." },
+            { description: "Heat the olive oil in a large pan over medium heat." },
+            { description: "Add the sliced onion and garlic and sauté until soft and translucent." },
+            { description: "Add the shredded chicken to the pan and mix well with the onions and garlic." },
+            { description: "Add the cooked fries and gently combine everything together." },
+            { description: "Lower the heat to very low and add the eggs." },
+            { description: "Stir continuously and gently until the eggs become creamy and coat the mixture without turning into scrambled eggs." },
+            { description: "Finish with black pepper, chopped parsley, and olives if desired. Serve immediately." }
+        ]
+    },
+
+    nutritional_values: [
+        { title: "Calories", description: "386 kcal" },
+        { title: "Total Fat", description: "15g" },
+        { title: "Carbohydrates", description: "27g" },
+        { title: "Fiber", description: "4g" },
+        { title: "Protein", description: "32g" }
+    ]
+    },
+    {
+    id: "11",
+    name: "Strawberry Protein Parfait",
+    date: "11 May 2026",
+    mainCategories: [EnumCategories.Breakfast],
+    extraCategories: [EnumCategories.LowCalorie],
+    imageUrl: "assets/images/recipes/defaultR.jpg",
+    url: "strawberry-protein-parfait",
+
+    // SEO Enhancement fields
+    prepTime: "PT10M",
+    cookTime: "PT0M",
+    totalTime: "PT2H10M",
+    yield: "2 servings",
+    cuisine: "International",
+    keywords: "strawberry parfait, protein parfait, chia pudding parfait, healthy breakfast, skyr parfait",
+    videoUrl: "",
+
+    introduction: {
+        introduction: "A creamy and refreshing high-protein parfait with strawberries and chia pudding.",
+        subtitle: "Perfect for breakfast or a healthy dessert",
+        description: "This strawberry protein parfait combines a fruity chia pudding layer with a creamy vanilla protein skyr mixture for a balanced and satisfying treat. " +
+        "Packed with protein and fiber, it's perfect as a healthy breakfast, snack, or dessert. " +
+        "Preparing it ahead of time makes it even better as the chia pudding becomes thick and creamy overnight."
+    },
+
+    ingredients: {
+        image: "assets/images/recipes/defaultI.jpg",
+        subtitle: "What you'll need",
+        introduction: "Simple ingredients for a healthy and delicious parfait:",
+        content: [
+            { title: "Vanilla whey protein", description: "30 g" },
+            { title: "Skyr natural", description: "300 g" },
+            { title: "Vanilla extract", description: "1 teaspoon" },
+            { title: "Chia seeds", description: "30 g" },
+            { title: "Skyr natural or Greek yogurt", description: "100 g" },
+            { title: "Milk", description: "50 ml" },
+            { title: "Honey", description: "2 teaspoons" },
+            { title: "Strawberries", description: "150 g" }
+        ]
+    },
+
+    steps: {
+        image: "assets/images/recipes/defaultS.jpg",
+        subtitle: "How to make it",
+        introduction: "Layering creates the perfect creamy texture:",
+        content: [
+            { description: "Add 300 g of skyr, milk, honey, strawberries, and vanilla extract to a blender." },
+            { description: "Blend until completely smooth." },
+            { description: "Transfer the mixture to a bowl and stir in the chia seeds." },
+            { description: "Place in the fridge for 1-2 hours, or overnight if possible, until thickened into a chia pudding." },
+            { description: "In another bowl, mix the remaining skyr or Greek yogurt with the vanilla whey protein until smooth and creamy." },
+            { description: "Once the chia pudding is ready, assemble the parfaits in two glasses or bowls." },
+            { description: "Start with one layer of strawberry chia pudding, then add one layer of the vanilla protein skyr mixture." },
+            { description: "Repeat the layers one more time." },
+            { description: "Serve chilled." }
+        ]
+    },
+
+    nutritional_values: [
+        { title: "Calories", description: "307 kcal" },
+        { title: "Total Fat", description: "6g" },
+        { title: "Carbohydrates", description: "21g" },
+        { title: "Fiber", description: "7g" },
+        { title: "Protein", description: "36g" }
     ]
     }
 ];
