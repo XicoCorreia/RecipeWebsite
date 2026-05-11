@@ -118,10 +118,10 @@ export const categories_special: Category[] = [
     name: EnumCategories.AirFryer, 
     path:"airfryer-recipes",
     imageUrl:'assets/images/categories/airfryer.jpg',
-    description: "Embark on a journey of culinary delight with my low-calorie recipes, crafted with a passion for flavor and a dedication to "+
-    "wellness. As someone who found joy in cooking through a focus on healthier eating, I understand the importance of meals that are both "+
-    "satisfying and nourishing. My low-calorie category offers a treasure trove of dishes that prioritize wholesome ingredients without "+
-    "compromising on taste. Let's redefine the art of cooking, one delicious and nutritious dish at a time.",
+    description: "Discover crispy, flavorful meals made simple with my air fryer recipes. From quick weeknight dinners" +
+    "to healthier versions of your favorite comfort foods, this category is packed with easy recipes that deliver maximum" +
+    "taste with less oil and less hassle. Whether you're new to air frying or already obsessed, you'll find delicious" +
+    "inspiration for every craving.",
     },
     {id: '33', 
     name:EnumCategories.Skillet,
