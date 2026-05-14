@@ -104,7 +104,7 @@ export class FoodService {
     const subCatRecipes: Recipe[][] = [];
     subCategories.forEach(subCat => {
       const recipesForSubCat: Recipe[] = sample_recipes.filter(recipe =>
-          recipe.mainCategories?.some(cat => cat === subCat.name)
+          recipe.extraCategories?.some(cat => cat === subCat.name)
       );
       subCatRecipes.push(recipesForSubCat);
   });

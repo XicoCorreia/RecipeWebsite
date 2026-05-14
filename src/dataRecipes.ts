@@ -48,7 +48,7 @@ export const sample_recipes: Recipe[] = [
             { description: "In another bowl, mix the egg yolks with the Dulce de leche until smooth and creamy." },
             { description: "Gently fold this mixture into the whipped egg whites. Go slowly so you don’t lose that airy texture." },
             { description: "Pour into a serving dish or individual cups and finish with crushed Maria biscuits on top." },
-            { description: "Chill in the fridge for a bit before serving—it’s even better cold." }
+            { description: "Chill in the fridge for a bit before serving—it's even better cold." }
         ]
     },
     
@@ -63,8 +63,8 @@ export const sample_recipes: Recipe[] = [
     id: "2",
     name: "Dulce de Leche Petit Gâteau",
     date: "03 May 2026",
-    mainCategories: [EnumCategories.Dessert, EnumCategories.Cake],
-    extraCategories: [ EnumCategories.AirFryer],
+    mainCategories: [EnumCategories.Dessert],
+    extraCategories: [ EnumCategories.AirFryer, EnumCategories.Cake],
     imageUrl: "assets/images/recipes/defaultR.jpg",
     url: "dulce-de-leche-petit-gateaux",
 

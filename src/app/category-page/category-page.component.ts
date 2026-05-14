@@ -31,7 +31,6 @@ export class CategoryPageComponent implements OnInit, OnDestroy {
     // Subscribe to route changes to update meta tags dynamically
     this.routeSubscription = this.activatedRoute.params.subscribe((params) => {
       if (params['name']) {
-        console.log(params)
         this.category = this.foodService.getCategoryByPath(params['name']);
         this.subCategories = this.foodService.getsubCategories(this.category.name);
         this.subCatRecipes = this.foodService.getsubCategoriesRecipes(this.subCategories);
