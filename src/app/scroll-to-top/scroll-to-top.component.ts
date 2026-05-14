@@ -7,27 +7,29 @@ import { DOCUMENT } from '@angular/common';
   styleUrls: ['./scroll-to-top.component.css']
 })
 
-//Credits: https://dev.to/anirbmuk/implement-scroll-to-top-in-angular-1e03
 export class ScrollToTopComponent implements OnInit {
   windowScrolled!: boolean;
   constructor(@Inject(DOCUMENT) private document: Document) {}
   @HostListener("window:scroll", [])
   onWindowScroll() {
-      if (document.documentElement.scrollTop || document.body.scrollTop > 100) {
+      if ((document.documentElement.scrollTop || document.body.scrollTop) > 100) {
           this.windowScrolled = true;
       } 
-     else if (this.windowScrolled || document.documentElement.scrollTop || document.body.scrollTop < 10) {
+     else if (this.windowScrolled && (document.documentElement.scrollTop || document.body.scrollTop) < 10) {
           this.windowScrolled = false;
       }
   }
   scrollToTop() {
-      (function smoothscroll() {
-          let currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
-          if (currentScroll > 0) {
-              window.requestAnimationFrame(smoothscroll);
-              window.scrollTo(0, currentScroll - (currentScroll / 8));
+      const scrollStep = () => {
+          const currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
+          if (currentScroll <= 1) {
+              window.scrollTo(0, 0);
+              return;
           }
-      })();
+          window.scrollTo(0, currentScroll - Math.max(1, currentScroll / 8));
+          requestAnimationFrame(scrollStep);
+      };
+      requestAnimationFrame(scrollStep);
   }
   ngOnInit() {}
 }
