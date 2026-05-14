@@ -1051,6 +1051,71 @@ export const sample_recipes: Recipe[] = [
         { title: "Fiber", description: "1g" },
         { title: "Protein", description: "37g" }
     ]
+    },
+    {
+    id: "17",
+    name: "Ninja Creami Piña Colada Protein Ice Cream",
+    date: "11 May 2026",
+    mainCategories: [EnumCategories.Dessert],
+    extraCategories: [EnumCategories.LowCalorie],
+    imageUrl: "assets/images/recipes/defaultR.jpg",
+    url: "ninja-creami-pina-colada-protein-ice-cream",
+
+    // SEO Enhancement fields
+    prepTime: "PT10M",
+    cookTime: "PT0M",
+    totalTime: "PT24H10M",
+    yield: "1 pint",
+    cuisine: "International",
+    keywords: "ninja creami pina colada ice cream, pineapple protein ice cream, coconut protein dessert, ninja creami recipe",
+    videoUrl: "",
+
+    introduction: {
+        introduction: "A tropical high-protein ice cream with pineapple and coconut flavors.",
+        subtitle: "Creamy, refreshing, and packed with tropical flavor",
+        description: "This Ninja Creami Piña Colada protein ice cream combines sweet pineapple with creamy coconut milk for a refreshing tropical-inspired dessert. " +
+        "Packed with protein while still tasting indulgent, it's perfect for hot days or whenever you want something fruity and creamy. " +
+        "Optional coconut flakes add extra texture and flavor."
+    },
+
+    ingredients: {
+        image: "assets/images/recipes/defaultI.jpg",
+        subtitle: "What you'll need",
+        introduction: "Simple tropical ingredients create this creamy dessert:",
+        content: [
+            { title: "Vanilla whey protein", description: "1 scoop" },
+            { title: "Xanthan gum", description: "0.25 teaspoon" },
+            { title: "Light canned coconut milk (Better for less calories)", description: "200 ml" },
+            { title: "Stevia", description: "20 g" },
+            { title: "Salt", description: "1 pinch" },
+            { title: "Canned pineapple", description: "150 g" },
+            { title: "Canned pineapple juice", description: "50 ml" },
+            { title: "Coconut flakes", description: "Optional, for topping or mix-ins" }
+        ]
+    },
+
+    steps: {
+        image: "assets/images/recipes/defaultS.jpg",
+        subtitle: "How to make it",
+        introduction: "The Ninja Creami creates a smooth tropical ice cream texture:",
+        content: [
+            { description: "Add all the ingredients except the coconut flakes to a Ninja Creami pint container." },
+            { description: "Blend everything using an immersion blender until completely smooth." },
+            { description: "Freeze for at least 12 hours, preferably 24 hours." },
+            { description: "Place the frozen pint into the Ninja Creami and run it on Lite Ice Cream mode." },
+            { description: "If necessary, respin until the texture becomes smooth and creamy." },
+            { description: "You can simply top the ice cream with coconut flakes before serving." },
+            { description: "Alternatively, scrape the sides with a knife, create a hole in the middle, add the coconut flakes, and run the Extras or Mix-In setting." }
+        ]
+    },
+
+    nutritional_values: [
+        { title: "Calories", description: "501 kcal" },
+        { title: "Total Fat", description: "29g" },
+        { title: "Carbohydrates", description: "52g" },
+        { title: "Fiber", description: "3g" },
+        { title: "Protein", description: "26g" }
+    ]
     }
 ];
 
