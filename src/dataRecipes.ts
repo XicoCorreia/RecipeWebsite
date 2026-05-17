@@ -446,7 +446,7 @@ export const sample_recipes: Recipe[] = [
     date: "11 May 2026",
     mainCategories: [EnumCategories.Main],
     extraCategories: [EnumCategories.Pasta, EnumCategories.Italian],
-    imageUrl: "assets/images/recipes/defaultR.jpg",
+    imageUrl: "assets/images/recipes/carbonara/carbonara.jpeg",
     url: "traditional-spaghetti-carbonara",
 
     // SEO Enhancement fields
