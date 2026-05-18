@@ -510,7 +510,7 @@ export const sample_recipes: Recipe[] = [
     date: "11 May 2026",
     mainCategories: [EnumCategories.Main],
     extraCategories: [EnumCategories.Chicken, EnumCategories.AirFryer],
-    imageUrl: "assets/images/recipes/defaultR.jpg",
+    imageUrl: "assets/images/recipes/chicken_legs/chicken_legs.jpeg",
     url: "air-fryer-chicken-legs",
 
     // SEO Enhancement fields
@@ -1058,7 +1058,7 @@ export const sample_recipes: Recipe[] = [
     date: "11 May 2026",
     mainCategories: [EnumCategories.Dessert],
     extraCategories: [EnumCategories.LowCalorie],
-    imageUrl: "assets/images/recipes/defaultR.jpg",
+    imageUrl: "assets/images/recipes/pinacolada/pinacolada.jpeg",
     url: "ninja-creami-pina-colada-protein-ice-cream",
 
     // SEO Enhancement fields
