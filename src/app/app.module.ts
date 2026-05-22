@@ -13,6 +13,7 @@ import { RecipesComponent } from './recipes/recipes.component';
 import { CategoriesComponent } from './categories/categories.component';
 import { CategoryPageComponent } from './category-page/category-page.component';
 import { SubcategoryPageComponent } from './subcategory-page/subcategory-page.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 import { ScrollToTopComponent } from './scroll-to-top/scroll-to-top.component';
 
 
@@ -28,6 +29,7 @@ import { ScrollToTopComponent } from './scroll-to-top/scroll-to-top.component';
     CategoriesComponent,
     CategoryPageComponent,
     SubcategoryPageComponent,
+    NotFoundComponent,
     ScrollToTopComponent
   ],
   imports: [

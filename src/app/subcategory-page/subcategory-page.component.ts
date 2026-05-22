@@ -1,7 +1,7 @@
 import { Component, OnInit, OnDestroy, Inject } from '@angular/core';
 import { Category } from '../shared/models/Category';
 import { Recipe } from '../shared/models/Recipe';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { FoodService } from '../services/food.service';
 import { Meta, Title } from '@angular/platform-browser';
 import { Subscription } from 'rxjs';
@@ -22,6 +22,7 @@ export class SubcategoryPageComponent implements OnInit, OnDestroy {
 
   constructor(
     private activatedRoute: ActivatedRoute,
+    private router: Router,
     private foodService: FoodService,
     private metaService: Meta,
     private titleService: Title,
@@ -33,6 +34,11 @@ export class SubcategoryPageComponent implements OnInit, OnDestroy {
     this.routeSubscription = this.activatedRoute.params.subscribe((params) => {
       if (params['name'] && params['parent_category']) {
         this.category = this.foodService.getCategoryByPath(params['parent_category'] + '/' + params['name']);
+        if (!this.category.path || !this.category.name) {
+          this.router.navigate(['/not-found']);
+          return;
+        }
+
         this.parent_path = params['parent_category'];
         this.parent_name = this.foodService.getNameByPath(this.parent_path);
         this.subCategories = this.foodService.getsubCategories(this.category.name);

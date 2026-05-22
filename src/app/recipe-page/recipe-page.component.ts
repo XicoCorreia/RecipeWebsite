@@ -1,5 +1,5 @@
 import { Component, OnInit, OnDestroy, Inject } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { FoodService } from '../services/food.service';
 import { Recipe } from '../shared/models/Recipe';
 import { EnumCategories } from '../shared/models/EnumCategories';
@@ -23,6 +23,7 @@ export class RecipePageComponent implements OnInit, OnDestroy {
 
   constructor(
     private activatedRoute: ActivatedRoute,
+    private router: Router,
     private foodService: FoodService,
     private metaService: Meta,
     private titleService: Title,
@@ -36,6 +37,10 @@ export class RecipePageComponent implements OnInit, OnDestroy {
     this.routeSubscription = this.activatedRoute.params.subscribe((params) => {
       if (params['label']) {
         this.recipe = this.foodService.getRecipeByUrl(params['label']);
+        if (!this.recipe.url || !this.recipe.name) {
+          this.router.navigate(['/not-found']);
+          return;
+        }
         const list_length = this.recipe.mainCategories.length;
         this.main_category = this.recipe.mainCategories[list_length - 1];
         const list_length2 = this.recipe.extraCategories.length;
