@@ -113,8 +113,13 @@
 ol.listing {
     counter-reset: step-counter;
     list-style: none;
-    margin: 0.5rem 0;
+    margin: 1rem 0;
     padding-left: 0;
+}
+
+#listing {
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
 }
 
 #listing li,
@@ -124,6 +129,47 @@ ol.listing li {
     display: flex;
     align-items: flex-start;
     gap: 0.5em;
+}
+
+.ingredients-checklist {
+    list-style: none;
+    padding-left: 0;
+    margin: 0.5rem 0;
+}
+
+.ingredients-checklist li {
+    margin-bottom: 0.75rem;
+}
+
+.ingredient-checkbox {
+    display: flex;
+    align-items: center; /* center vertically */
+    gap: 0.75rem;
+    cursor: pointer;
+}
+
+.ingredient-checkbox p {
+    margin: 0; /* remove default paragraph spacing */
+}
+
+.ingredient-checkbox input[type="checkbox"] {
+    transform: scale(1.5);
+    accent-color: #a62031;
+}
+
+.ingredient-checkbox .ingredient-text{
+    display: inline-block;
+}
+
+.ingredient-checkbox input[type="checkbox"]:checked + .ingredient-text,
+.ingredient-checkbox input[type="checkbox"]:checked ~ .ingredient-text{
+    text-decoration: line-through;
+    color: #777;
+}
+
+.ingredient-checkbox span.ingredient-title {
+    font-weight: normal;
+    opacity: 0.85;
 }
 
 #listing li::before,
@@ -142,12 +188,20 @@ ol.listing li::before {
 }
 
 .nutritional{
+    margin-top: 0;
+    margin-bottom: 0;
     list-style-type: none;
     padding-left: 1rem ;
 }
 
 .nutritional-indented {
     margin-left: 1em;
+}
+
+.nutritional-card h3 {
+    color: #a62031;
+    margin-bottom: 0;
+    line-height: 0.5;
 }
 
 .recipe-card-container{
@@ -199,6 +253,14 @@ span {
 
 .nutritional-card h3{
     color:#a62031;
+}
+
+#nutrition {
+    margin-bottom: 1em;
+}
+
+#nutrition h2{
+    line-height: 0.5;
 }
 
 

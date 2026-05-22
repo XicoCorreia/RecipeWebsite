@@ -35,9 +35,12 @@
                 <h2 id="subtitle">{{recipe.ingredients.subtitle}}</h2>
                 <div class="recipe-text">
                     {{recipe.ingredients.introduction}}
-                    <ul class="listing">
-                        <li *ngFor="let ingredient of recipe.ingredients.content">
-                            <strong *ngIf="ingredient.title" >{{ingredient.title}}:</strong>  {{ingredient.description}}
+                    <ul class="listing ingredients-checklist">
+                        <li *ngFor="let ingredient of recipe.ingredients.content; let i = index">
+                            <label class="ingredient-checkbox">
+                                <input type="checkbox" />
+                                <p class="ingredient-text"><b>{{ ingredient.title }}:</b> {{ ingredient.description }}</p>
+                            </label>
                         </li>
                     </ul>
                 </div>  
@@ -81,9 +84,12 @@
                     <div>
                         <h2>Ingredients</h2>
                         <div class="recipe-text">
-                            <ul class="listing">
-                                <li *ngFor="let ingredient of recipe.ingredients.content">
-                                    <strong *ngIf="ingredient.title">{{ingredient.title}}:</strong> {{ingredient.description}}
+                            <ul class="listing ingredients-checklist">
+                                <li *ngFor="let ingredient of recipe.ingredients.content; let i = index">
+                                    <label class="ingredient-checkbox">
+                                        <input type="checkbox" />
+                                        <p class="ingredient-text"><b>{{ ingredient.title }}:</b> {{ ingredient.description }}</p>
+                                    </label>
                                 </li>
                             </ul>
                         </div>
@@ -96,7 +102,7 @@
                             </li>
                         </ol>
                     </div>
-                    <div >
+                    <div id="nutrition">
                         <h2>Nutrition</h2>
                         <span>per serving</span>
                         <ul class="listing nutritional">
